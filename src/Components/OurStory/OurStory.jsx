@@ -49,14 +49,13 @@ const OurStory = () => {
                                 </div>
                             </div>
                             <h2 className="text-center">From Humble Beginnings to Trusted Excellence</h2>
-
                         </div>
 
                         <div className="marginTop">
                             <Row gutter={[16, 16]}>
                                 <Col lg={24} md={24} xs={24}>
                                     <div className={`StoryImageContainer LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                        <img src="/public/Image/Financial Growth.jpg" alt="Financial Growth" />
+                                        <img src="/Image/Financial Growth.jpg" alt="Financial Growth" />
                                     </div>
                                 </Col>
                                 <Col lg={24} md={24} xs={24}>

@@ -1,0 +1,84 @@
+.NavigationbarContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.NavigationbarContainer.nav-scrolled .Container {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.NavigationbarContainer.nav-visible {
+    transform: translateY(0);
+}
+
+.NavigationbarContainer.nav-hidden {
+    transform: translateY(-100%);
+    box-shadow: none !important;
+}
+
+.NavigationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.NavigationbarContainer .MainContainer {
+    padding: 0px !important;
+}
+
+.NavigationbarContainer .Container {
+    min-height: 100%;
+    border: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.NavLinksContainer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.NavLinksContainer a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.NavLinksContainer a:hover {
+    color: #060568;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.NavLinksContainer a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #060568 0%, #0a0a8a 100%);
+    transition: width 0.3s ease;
+}
+
+.NavLinksContainer a:hover::after {
+    width: 100%;
+}
+
+
+.BtnContainer button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(6, 5, 104, 0.3);
+}
+
+.NavigationLogoContainer img {
+    width: 200px;
+}

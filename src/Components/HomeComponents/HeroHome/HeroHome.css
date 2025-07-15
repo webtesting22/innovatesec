@@ -1,0 +1,117 @@
+.FlexContainer {
+    height: 1400px;
+    /* background-color: red; */
+    position: relative;
+}
+
+.LeftSideContentContainer {
+    position: absolute;
+    width: 50%;
+}
+
+.LeftSideContentContainer>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.RightSideVideoContainer {
+    position: sticky;
+    top: 20px;
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    /* transition: width 0.3s ease-out; */
+}
+
+.VideoWrapper {
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    min-height: 400px;
+    overflow: hidden;
+    /* border-radius: 12px; */
+}
+
+.VideoWrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 400px;
+}
+
+.PlayPauseButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+}
+
+.PlayPauseButton.visible {
+    opacity: 1;
+    transition: .5s;
+}
+
+.PlayPauseButton:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: .5s;
+}
+
+.PlayPauseButton.playing {
+    animation: pulse 2s infinite;
+}
+
+.PlayPauseButton.paused {
+    animation: none;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.ButtonIcon {
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+.AnimatedBannerImageContainer{
+    display: flex;
+    justify-content: center;
+}
+.AnimatedBannerImageContainer img {
+    position: absolute;
+    top: 450px;
+    width: 92.6%;
+    max-width: 100%;
+    /* left: 0px; */
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}

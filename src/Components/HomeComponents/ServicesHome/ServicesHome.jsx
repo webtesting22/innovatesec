@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import "./ServicesHome.css";
 import ServicesData from "../../Services/ServicesData";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useNavigate } from 'react-router-dom';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -14,6 +15,7 @@ import { Autoplay, FreeMode, Pagination, Navigation } from 'swiper/modules';
 
 const Services = () => {
     const swiperRef = useRef(null);
+    const navigate = useNavigate();
 
     const handlePrevSlide = () => {
         if (swiperRef.current) {
@@ -122,7 +124,12 @@ const Services = () => {
 
                                                         </div>
                                                         <div className="BtnContainer">
-                                                            <button>Read More</button>
+                                                            <button onClick={() => {
+                                                                const serviceSlug = item.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                                                                navigate(`/services/${serviceSlug}`, { state: { service: item } });
+                                                            }}>
+                                                                Read More
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </div>

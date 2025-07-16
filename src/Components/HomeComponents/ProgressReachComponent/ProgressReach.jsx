@@ -42,7 +42,9 @@ const ProgressReach = () => {
                                     <div>
                                         <h2 className="white">Elevate your digital strategy in 2025</h2>
                                         <br />
-                                        <p className="white">Get global benchmarks and actionable insights to refine your customer experience.</p>
+                                       <p className="white">Innovate Securities Pvt. Ltd. (ISPL) is a leading financial services provider in India, offering a diverse range of solutions including equities, derivatives, mutual funds, bonds, corporate fixed deposits, and NCDs. With over 30 years of expertise, ISPL caters to a wide range of clients, ensuring seamless access to investments through advanced technology and personalized support.</p>
+                                      <br />
+                                       <p className="white">Whether your goal is capital growth, wealth preservation, or tax savings, ISPL’s tailored strategies ensure your financial objectives are achieved. With a strong commitment to client success, ISPL provides expert guidance, reliable execution, and the tools necessary for making informed financial decisions.</p>
                                         <br />
                                     </div>
                                     <div>

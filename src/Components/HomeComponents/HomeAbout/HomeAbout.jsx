@@ -55,7 +55,7 @@ const HomeAbout = () => {
                             <Row gutter={[16, 16]}>
                                 <Col lg={12} md={12} xs={24}>
                                     <div className="AboutCardContainer BoxDesigns">
-                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Innovative Logo.png" alt="Innovate Securities Company Logo - 30+ Years of Financial Excellence"  className="LogoIcon"/>
+                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Innovative Logo.png" alt="Innovate Securities Company Logo - 30+ Years of Financial Excellence" className="LogoIcon" />
                                         <div>
                                             <h2>Empowering Financial Growth with 30+ Years of Trusted Expertise</h2>
                                             <br />

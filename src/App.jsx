@@ -10,6 +10,7 @@ import About from './Components/AboutUs/About'
 import NewsLetters from './Components/NewsLetter/NewsLetters'
 import Footer from './Components/Footer/Footer'
 import Services from './Components/Services/Services'
+import SingleService from './Components/Services/SingleService'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='/our-story' element={<OurStory />} />
           <Route path='/about-us' element={<About />} />
           <Route path='/services' element={<Services />} />
+          <Route path='/services/:serviceName' element={<SingleService />} />
         </Routes>
         <NewsLetters />
         <Footer />

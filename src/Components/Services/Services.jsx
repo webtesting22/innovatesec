@@ -2,11 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Services.css";
 import { Row, Col } from "antd";
 import ServicesData from "./ServicesData";
+import { useNavigate } from "react-router-dom";
 // import { HiOutlineArrowUpRight } from "react-icons/hi";
 
 const Services = () => {
     const [selectedService, setSelectedService] = useState(0);
     const [isAnimating, setIsAnimating] = useState(false);
+    const navigate = useNavigate();
 
     const currentService = ServicesData[selectedService];
 
@@ -49,6 +51,9 @@ const Services = () => {
                 observer.unobserve(sectionRef.current);
             }
         };
+    }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
     }, []);
 
     return (
@@ -95,7 +100,12 @@ const Services = () => {
                                         </p>
                                         <br />
                                         <div className="BtnContainerWhite">
-                                            <button>View Detailed</button>
+                                            <button onClick={() => {
+                                                const serviceSlug = currentService.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                                                navigate(`/services/${serviceSlug}`, { state: { service: currentService } });
+                                            }}>
+                                                View Detailed
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -105,7 +115,7 @@ const Services = () => {
                         <Col lg={12} xs={24}>
                             <div className="ServicesContentContainer">
                                 <h2 className="marginBottom">
-                                Professional Financial Services For Growth Success
+                                    Professional Financial Services For Growth Success
                                 </h2>
 
                                 <div className="ServicesTagsContainer">

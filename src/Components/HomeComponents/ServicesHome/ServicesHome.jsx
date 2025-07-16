@@ -109,7 +109,7 @@ const Services = () => {
                                                     <div>
                                                         <div className='IconsImageContainer'>
                                                             <div>
-                                                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Equity Market.png" alt="" />
+                                                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Equity Market.png" alt="Equity Market Trading Icon - Stock Market Investment Services" />
                                                             </div>
                                                         </div>
                                                         <div>

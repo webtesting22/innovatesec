@@ -46,7 +46,7 @@ const OurStory = () => {
                             <div className="SectionTagLabelContainer" style={{ margin: "auto" }}>
                                 <div>
                                     <div className="flexVertically">
-                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutHome.png" alt="" />
+                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutHome.png" alt="Innovate Securities Journey Icon - 40+ Years of Financial Excellence" />
                                     </div>
                                     <div>
                                         <p>Our Journey Since 1980</p>
@@ -61,7 +61,7 @@ const OurStory = () => {
                             <Row gutter={[16, 16]}>
                                 <Col lg={24} md={24} xs={24}>
                                     <div className={`StoryImageContainer LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                        <img src="/Image/Financial Growth.jpg" alt="Financial Growth" />
+                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/OurStory.jpg" alt="Innovate Securities Success Story - Financial Growth and Investment Excellence" />
                                     </div>
                                 </Col>
                                 <Col lg={24} md={24} xs={24}>

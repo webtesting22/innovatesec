@@ -50,7 +50,7 @@ const Navbar = () => {
                                     behavior: 'smooth'
                                 });
                             }}>
-                                <Link to="/"> <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/innovateLogo.png" alt="" /></Link>
+                                <Link to="/"> <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/innovateLogo.png" alt="Innovate Securities Logo - Trusted Financial Services" /></Link>
                             </div>
                             <div className="NavLinksContainer">
                                 {NavData.map((item) => (

@@ -71,3 +71,7 @@
     opacity: 1;
     transition: .5s;
 }
+
+.CopyRightContainer p {
+    font-size: 14px;
+}

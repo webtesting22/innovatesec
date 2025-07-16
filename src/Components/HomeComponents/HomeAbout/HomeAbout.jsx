@@ -42,7 +42,7 @@ const HomeAbout = () => {
                             <div className="SectionTagLabelContainer">
                                 <div>
                                     <div className="flexVertically">
-                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutHome.png" alt="" />
+                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutHome.png" alt="Investment Confidence Icon - Trusted Financial Guidance" />
                                     </div>
                                     <div>
                                         <p>Invest with Confidence and Clarity</p>
@@ -55,7 +55,7 @@ const HomeAbout = () => {
                             <Row gutter={[16, 16]}>
                                 <Col lg={12} md={12} xs={24}>
                                     <div className="AboutCardContainer BoxDesigns">
-                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Innovative Logo.png" alt=""  className="LogoIcon"/>
+                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Innovative Logo.png" alt="Innovate Securities Company Logo - 30+ Years of Financial Excellence"  className="LogoIcon"/>
                                         <div>
                                             <h2>Empowering Financial Growth with 30+ Years of Trusted Expertise</h2>
                                             <br />
@@ -67,7 +67,7 @@ const HomeAbout = () => {
                                 </Col>
                                 <Col lg={12} md={12} xs={24}>
                                     <div className={`AboutImageContainerHome LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                        <img src="https://images.unsplash.com/photo-1733094151451-4222a842cfd1?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                                        <img src="https://images.unsplash.com/photo-1733094151451-4222a842cfd1?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professional Financial Services Team - Innovate Securities Investment Experts" />
                                     </div>
                                 </Col>
                             </Row>

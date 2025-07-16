@@ -105,11 +105,12 @@
 
 /* Story Image Container */
 .StoryImageContainer {
-    height: 450px;
+    min-height: 450px;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(0, 33, 71, 0.15);
     position: relative;
+    max-height: 600px;
 }
 
 .StoryImageContainer::after {
@@ -272,6 +273,21 @@
     border: 4px solid white;
     box-shadow: 0 0 0 2px var(--brand-color);
     z-index: 3;
+}
+
+
+@media (min-width: 1500px) and (max-width: 2000px) {
+    .TimelineContent {
+        flex: 1;
+        max-width: 430px;
+        padding: 25px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 33, 71, 0.08);
+        border: 1px solid #f0f0f0;
+        position: relative;
+        margin: 0 30px;
+    }
 }
 
 /* Responsive Design */

@@ -105,7 +105,7 @@ const HeroHome = () => {
                             <div className="SectionTagLabelContainer">
                                 <div>
                                     <div className="flexVertically">
-                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/RocketPng.png" alt="" />
+                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/RocketPng.png" alt="Financial Growth Rocket Icon - Empowering Investment Success" />
                                     </div>
                                     <div>
                                         <p>Empowering Smarter Financial Futures</p>
@@ -161,7 +161,7 @@ const HeroHome = () => {
                         </div>
 
                         <div className="AnimatedBannerImageContainer">
-                            <img src={AnimatedBannerImage} alt="" />
+                            <img src={AnimatedBannerImage} alt="Innovate Securities Financial Services Banner - Investment Solutions" />
                         </div>
                     </div>
 

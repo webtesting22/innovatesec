@@ -67,9 +67,13 @@ const Footer = () => {
                             </div>
                         </Col>
                     </Row>
+                    <hr />
+                    <div className="CopyRightContainer">
+                        <p>Copyright © 2025 Innovate Securities Pvt. Ltd. All rights reserved.</p>
+                    </div>
                 </div>
                 {/* <div className="FooterBackImage">
-                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/2371.jpg" alt="" />
+                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/2371.jpg" alt="Innovate Securities Footer Background - Financial Services Excellence" />
                 </div> */}
             </div>
         </div>

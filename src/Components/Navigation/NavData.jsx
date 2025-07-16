@@ -18,7 +18,7 @@ const NavData = [
     {
         id: 3,
         name: "Services",
-        path: "/services",
+        path: "/services",  
     },
     {
         id: 4,

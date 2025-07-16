@@ -43,7 +43,7 @@ const About = () => {
                         <div className="SectionTagLabelContainer" style={{ margin: "auto" }}>
                             <div>
                                 <div className="flexVertically">
-                                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutBrand.png" alt="" />
+                                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutBrand.png" alt="About Innovate Securities Brand Icon - Trusted Financial Services" />
                                 </div>
                                 <div>
                                     <p>About InnvoteSecurities</p>
@@ -59,23 +59,23 @@ const About = () => {
                         <div className="ImagesGridAnimation">
                             <div className="FirstGrid">
                                 <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb0914cd68530b66098f_image.avif" alt="" />
+                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb0914cd68530b66098f_image.avif" alt="Financial Services Team Collaboration - Professional Investment Advisory" />
                                 </div>
                                 <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb072830df78df68be00_image-1.avif" alt="" />
+                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb072830df78df68be00_image-1.avif" alt="Business Strategy and Financial Planning - Corporate Investment Solutions" />
                                 </div>
                             </div>
                             <div className="SecondGrid">
                                 <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb1b337e785c25235f0d_iPad.avif" alt="" />
+                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb1b337e785c25235f0d_iPad.avif" alt="Digital Financial Services Platform - Modern Investment Technology" />
                                 </div>
                             </div>
                             <div className="ThirdGrid">
                                 <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb06bfb8fae8b51ef318_image-3.avif" alt="" />
+                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb06bfb8fae8b51ef318_image-3.avif" alt="Investment Portfolio Analysis - Financial Market Research" />
                                 </div>
                                 <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb085ecd642f27ebf16b_image-2.avif" alt="" />
+                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb085ecd642f27ebf16b_image-2.avif" alt="Corporate Financial Services - Business Investment Solutions" />
                                 </div>
                             </div>
                         </div>

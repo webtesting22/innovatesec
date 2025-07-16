@@ -1,0 +1,73 @@
+.FooterMainContainer .Container {
+    min-height: 100% !important;
+    background-color: #0021470a;
+}
+
+.SocialMediaContainer ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.SocialMediaContainer ul li {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+.SocialMediaContainer ul li svg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.SocialLinkstAndAdress>div ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    list-style: none;
+    gap: 10px;
+}
+
+.SocialLinkstAndAdress>div ul li {
+    position: relative;
+    padding-left: 0px;
+    transition: .5s;
+}
+
+.SocialLinkstAndAdress>div ul li a {
+    color: black;
+}
+
+.SocialLinkstAndAdress div ul li::before {
+    width: 0px;
+    content: "";
+    height: 100%;
+    position: absolute;
+    background-color: var(--brand-color);
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.SocialLinkstAndAdress div ul li:hover {
+    transform: translateX(10px);
+    transition: .5s;
+    padding-left: 20px;
+}
+
+.SocialLinkstAndAdress div ul li:hover::before {
+    width: 15px;
+    content: "";
+    height: 100%;
+    position: absolute;
+    background-color: var(--brand-color);
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: .5s;
+}

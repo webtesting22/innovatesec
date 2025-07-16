@@ -68,3 +68,11 @@
   top: 4px;
   z-index: 3;
 }
+
+.paddingRight {
+  padding-right: 40px;
+}
+
+.paddingLeft {
+  padding-left:40px;
+}

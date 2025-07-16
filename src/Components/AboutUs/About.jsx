@@ -31,6 +31,10 @@ const About = () => {
             }
         };
     }, []);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="MainContainer marginTop" ref={sectionRef}>
             <div className="Container">
@@ -95,7 +99,7 @@ const About = () => {
 
                                 <h2 className="white">Our leadership delivers innovative, client-focused services for sustainable financial success.</h2>
                                 <br />
-                                <p className="white">Thank you for choosing <b>Innovate Securities Pvt. Ltd.</b>. We look forward to being a <b>trusted partner</b> in your financial journey.</p>
+                                <p className="white">Thank you for choosing <b>Innovate Securities Pvt. Ltd.</b> We look forward to being a <b>trusted partner</b> in your financial journey.</p>
                             </div>
                         </div>
                     </div>

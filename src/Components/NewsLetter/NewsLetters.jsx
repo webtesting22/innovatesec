@@ -1,0 +1,150 @@
+import React, { useState } from "react";
+import "./NewsLetters.css";
+import { HiOutlineMail } from "react-icons/hi";
+import { HiOutlineCheckCircle } from "react-icons/hi";
+import { notification } from "antd";
+
+const NewsLetters = () => {
+    const [email, setEmail] = useState("");
+    const [isValid, setIsValid] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
+    const [api, contextHolder] = notification.useNotification();
+
+    // Email validation function
+    const validateEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
+
+    // Handle email input change
+    const handleEmailChange = (e) => {
+        const value = e.target.value;
+        setEmail(value);
+
+        if (value === "") {
+            setIsValid(true); // Don't show error for empty field
+        } else {
+            setIsValid(validateEmail(value));
+        }
+    };
+
+    // Handle form submission
+    const handleSubmit = async () => {
+        if (!email.trim()) {
+            api.error({
+                message: "Email Required",
+                description: "Please enter your email address to subscribe.",
+                placement: "topRight",
+                duration: 4,
+            });
+            return;
+        }
+
+        if (!validateEmail(email)) {
+            api.error({
+                message: "Invalid Email",
+                description: "Please enter a valid email address.",
+                placement: "topRight",
+                duration: 4,
+            });
+            return;
+        }
+
+        setIsLoading(true);
+
+        // Simulate API call
+        setTimeout(() => {
+            setIsLoading(false);
+
+            api.success({
+                message: "Successfully Subscribed!",
+                description: `Thank you for subscribing to our newsletter. We've sent a confirmation email to ${email}.`,
+                placement: "topRight",
+                duration: 6,
+                icon: <HiOutlineCheckCircle style={{ color: 'var(--brand-color)', fontSize: '20px' }} />,
+                style: {
+                    borderRadius: "8px",
+                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
+                },
+            });
+
+            // Reset form
+            setEmail("");
+            setIsValid(true);
+        }, 1500);
+    };
+
+    // Handle Enter key press
+    const handleKeyPress = (e) => {
+        if (e.key === "Enter") {
+            handleSubmit();
+        }
+    };
+
+    return (
+        <>
+            {contextHolder}
+            <div className="MainContainer NewsLetterMainContainer">
+                <div className="Container">
+                    <div className="paddingSide">
+                        <div className="NewsletterContainer">
+                            <div className="NewsletterContent">
+                                <h2 className="text-center">Subscribe to our newsletter</h2>
+                                <p className="text-center NewsletterSubtitle">
+                                    Sign up today and get a free sample up to 100 records.
+                                </p>
+                                <br />
+                                <div className="NewsletterInputContainer">
+                                    <div className="InputWrapper">
+                                        <HiOutlineMail className="EmailIcon" />
+                                        <input
+                                            type="email"
+                                            placeholder="Enter your email address"
+                                            className={`NewsletterInput ${!isValid ? 'error' : ''}`}
+                                            value={email}
+                                            onChange={handleEmailChange}
+                                            onKeyPress={handleKeyPress}
+                                        />
+                                    </div>
+                                    <button
+                                        className={`NewsletterButton ${isLoading ? 'loading' : ''}`}
+                                        onClick={handleSubmit}
+                                        disabled={isLoading}
+                                    >
+                                        {isLoading ? "Subscribing..." : "Get started"}
+                                    </button>
+                                </div>
+
+                                {!isValid && email && (
+                                    <div className="ErrorMessage">
+                                        Please enter a valid email address
+                                    </div>
+                                )}
+
+                                <div className="ExpertSection">
+                                    <p className="ExpertText">Our experts are ready to help!</p>
+                                    <div className="ExpertProfiles">
+                                        <div className="ExpertProfile">
+                                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/UserIcon.png" alt="Expert 1" />
+                                        </div>
+                                        <div className="ExpertProfile">
+                                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/UserIcon.png" alt="Expert 2" />
+                                        </div>
+                                        <div className="ExpertProfile">
+                                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/UserIcon.png" alt="Expert 3" />
+                                        </div>
+                                        <div className="ExpertProfile">
+                                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/UserIcon.png" alt="Expert 4" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
+};
+
+export default NewsLetters;

@@ -32,6 +32,9 @@ const OurStory = () => {
         };
     }, []);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const BackgroundImage = "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/OverlayBack.jpg"
     return (
@@ -51,7 +54,7 @@ const OurStory = () => {
                                 </div>
                             </div>
                             <h2 className="text-center">From Humble Beginnings to Trusted Excellence</h2>
-                            
+
                         </div>
 
                         <div className="marginTop">

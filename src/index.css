@@ -53,6 +53,60 @@ h2 {
   transform-style: preserve-3d;
   font-family: "Work Sans", sans-serif;
   font-family: "Space Grotesk", sans-serif;
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: perspective(1000px) rotateX(0deg) translateZ(0);
+  filter: blur(0px);
+  opacity: 1;
+}
+
+/* Animation Classes for h2 */
+h2.animate-blur-3d {
+  opacity: 0;
+  transform: perspective(1000px) rotateX(15deg) translateZ(-50px);
+  filter: blur(8px);
+}
+
+h2.animate-blur-3d.animate-in {
+  opacity: 1;
+  transform: perspective(1000px) rotateX(0deg) translateZ(0);
+  filter: blur(0px);
+}
+
+/* Additional 3D Animation Variants */
+h2.animate-3d-slide {
+  opacity: 0;
+  transform: perspective(1000px) rotateY(-20deg) translateX(-100px) translateZ(-50px);
+  filter: blur(5px);
+}
+
+h2.animate-3d-slide.animate-in {
+  opacity: 1;
+  transform: perspective(1000px) rotateY(0deg) translateX(0) translateZ(0);
+  filter: blur(0px);
+}
+
+h2.animate-3d-zoom {
+  opacity: 0;
+  transform: perspective(1000px) scale(0.8) translateZ(-100px);
+  filter: blur(10px);
+}
+
+h2.animate-3d-zoom.animate-in {
+  opacity: 1;
+  transform: perspective(1000px) scale(1) translateZ(0);
+  filter: blur(0px);
+}
+
+h2.animate-3d-flip {
+  opacity: 0;
+  transform: perspective(1000px) rotateX(90deg) translateZ(-50px);
+  filter: blur(6px);
+}
+
+h2.animate-3d-flip.animate-in {
+  opacity: 1;
+  transform: perspective(1000px) rotateX(0deg) translateZ(0);
+  filter: blur(0px);
 }
 
 h3 {
@@ -273,6 +327,10 @@ p {
   color: white;
 }
 
+b {
+  font-weight: 500;
+  /* color:  black !important; */
+}
 
 @media (min-width: 1500px) and (max-width: 3000px) {
   .Container {

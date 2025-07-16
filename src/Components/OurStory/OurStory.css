@@ -4,6 +4,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -40,7 +41,7 @@
     /* height: 100%; */
     position: relative;
     overflow: hidden;
-  transition: .5s;
+    transition: .5s;
 }
 
 .StoryContentContainer::before {
@@ -154,7 +155,7 @@
     position: relative;
     opacity: 0;
     transform: translateY(30px);
-   transition: .5s;
+    transition: .5s;
 }
 
 .TimelineItem:nth-child(odd) {
@@ -279,30 +280,30 @@
         font-size: 16px !important;
         padding: 0 20px;
     }
-    
+
     .StoryContentContainer {
         padding: 25px;
         margin-bottom: 30px;
     }
-    
+
     .StoryImageContainer {
         height: 300px;
     }
-    
+
     .StoryTimelineContainer::before {
         left: 30px;
     }
-    
+
     .TimelineItem {
         flex-direction: column !important;
         text-align: left !important;
         padding-left: 60px;
     }
-    
+
     .TimelineItem::after {
         left: 30px;
     }
-    
+
     .TimelineYear {
         position: absolute;
         left: 0;
@@ -311,13 +312,13 @@
         font-size: 14px;
         padding: 8px 12px;
     }
-    
+
     .TimelineContent {
         margin: 0;
         margin-top: 50px;
         max-width: none;
     }
-    
+
     .TimelineContent::before {
         display: none;
     }
@@ -329,24 +330,24 @@
         padding: 0 15px;
         line-height: 1.5 !important;
     }
-    
+
     .StoryContentContainer {
         padding: 20px;
     }
-    
+
     .StoryParagraph p {
         font-size: 14px;
         line-height: 1.6;
     }
-    
+
     .TimelineContent {
         padding: 20px;
     }
-    
+
     .TimelineContent h3 {
         font-size: 16px;
     }
-    
+
     .TimelineContent p {
         font-size: 13px;
     }
@@ -370,4 +371,27 @@
     color: white;
     transition: all 0.3s ease-out;
     transition: .5s;
+}
+
+
+.StackImageAnimation {
+    background-image: url("https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/OverlayBack.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.StackImageAnimation::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.805);
 }

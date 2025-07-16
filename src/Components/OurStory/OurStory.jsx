@@ -32,6 +32,8 @@ const OurStory = () => {
         };
     }, []);
 
+
+    const BackgroundImage = "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/OverlayBack.jpg"
     return (
         <div className="OurStoryContainer" ref={sectionRef}>
             <div className="MainContainer marginTop">
@@ -49,6 +51,7 @@ const OurStory = () => {
                                 </div>
                             </div>
                             <h2 className="text-center">From Humble Beginnings to Trusted Excellence</h2>
+                            
                         </div>
 
                         <div className="marginTop">
@@ -86,37 +89,39 @@ const OurStory = () => {
                             </Row>
                         </div>
 
-                        <div className="marginTop">
-                            <div className={`StoryTimelineContainer ${isVisible ? 'animate-timeline' : ''}`}>
-                                <div className="TimelineItem">
-                                    <div className="TimelineYear">1980</div>
-                                    <div className="TimelineContent">
-                                        <h3>The Foundation</h3>
-                                        <p>Shri Bhushan Pranlal Shah founded Ampi Investments, establishing our roots in the Bombay Stock Exchange.</p>
+                        <div className="StackImageAnimation">
+                            <div className="marginTop">
+                                <div className={`StoryTimelineContainer ${isVisible ? 'animate-timeline' : ''}`}>
+                                    <div className="TimelineItem">
+                                        <div className="TimelineYear">1980</div>
+                                        <div className="TimelineContent">
+                                            <h3>The Foundation</h3>
+                                            <p>Shri Bhushan Pranlal Shah founded Ampi Investments, establishing our roots in the Bombay Stock Exchange.</p>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div className="TimelineItem">
-                                    <div className="TimelineYear">Later Years</div>
-                                    <div className="TimelineContent">
-                                        <h3>New Leadership</h3>
-                                        <p>Piyush M. Parikh and Amar M. Parikh joined, bringing fresh perspectives and expertise to drive growth.</p>
+                                    <div className="TimelineItem">
+                                        <div className="TimelineYear">Later Years</div>
+                                        <div className="TimelineContent">
+                                            <h3>New Leadership</h3>
+                                            <p>Piyush M. Parikh and Amar M. Parikh joined, bringing fresh perspectives and expertise to drive growth.</p>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div className="TimelineItem">
-                                    <div className="TimelineYear">Evolution</div>
-                                    <div className="TimelineContent">
-                                        <h3>Transformation</h3>
-                                        <p>Under Amar Parikh's leadership, we evolved into a research-driven corporate entity serving diverse clients.</p>
+                                    <div className="TimelineItem">
+                                        <div className="TimelineYear">Evolution</div>
+                                        <div className="TimelineContent">
+                                            <h3>Transformation</h3>
+                                            <p>Under Amar Parikh's leadership, we evolved into a research-driven corporate entity serving diverse clients.</p>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div className="TimelineItem">
-                                    <div className="TimelineYear">Today</div>
-                                    <div className="TimelineContent">
-                                        <h3>Continued Excellence</h3>
-                                        <p>Over three decades of experience, delivering innovative financial solutions to a wide range of clients.</p>
+                                    <div className="TimelineItem">
+                                        <div className="TimelineYear">Today</div>
+                                        <div className="TimelineContent">
+                                            <h3>Continued Excellence</h3>
+                                            <p>Over three decades of experience, delivering innovative financial solutions to a wide range of clients.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

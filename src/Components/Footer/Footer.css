@@ -8,6 +8,7 @@
     padding: 0px;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .SocialMediaContainer ul li {
@@ -74,4 +75,13 @@
 
 .CopyRightContainer p {
     font-size: 14px;
+}
+
+
+@media (max-width:900px) {
+    .SocialLinkstAndAdress>div ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }

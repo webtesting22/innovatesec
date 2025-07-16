@@ -31,8 +31,8 @@ const Footer = () => {
         <div className="MainContainer FooterMainContainer">
             <div className="Container ">
                 <div className="paddingSide marginTop marginBottom">
-                    <Row>
-                        <Col lg={12} md={12} sm={12} xs={12}>
+                    <Row gutter={[16, 16]} className="w-100">
+                        <Col lg={12} md={12} sm={24} xs={24}>
                             <div className="CompanyBrandingContainer paddingRight">
                                 <div>
                                     <h3>Innovate Securities Pvt. Ltd.</h3>
@@ -51,7 +51,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={12} md={12} sm={12} xs={12}>
+                        <Col lg={12} md={12} sm={24} xs={24}>
                             <div className="SocialLinkstAndAdress">
                                 <div>
                                     <h3>Quick Links</h3>
@@ -69,7 +69,8 @@ const Footer = () => {
                     </Row>
                     <hr />
                     <div className="CopyRightContainer">
-                        <p>Copyright © 2025 Innovate Securities Pvt. Ltd. All rights reserved.</p>
+                        <p><b>Copyright © 2025 Innovate Securities Pvt. Ltd. All rights reserved.</b></p>
+                        {/* <p>Designed and Developed by <a href="https://www.outleadsolutions.com/" target="_blank" rel="noopener noreferrer">OutLead Solutions</a></p> */}
                     </div>
                 </div>
                 {/* <div className="FooterBackImage">

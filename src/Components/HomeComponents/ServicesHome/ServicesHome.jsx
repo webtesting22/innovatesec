@@ -89,7 +89,17 @@ const Services = () => {
                                 slidesPerView={3}
                                 spaceBetween={25}
                                 freeMode={true}
-
+                                breakpoints={{
+                                    0: {
+                                        slidesPerView: 1,
+                                    },
+                                    768: {
+                                        slidesPerView: 2,
+                                    },
+                                    1024: {
+                                        slidesPerView: 3,
+                                    },
+                                }}
                                 loop={true}
                                 speed={800}
                                 autoplay={{

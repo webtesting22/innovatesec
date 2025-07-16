@@ -115,3 +115,21 @@
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
 }
+
+
+@media (max-width:900px){
+    .LeftSideContentContainer {
+        position: static !important;
+        width: 100%;
+    }
+    .RightSideVideoContainer{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+    .AnimatedBannerImageContainer{
+        display: none !important;
+    }
+    .FlexContainer{
+        height: 100% !important;
+    }
+}

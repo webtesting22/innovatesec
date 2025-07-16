@@ -34,3 +34,12 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+@media (max-width:900px){
+    .ReachQuateContainer{
+        padding: 20px !important;
+    }
+    .ReachQuateContainerRight div{
+        height: unset !important;
+    }
+}

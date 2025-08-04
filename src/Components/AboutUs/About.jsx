@@ -51,9 +51,9 @@ const About = () => {
                             </div>
                         </div>
                         <h2 className="text-center">Trusted by leaders from various industries</h2>
-                        <div className="BtnContainer" style={{ margin: "auto" }}>
+                        {/* <div className="BtnContainer" style={{ margin: "auto" }}>
                             <button>Portfolio</button>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="marginTop">
                         <div className="ImagesGridAnimation">

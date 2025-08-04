@@ -112,7 +112,7 @@ const OurStory = () => {
                                     </div>
 
                                     <div className="TimelineItem">
-                                        <div className="TimelineYear">Transformation</div>
+                                        <div className="TimelineYear">Change</div>
                                         <div className="TimelineContent">
                                             <h3>A Path of Purpose</h3>
                                             <p>Piyush Parikh chose to pursue the spiritual path of Diksha. Amar M. Parikh assumed leadership, ushering in a new era of transformation.</p>

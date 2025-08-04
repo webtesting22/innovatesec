@@ -98,32 +98,40 @@ const OurStory = () => {
                                     <div className="TimelineItem">
                                         <div className="TimelineYear">1980</div>
                                         <div className="TimelineContent">
-                                            <h3>The Foundation</h3>
-                                            <p>Shri Bhushan Pranlal Shah founded Ampi Investments, establishing our roots in the Bombay Stock Exchange.</p>
+                                            <h3>A Humble Beginning</h3>
+                                            <p>Founded as Ampi Investments by the late Shri Bhushan Pranlal Shah. Operated as a small broking firm associated with a sub-broker from the Bombay Stock Exchange (BSE). His innovative vision and values laid the foundation for future growth.</p>
                                         </div>
                                     </div>
 
                                     <div className="TimelineItem">
-                                        <div className="TimelineYear">Later Years</div>
+                                        <div className="TimelineYear">Early Years</div>
                                         <div className="TimelineContent">
-                                            <h3>New Leadership</h3>
-                                            <p>Piyush M. Parikh and Amar M. Parikh joined, bringing fresh perspectives and expertise to drive growth.</p>
+                                            <h3>Next Generation Joins</h3>
+                                            <p>Piyush M. Parikh and Amar M. Parikh joined the business. Brought new ideas and professional drive to expand operations and deepen client relationships.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="TimelineItem">
+                                        <div className="TimelineYear">Transformation</div>
+                                        <div className="TimelineContent">
+                                            <h3>A Path of Purpose</h3>
+                                            <p>Piyush Parikh chose to pursue the spiritual path of Diksha. Amar M. Parikh assumed leadership, ushering in a new era of transformation.</p>
                                         </div>
                                     </div>
 
                                     <div className="TimelineItem">
                                         <div className="TimelineYear">Evolution</div>
                                         <div className="TimelineContent">
-                                            <h3>Transformation</h3>
-                                            <p>Under Amar Parikh's leadership, we evolved into a research-driven corporate entity serving diverse clients.</p>
+                                            <h3>Evolution into Innovate Securities</h3>
+                                            <p>Under Amar's guidance and his team's support, the firm evolved into a research-driven, client-focused financial services company. Serving a broad base of individuals, corporates, dealers, and sub-brokers.</p>
                                         </div>
                                     </div>
 
                                     <div className="TimelineItem">
                                         <div className="TimelineYear">Today</div>
                                         <div className="TimelineContent">
-                                            <h3>Continued Excellence</h3>
-                                            <p>Over three decades of experience, delivering innovative financial solutions to a wide range of clients.</p>
+                                            <h3>Continuing Excellence</h3>
+                                            <p>Over 3 decades of industry experience. Known for reliable, insightful, and ethical financial solutions. Continuing to grow as a trusted name in the financial sector.</p>
                                         </div>
                                     </div>
                                 </div>

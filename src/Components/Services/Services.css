@@ -234,6 +234,9 @@
 }
 
 @media (max-width: 768px) {
+    .ServicesContentContainer .marginBottom{
+        margin-bottom: 00px !important;
+    }
     .ServicesTagsContainer {
         flex-wrap: nowrap;
         overflow: auto;
@@ -288,7 +291,7 @@
 
 @media (max-width: 480px) {
     .ServiceCard {
-        padding: 25px;
+        padding: 20px;
         min-height: 350px;
     }
 

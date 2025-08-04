@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./About.css";
 import { BiSolidQuoteLeft } from "react-icons/bi";
-
+import { Row, Col } from "antd";
 const About = () => {
     const sectionRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
@@ -57,27 +57,35 @@ const About = () => {
                     </div>
                     <div className="marginTop">
                         <div className="ImagesGridAnimation">
-                            <div className="FirstGrid">
-                                <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb0914cd68530b66098f_image.avif" alt="Financial Services Team Collaboration - Professional Investment Advisory" />
-                                </div>
-                                <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb072830df78df68be00_image-1.avif" alt="Business Strategy and Financial Planning - Corporate Investment Solutions" />
-                                </div>
-                            </div>
-                            <div className="SecondGrid">
-                                <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb1b337e785c25235f0d_iPad.avif" alt="Digital Financial Services Platform - Modern Investment Technology" />
-                                </div>
-                            </div>
-                            <div className="ThirdGrid">
-                                <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb06bfb8fae8b51ef318_image-3.avif" alt="Investment Portfolio Analysis - Financial Market Research" />
-                                </div>
-                                <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                    <img src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a/67eadb085ecd642f27ebf16b_image-2.avif" alt="Corporate Financial Services - Business Investment Solutions" />
-                                </div>
-                            </div>
+                            <Row gutter={[8, 8]}>
+                                <Col lg={6} md={6} sm={6} xs={6}>
+                                    <div className="FirstGrid">
+                                        <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
+                                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsMain2.jpg" alt="Financial Services Team Collaboration - Professional Investment Advisory" />
+                                        </div>
+                                        <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
+                                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsMain3.jpg" alt="Business Strategy and Financial Planning - Corporate Investment Solutions" />
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col lg={12} md={12} sm={12} xs={12}>
+                                    <div className="SecondGrid">
+                                        <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
+                                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutMain1.jpg" alt="Digital Financial Services Platform - Modern Investment Technology" />
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col lg={6} md={6} sm={6} xs={6}>
+                                    <div className="ThirdGrid">
+                                        <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
+                                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsmain4.jpg" alt="Investment Portfolio Analysis - Financial Market Research" />
+                                        </div>
+                                        <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
+                                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsMain5.jpg" alt="Corporate Financial Services - Business Investment Solutions" />
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
                         </div>
                     </div>
                     <div className="marginTop">

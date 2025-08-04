@@ -178,6 +178,7 @@ const Navbar = () => {
                         </div>
                     ))}
                     <div className="BtnContainer">
+                        <Link to="tel:9825032653">
                         <button
                             type="primary"
                             style={{ width: "100%", textAlign: "center", margin: "auto", justifyContent: "center" }}
@@ -185,6 +186,7 @@ const Navbar = () => {
                         >
                             Contact Us
                         </button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -218,7 +220,7 @@ const Navbar = () => {
                                     </div>
                                     <div>
                                         <div className="BtnContainer">
-                                            <button>Contact Us</button>
+                                            <Link to="tel:9825032653"><button>Contact Us</button></Link>
                                         </div>
                                     </div>
                                 </>

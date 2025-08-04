@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./HeroHome.css"
 import AnimatedBannerImage from "/Image/Financial Growth.jpg"
+import { Link } from "react-router-dom";
 const HeroHome = () => {
     const [videoWidth, setVideoWidth] = useState(40);
     const [isPlaying, setIsPlaying] = useState(true);
@@ -117,18 +118,18 @@ const HeroHome = () => {
                                 <p>With over 30 years of experience in capital markets, Innovate Securities offers personalized investment solutions across shares, bonds, mutual funds, and more.</p>
                                 <p>We serve individuals, corporates, and institutions with expertise, integrity, and long-term vision.</p>
                                 <div className="BtnContainer">
-                                    <button>Get In Touch</button>
+                                    <Link to="/about-us"> <button>About Innovate</button></Link>
                                 </div>
                             </div>
                         </div>
-                        
-                            <div
-                                className="RightSideVideoContainer"
-                                style={{ width: `${videoWidth}%` }}
-                                onMouseEnter={handleMouseEnter}
-                                onMouseLeave={handleMouseLeave}
-                            >
-                                <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
+
+                        <div
+                            className="RightSideVideoContainer"
+                            style={{ width: `${videoWidth}%` }}
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}
+                        >
+                            <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
                                 <div className="VideoWrapper">
                                     <video
                                         ref={videoRef}

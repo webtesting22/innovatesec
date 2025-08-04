@@ -19,11 +19,11 @@ const NavData = [
         name: "Services",
         path: "/services",  
     },
-    {
-        id: 5,
-        name: "Contact",
-        path: "/contact",
-    },
+    // {
+    //     id: 5,
+    //     name: "Contact",
+    //     path: "/contact",
+    // },
 ]
 
 export default NavData;

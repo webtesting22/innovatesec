@@ -259,6 +259,12 @@
     transition-delay: 0.8s;
 }
 
+.animate-timeline .TimelineItem:nth-child(5) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.0s;
+}
+
 /* Timeline Dots */
 .TimelineItem::after {
     content: '';

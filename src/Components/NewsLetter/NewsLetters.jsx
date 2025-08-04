@@ -3,7 +3,7 @@ import "./NewsLetters.css";
 import { HiOutlineMail } from "react-icons/hi";
 import { HiOutlineCheckCircle } from "react-icons/hi";
 import { notification } from "antd";
-
+import { Link } from "react-router-dom";
 const NewsLetters = () => {
     const [email, setEmail] = useState("");
     const [isValid, setIsValid] = useState(true);
@@ -124,6 +124,7 @@ const NewsLetters = () => {
                                             onKeyPress={handleKeyPress}
                                         />
                                     </div> */}
+                                    <Link to="tel:9825032653">
                                     <button
                                         className={`NewsletterButton ${isLoading ? 'loading' : ''}`}
                                         // onClick={handleSubmit}
@@ -131,6 +132,7 @@ const NewsLetters = () => {
                                     >
                                         {isLoading ? "Calling..." : "Call Now"}
                                     </button>
+                                    </Link>
                                 </div>
 
                                 {!isValid && email && (

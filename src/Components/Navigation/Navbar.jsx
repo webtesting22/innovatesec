@@ -120,7 +120,7 @@ const Navbar = () => {
             }}>
                 <div className="NavigationLogoContainer">
                     <img
-                        src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/innovateLogo.png"
+                        src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/InnovateLogo1993.png"
                         alt="Innovate Securities Logo - Trusted Financial Services"
                         style={{ width: '160px' }}
                     />
@@ -144,7 +144,7 @@ const Navbar = () => {
                     <span style={{
                         fontSize: '16px',
                         color: '#666',
-                        background:"transparent",
+                        background: "transparent",
                         fontWeight: 'bold'
                     }}>
                         ×
@@ -180,7 +180,7 @@ const Navbar = () => {
                     <div className="BtnContainer">
                         <button
                             type="primary"
-                            style={{width:"100%",textAlign:"center",margin:"auto",justifyContent:"center"}}
+                            style={{ width: "100%", textAlign: "center", margin: "auto", justifyContent: "center" }}
 
                         >
                             Contact Us
@@ -203,7 +203,7 @@ const Navbar = () => {
                                     behavior: 'smooth'
                                 });
                             }}>
-                                <Link to="/"> <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/innovateLogo.png" alt="Innovate Securities Logo - Trusted Financial Services" /></Link>
+                                <Link to="/"> <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/InnovateLogo1993.png" alt="Innovate Securities Logo - Trusted Financial Services" /></Link>
                             </div>
 
                             {/* Desktop Navigation */}

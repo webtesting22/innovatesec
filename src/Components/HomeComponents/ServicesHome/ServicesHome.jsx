@@ -17,27 +17,48 @@ const Services = () => {
     const swiperRef = useRef(null);
     const navigate = useNavigate();
 
+    // Helper function to handle both JSX and string descriptions
+    const getDescriptionText = (description) => {
+        if (typeof description === 'string') {
+            return description;
+        } else if (React.isValidElement(description)) {
+            // For JSX elements, we need to extract text content
+            const textContent = React.Children.toArray(description.props.children)
+                .map(child => {
+                    if (typeof child === 'string') {
+                        return child;
+                    } else if (React.isValidElement(child)) {
+                        return React.Children.toArray(child.props.children).join('');
+                    }
+                    return '';
+                })
+                .join('');
+            return textContent;
+        }
+        return '';
+    };
+
     const handlePrevSlide = () => {
-        if (swiperRef.current) {
-            swiperRef.current.slidePrev();
+        if (swiperRef.current && swiperRef.current.swiper) {
+            swiperRef.current.swiper.slidePrev();
         }
     };
 
     const handleNextSlide = () => {
-        if (swiperRef.current) {
-            swiperRef.current.slideNext();
+        if (swiperRef.current && swiperRef.current.swiper) {
+            swiperRef.current.swiper.slideNext();
         }
     };
 
     const handleMouseEnter = () => {
-        if (swiperRef.current && swiperRef.current.autoplay) {
-            swiperRef.current.autoplay.pause();
+        if (swiperRef.current && swiperRef.current.swiper && swiperRef.current.swiper.autoplay) {
+            swiperRef.current.swiper.autoplay.pause();
         }
     };
 
     const handleMouseLeave = () => {
-        if (swiperRef.current && swiperRef.current.autoplay) {
-            swiperRef.current.autoplay.resume();
+        if (swiperRef.current && swiperRef.current.swiper && swiperRef.current.swiper.autoplay) {
+            swiperRef.current.swiper.autoplay.resume();
         }
     };
 
@@ -77,79 +98,77 @@ const Services = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="ServicesCardsContainer marginTop">
-                        <div
+                    <div className='SwiperContainer'>
+                        <Swiper
+                            ref={swiperRef}
+                            spaceBetween={30}
+                            slidesPerView={1}
+                            loop={true}
+                            speed={800}
+                            // autoplay={{
+                            //     delay: 3000,
+                            //     disableOnInteraction: false,
+                            // }}
+                            // pagination={{
+                            //     clickable: true,
+                            // }}
+                            navigation={false}
+                            modules={[Autoplay, FreeMode, Pagination, Navigation]}
+                            className="mySwiper"
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 30,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 30,
+                                },
+                            }}
                         >
-                            <Swiper
-                                onSwiper={(swiper) => {
-                                    swiperRef.current = swiper;
-                                }}
-                                slidesPerView={3}
-                                spaceBetween={25}
-                                freeMode={true}
-                                breakpoints={{
-                                    0: {
-                                        slidesPerView: 1,
-                                    },
-                                    768: {
-                                        slidesPerView: 2,
-                                    },
-                                    1024: {
-                                        slidesPerView: 3,
-                                    },
-                                }}
-                                loop={true}
-                                speed={800}
-                                autoplay={{
-                                    delay: 2500,
-                                    disableOnInteraction: false,
-                                }}
-                                // pagination={{
-                                //     clickable: true,
-                                // }}
-                                modules={[Autoplay, FreeMode, Pagination, Navigation]}
-                                className="mySwiper"
-                            >
-                                {
-                                    ServicesData.map((item, index) => {
-                                        const IconComponent = item.iconComponent;
-                                        return (
-                                            <SwiperSlide key={index}>
-                                                <div className='ServicesContainerCard'>
-                                                    <div>
-                                                        <div className='IconsImageContainer'>
-                                                            <div>
-                                                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Equity Market.png" alt="Equity Market Trading Icon - Stock Market Investment Services" />
-                                                            </div>
-                                                        </div>
+                            {
+                                ServicesData.map((item, index) => {
+                                    const IconComponent = item.iconComponent;
+                                    return (
+                                        <SwiperSlide key={index}>
+                                            <div className='ServicesContainerCard marginTop'>
+                                                <div>
+                                                    <div className='IconsImageContainer'>
                                                         <div>
-                                                            <div className='ServicesHeadingContainer'>
-                                                                <h3>{item.title}</h3>
-                                                            </div>
-                                                            <div>
-                                                                <p>{item.description}</p>
-                                                            </div>
-
-                                                        </div>
-                                                        <div className="BtnContainer">
-                                                            <button onClick={() => {
-                                                                const serviceSlug = item.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-                                                                navigate(`/services/${serviceSlug}`, { state: { service: item } });
-                                                            }}>
-                                                                Read More
-                                                            </button>
+                                                            <img src={item.iconImage} alt={item.title} />
                                                         </div>
                                                     </div>
+                                                    <div>
+                                                        <div className='ServicesHeadingContainer'>
+                                                            <h3>{item.title}</h3>
+                                                        </div>
+                                                        <div>
+                                                            <p>{item.servicesCardText}</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div className="BtnContainer">
+                                                        <button onClick={() => {
+                                                            const serviceSlug = item.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                                                            navigate(`/services/${serviceSlug}`, { state: { service: item } });
+                                                        }}>
+                                                            Read More
+                                                        </button>
+                                                    </div>
                                                 </div>
-                                            </SwiperSlide>
-                                        );
-                                    })
-                                }
-                                {/* <SwiperSlide>Slide 1</SwiperSlide> */}
-                            </Swiper>
-                        </div>
+                                            </div>
+                                        </SwiperSlide>
+                                    );
+                                })
+                            }
+                            {/* <SwiperSlide>Slide 1</SwiperSlide> */}
+                        </Swiper>
                     </div>
                 </div>
             </div>

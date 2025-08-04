@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./HomeAbout.css";
 import { Row, Col } from "antd";
-
+import AnimatedBannerImage from "/Image/Financial Growth.jpg"
 const HomeAbout = () => {
     const sectionRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
@@ -67,7 +67,7 @@ const HomeAbout = () => {
                                 </Col>
                                 <Col lg={12} md={12} xs={24}>
                                     <div className={`AboutImageContainerHome LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                        <img src="https://images.unsplash.com/photo-1733094151451-4222a842cfd1?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professional Financial Services Team - Innovate Securities Investment Experts" />
+                                        <img src={AnimatedBannerImage} alt="Professional Financial Services Team - Innovate Securities Investment Experts" />
                                     </div>
                                 </Col>
                             </Row>

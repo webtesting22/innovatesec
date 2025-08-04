@@ -84,7 +84,7 @@ const Services = () => {
                                 <div className={`ServiceCard ${isAnimating ? 'animating' : ''}`}>
                                     <div className={` ServiceCardImage LayerImage ${isVisible ? 'reveal-image' : ''}`}>
                                         <img
-                                            src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CommonService.jpg"
+                                            src={currentService.image}
                                             alt={`${currentService.title} - Innovate Securities Financial Services`}
                                         />
                                     </div>
@@ -92,17 +92,17 @@ const Services = () => {
                                         <h2>{currentService.title}</h2>
                                         <br />
                                         <p className="white">
-                                            {currentService.description.split('\n')[0]}
+                                            {currentService.servicesCardText}
                                         </p>
                                         <br />
-                                        <p className="white">
-                                            {currentService.description.split('\n')[1]}
-                                        </p>
+                                        {/* <p className="white">
+                                            {currentService.description}
+                                        </p> */}
                                         <br />
                                         <div className="BtnContainerWhite">
                                             <button onClick={() => {
                                                 const serviceSlug = currentService.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-                                                navigate(`/services/${serviceSlug}`, { state: { service: currentService } });
+                                                navigate(`/services/${serviceSlug}`);
                                             }}>
                                                 View Detailed
                                             </button>

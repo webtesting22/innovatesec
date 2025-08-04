@@ -11,8 +11,8 @@ const SingleService = () => {
     const sectionRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
 
-    // Get service data from location state or find by service name
-    const service = location.state?.service || ServicesData.find(s => {
+    // Get service data from URL parameter
+    const service = ServicesData.find(s => {
         const serviceSlug = s.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
         return serviceSlug === serviceName;
     });
@@ -100,43 +100,12 @@ const SingleService = () => {
 
                                 <div className="ServiceDescription">
                                     <h2>Service Overview</h2>
-                                    <p>{service.description.split('\n')[0]}</p>
-                                    <p>{service.description.split('\n')[1]}</p>
+                                    <div className="service-description-content marginTop" >
+                                        {service.description}
+                                    </div>
                                 </div>
 
-                                <div className="ServiceFeatures">
-                                    <h2>Key Features</h2>
-                                    <Row gutter={[20, 20]}>
-                                        <Col lg={12} xs={24}>
-                                            <div className="FeatureCard">
-                                                <div className="FeatureIcon">📊</div>
-                                                <h3>Professional Expertise</h3>
-                                                <p>30+ years of market experience with expert guidance for optimal investment decisions.</p>
-                                            </div>
-                                        </Col>
-                                        <Col lg={12} xs={24}>
-                                            <div className="FeatureCard">
-                                                <div className="FeatureIcon">🛡️</div>
-                                                <h3>Secure Platform</h3>
-                                                <p>NSE & BSE corporate membership with CDSL depository services for safe transactions.</p>
-                                            </div>
-                                        </Col>
-                                        <Col lg={12} xs={24}>
-                                            <div className="FeatureCard">
-                                                <div className="FeatureIcon">📈</div>
-                                                <h3>Real-time Data</h3>
-                                                <p>Access to live market data and professional research for informed investment strategies.</p>
-                                            </div>
-                                        </Col>
-                                        <Col lg={12} xs={24}>
-                                            <div className="FeatureCard">
-                                                <div className="FeatureIcon">🎯</div>
-                                                <h3>Personalized Solutions</h3>
-                                                <p>Tailored financial strategies aligned with your specific investment goals and risk profile.</p>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </div>
+                                
                             </div>
                         </Col>
 
@@ -180,16 +149,12 @@ const SingleService = () => {
                                                     <div className="OtherServiceContent BtnContainer">
                                                         <div>
                                                             <h4>{otherService.title}</h4>
-                                                            <p>{otherService.description.split('\n')[0]}</p>
+                                                            <p>{otherService.servicesCardText}</p>
                                                             <button
                                                                 onClick={() => {
-                                                                    navigate(`/services/${serviceSlug}`, { state: { service: otherService } });
+                                                                    navigate(`/services/${serviceSlug}`);
                                                                     window.scrollTo(0, 0);
                                                                 }}
-                                                                // onClick={() => {
-                                                                //     window.scrollTo(0, 0);
-                                                                // }}
-                                                            // className="OtherServiceButton"
                                                             >
                                                                 View Details
                                                             </button>

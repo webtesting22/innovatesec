@@ -76,18 +76,22 @@
     border-left: 5px solid var(--brand-color);
 }
 
-.ServiceDescription h2 {
-    font-size: 28px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 20px;
-}
 
-.ServiceDescription p {
+
+.service-description-content {
     font-size: 16px;
     line-height: 1.8;
-    color: #666;
+    color: black !important;
+}
+
+.service-description-content p {
     margin-bottom: 15px;
+    color: black !important;
+}
+
+.service-description-content strong {
+    color: #333;
+    font-weight: 600;
 }
 
 /* Service Features */
@@ -105,7 +109,7 @@
 
 .FeatureCard {
     background: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     border: 1px solid #f0f0f0;
@@ -375,7 +379,7 @@
     .ServiceTitle {
         font-size: 40px;
     }
-    
+
     .ServiceHeroImage {
         height: 350px;
     }
@@ -385,62 +389,55 @@
     .ServiceTitle {
         font-size: 32px;
     }
-    
+
     .ServiceHeroImage {
         height: 300px;
     }
-    
+
     .ServiceDescription {
         padding: 30px;
     }
-    
-    .ServiceDescription h2 {
-        font-size: 24px;
-    }
-    
-    .ServiceFeatures h2 {
-        font-size: 24px;
-    }
-    
+
+
     .FeatureCard {
         padding: 25px;
     }
-    
+
     .ServiceSidebar {
         position: static;
         margin-top: 40px;
     }
-    
+
     .ServiceSidebar .ServiceCard {
         padding: 25px;
     }
-    
+
     .ServiceSidebar .ServiceCard h3 {
         font-size: 20px;
     }
-    
+
     .OtherServices {
         padding: 25px;
     }
-    
+
     .OtherServiceItem {
         padding: 15px;
         gap: 12px;
     }
-    
+
     .OtherServiceImage {
         width: 50px;
         height: 50px;
     }
-    
+
     .OtherServiceContent h4 {
         font-size: 14px;
     }
-    
+
     .OtherServiceContent p {
         font-size: 12px;
     }
-    
+
     .OtherServiceButton {
         padding: 6px 12px;
         font-size: 11px;
@@ -451,39 +448,35 @@
     .ServiceTitle {
         font-size: 28px;
     }
-    
+
     .ServiceHeroImage {
         height: 250px;
     }
-    
+
     .ServiceDescription {
         padding: 20px;
     }
-    
-    .ServiceDescription h2 {
-        font-size: 20px;
-    }
-    
+
     .FeatureCard {
         padding: 20px;
     }
-    
+
     .FeatureIcon {
         font-size: 36px;
     }
-    
+
     .FeatureCard h3 {
         font-size: 18px;
     }
-    
+
     .ServiceSidebar .ServiceCard {
         padding: 20px;
     }
-    
+
     .ServiceSidebar .ServiceCard h3 {
         font-size: 18px;
     }
-    
+
     .ContactButton {
         padding: 12px 25px;
         font-size: 14px;

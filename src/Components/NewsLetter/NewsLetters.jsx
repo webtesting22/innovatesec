@@ -89,38 +89,11 @@ const NewsLetters = () => {
                     <div className="paddingSide">
                         <div className="NewsletterContainer">
                             <div className="NewsletterContent">
-                                <h2 className="text-center">Subscribe to our newsletter</h2>
+                                <h2 className="text-center">Let's Connect</h2>
                                 <p className="text-center NewsletterSubtitle">
-                                    Sign up today and get a free sample up to 100 records.
+                                    We're here to help you with your financial needs.
                                 </p>
-                                <br />
-                                <div className="NewsletterInputContainer">
-                                    <div className="InputWrapper">
-                                        <HiOutlineMail className="EmailIcon" />
-                                        <input
-                                            type="email"
-                                            placeholder="Enter your email address"
-                                            className={`NewsletterInput ${!isValid ? 'error' : ''}`}
-                                            value={email}
-                                            onChange={handleEmailChange}
-                                            onKeyPress={handleKeyPress}
-                                        />
-                                    </div>
-                                    <button
-                                        className={`NewsletterButton ${isLoading ? 'loading' : ''}`}
-                                        onClick={handleSubmit}
-                                        disabled={isLoading}
-                                    >
-                                        {isLoading ? "Subscribing..." : "Get started"}
-                                    </button>
-                                </div>
-
-                                {!isValid && email && (
-                                    <div className="ErrorMessage">
-                                        Please enter a valid email address
-                                    </div>
-                                )}
-
+                                {/* <br /> */}
                                 <div className="ExpertSection">
                                     <p className="ExpertText">Our experts are ready to help!</p>
                                     <div className="ExpertProfiles">
@@ -138,6 +111,35 @@ const NewsLetters = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <br />
+                                <div className="NewsletterInputContainer">
+                                    {/* <div className="InputWrapper">
+                                        <HiOutlineMail className="EmailIcon" />
+                                        <input
+                                            type="email"
+                                            placeholder="Enter your email address"
+                                            className={`NewsletterInput ${!isValid ? 'error' : ''}`}
+                                            value={email}
+                                            onChange={handleEmailChange}
+                                            onKeyPress={handleKeyPress}
+                                        />
+                                    </div> */}
+                                    <button
+                                        className={`NewsletterButton ${isLoading ? 'loading' : ''}`}
+                                        // onClick={handleSubmit}
+                                        disabled={isLoading}
+                                    >
+                                        {isLoading ? "Calling..." : "Call Now"}
+                                    </button>
+                                </div>
+
+                                {!isValid && email && (
+                                    <div className="ErrorMessage">
+                                        Please enter a valid email address
+                                    </div>
+                                )}
+
+                                
                             </div>
                         </div>
                     </div>

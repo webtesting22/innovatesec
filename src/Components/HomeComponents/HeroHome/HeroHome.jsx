@@ -160,9 +160,9 @@ const HeroHome = () => {
                             </div>
                         </div>
 
-                        <div className="AnimatedBannerImageContainer">
+                        {/* <div className="AnimatedBannerImageContainer">
                             <img src={AnimatedBannerImage} alt="Innovate Securities Financial Services Banner - Investment Solutions" />
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>

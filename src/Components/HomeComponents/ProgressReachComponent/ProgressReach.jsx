@@ -60,10 +60,10 @@ const ProgressReach = () => {
                                         <Col lg={12} md={12} xs={24}>
                                             <div>
                                                 <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                                    <img src="https://images.unsplash.com/photo-1738736637589-5d8007bedbbc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Financial Planning and Investment Strategy - Professional Wealth Management" />
+                                                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/digitalstrategy1.jpg" alt="Financial Planning and Investment Strategy - Professional Wealth Management" />
                                                 </div>
                                                 <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                                    <img src="https://images.unsplash.com/photo-1630464373688-fb6a37ce89ed?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Business Growth and Investment Success - Corporate Financial Services" />
+                                                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/digitalStrategy2.jpg" alt="Business Growth and Investment Success - Corporate Financial Services" />
                                                 </div>
                                             </div>
                                         </Col>

@@ -77,6 +77,10 @@
   padding-left: 40px;
 }
 
+.Nopadding{
+  padding: 0px;
+}
+
 @media (max-width:900px) {
 
   .BoxDesigns::after,

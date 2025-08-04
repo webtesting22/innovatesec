@@ -14,14 +14,13 @@ const NavData = [
         name: "About",
         path: "/about-us",
     },
-
     {
-        id: 3,
+        id: 4,
         name: "Services",
         path: "/services",  
     },
     {
-        id: 4,
+        id: 5,
         name: "Contact",
         path: "/contact",
     },

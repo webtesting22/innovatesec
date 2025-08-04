@@ -109,7 +109,7 @@ const Navbar = () => {
                 top: 0,
                 left: 0,
                 right: 0,
-                height: '64px',
+                // height: '64px',
                 borderBottom: '1px solid #f0f0f0',
                 padding: '16px 24px',
                 display: 'flex',

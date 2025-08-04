@@ -234,6 +234,14 @@
 }
 
 @media (max-width: 768px) {
+    .ServicesTagsContainer {
+        flex-wrap: nowrap;
+        overflow: auto;
+        padding: 10px 0px;
+    }
+    .ServicesBannerImage>div {
+        min-height: 100% !important;
+    }
     .ServicesRow {
         margin-top: 40px;
     }

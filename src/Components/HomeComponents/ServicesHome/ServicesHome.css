@@ -96,3 +96,9 @@
         max-width: 1500px !important;
     }
 }
+
+@media (max-width: 768px) {
+    .ServicesContainerCard{
+        padding: 10px;
+    }
+}

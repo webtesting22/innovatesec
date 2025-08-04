@@ -37,7 +37,7 @@
 
 @media (max-width:900px){
     .ReachQuateContainer{
-        padding: 20px !important;
+        padding: 10px !important;
     }
     .ReachQuateContainerRight div{
         height: unset !important;

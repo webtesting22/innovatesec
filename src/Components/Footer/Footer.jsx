@@ -69,9 +69,21 @@ const Footer = () => {
                     </Row>
                     <hr />
                     <div className="CopyRightContainer">
-                        <p><b>Copyright © 2025 Innovate Securities Pvt. Ltd. All rights reserved.</b></p>
-                        {/* <p>Designed and Developed by <a href="https://www.outleadsolutions.com/" target="_blank" rel="noopener noreferrer">OutLead Solutions</a></p> */}
+                        <p>
+                            <strong>© 2025 Innovate Securities Pvt. Ltd. All rights reserved.</strong>
+                        </p>
+                        <p>
+                            Designed & Developed by{" "}
+                            <a style={{ color: "black" }}
+                                href="https://www.outleadsolutions.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <b>OutLead Solutions</b>
+                            </a>
+                        </p>
                     </div>
+
                 </div>
                 {/* <div className="FooterBackImage">
                     <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/2371.jpg" alt="Innovate Securities Footer Background - Financial Services Excellence" />

@@ -13,6 +13,10 @@ body {
   /* height: 600vh; */
 }
 
+a{
+  text-decoration: none;
+}
+
 .Container {
   max-width: 1200px;
   height: 100%;

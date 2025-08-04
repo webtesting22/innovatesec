@@ -72,13 +72,26 @@
     opacity: 1;
     transition: .5s;
 }
+.CopyRightContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .CopyRightContainer p {
     font-size: 14px;
 }
 
-
+.FooterMainContainer .marginBottom{
+    margin-bottom: 20px !important;
+}
 @media (max-width:900px) {
+    .CopyRightContainer{
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+    
     .SocialLinkstAndAdress>div ul {
         flex-direction: row;
         flex-wrap: wrap;

@@ -93,7 +93,7 @@
 
 /* Services Content Container */
 .ServicesContentContainer {
-    /* padding: 20px 0; */
+    padding: 20px 10px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -235,7 +235,7 @@
 
 @media (max-width: 768px) {
     .ServicesContentContainer .marginBottom{
-        margin-bottom: 00px !important;
+        margin-bottom: 0px !important;
     }
     .ServicesTagsContainer {
         flex-wrap: nowrap;

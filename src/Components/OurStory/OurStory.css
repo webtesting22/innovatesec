@@ -265,6 +265,24 @@
     transition-delay: 1.0s;
 }
 
+.animate-timeline .TimelineItem:nth-child(6) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.2s;
+}
+
+.animate-timeline .TimelineItem:nth-child(7) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.4s;
+}
+
+.animate-timeline .TimelineItem:nth-child(8) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.6s;
+}
+
 /* Timeline Dots */
 .TimelineItem::after {
     content: '';

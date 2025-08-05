@@ -49,7 +49,7 @@ const OurStory = () => {
                                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutHome.png" alt="Innovate Securities Journey Icon - 40+ Years of Financial Excellence" />
                                     </div>
                                     <div>
-                                        <p>Our Journey Since 1980</p>
+                                        <p>Our Journey Since 1986</p>
                                     </div>
                                 </div>
                             </div>
@@ -69,19 +69,19 @@ const OurStory = () => {
                                         <div className="StorySection">
                                             <div className="StoryParagraph">
                                                 <p>
-                                                    The journey of <strong>Innovate Securities Pvt. Ltd.</strong> began in 1980, when the late <strong>Shri Bhushan Pranlal Shah</strong> founded <strong>Ampi Investments</strong>, a small broking firm associated with a sub-broker from the <strong>Bombay Stock Exchange</strong>. His innovative vision laid the foundation for <strong>Innovate Securities</strong>, what would become a trusted name in the financial sector.
+                                                    The journey of <strong>Innovate Securities Pvt. Ltd.</strong> began in 1986, when <strong>Bhushan Shah</strong>, along with <strong>Piyush Parikh</strong> and <strong>Amar Parikh</strong>, started out as <strong>AMPI Investments</strong> as a proprietor firm. They began their broking business with the <strong>Bombay Stock Exchange</strong> at a time when not many people worked with BSE, operating as a Sub Broker. This marked the foundation of what would become a trusted name in the financial sector.
                                                 </p>
                                             </div>
 
                                             <div className="StoryParagraph">
                                                 <p>
-                                                    In the subsequent years, <strong>Piyush M. Parikh</strong> and <strong>Amar M. Parikh</strong> joined the business, bringing their unique perspectives and expertise. After <strong>Piyush Parikh</strong> chose to pursue the path of <em>Diksha</em>, <strong>Amar Parikh</strong> took over leadership, guiding the firm through its evolution. Under his direction, and his team's support, Innovate Securities has grown from its modest beginnings into a well-established, research-driven corporate entity.
+                                                    In 1993, <strong>Amar Parikh</strong> and <strong>Piyush Parikh</strong> launched <strong>Innovate Securities Pvt. Ltd. (ISPL)</strong> as a Private Corporate Firm, marking a significant milestone in our evolution. Over the years, the company expanded its reach by acquiring memberships with various exchanges and diversifying its service offerings.
                                                 </p>
                                             </div>
 
                                             <div className="StoryParagraph">
                                                 <p>
-                                                    Today, with over three decades of experience, Innovate Securities continues to serve a wide range of individual and corporate clients, sub-brokers, and dealers, delivering innovative and reliable financial solutions.
+                                                    Today, with over three decades of experience, Innovate Securities continues to serve a wide range of individual and corporate clients, sub-brokers, and dealers, delivering innovative and reliable financial solutions through our comprehensive suite of services including equity trading, mutual fund distribution, and depository services.
                                                 </p>
                                             </div>
                                         </div>
@@ -96,42 +96,66 @@ const OurStory = () => {
                             <div className="marginTop">
                                 <div className={`StoryTimelineContainer ${isVisible ? 'animate-timeline' : ''}`}>
                                     <div className="TimelineItem">
-                                        <div className="TimelineYear">1980</div>
+                                        <div className="TimelineYear">1986</div>
                                         <div className="TimelineContent">
-                                            <h3>A Humble Beginning</h3>
-                                            <p>Founded as Ampi Investments by the late Shri Bhushan Pranlal Shah. Operated as a small broking firm associated with a sub-broker from the Bombay Stock Exchange (BSE). His innovative vision and values laid the foundation for future growth.</p>
+                                            <h3>The Foundation</h3>
+                                            <p>Bhushan Shah, along with Piyush Parikh & Amar Parikh started out as AMPI Investments as a proprietor firm. Started broking business with BSE (these are those times when not many people used to work with BSE). Worked as a Sub Broker.</p>
                                         </div>
                                     </div>
 
                                     <div className="TimelineItem">
-                                        <div className="TimelineYear">Early Years</div>
+                                        <div className="TimelineYear">1992</div>
                                         <div className="TimelineContent">
-                                            <h3>Next Generation Joins</h3>
-                                            <p>Piyush M. Parikh and Amar M. Parikh joined the business. Brought new ideas and professional drive to expand operations and deepen client relationships.</p>
+                                            <h3>Ahmedabad Stock Exchange Membership</h3>
+                                            <p>Acquired Ahmedabad Stock Exchange Membership, expanding our presence in the regional market.</p>
                                         </div>
                                     </div>
 
                                     <div className="TimelineItem">
-                                        <div className="TimelineYear">Change</div>
+                                        <div className="TimelineYear">1993</div>
                                         <div className="TimelineContent">
-                                            <h3>A Path of Purpose</h3>
-                                            <p>Piyush Parikh chose to pursue the spiritual path of Diksha. Amar M. Parikh assumed leadership, ushering in a new era of transformation.</p>
+                                            <h3>Birth of Innovate Securities</h3>
+                                            <p>Amar Parikh and Piyush Parikh launched Innovate Securities Pvt. Ltd. (ISPL) as a Private Corporate Firm, marking a significant milestone in our journey.</p>
                                         </div>
                                     </div>
 
                                     <div className="TimelineItem">
-                                        <div className="TimelineYear">Evolution</div>
+                                        <div className="TimelineYear">15th August 1994</div>
                                         <div className="TimelineContent">
-                                            <h3>Evolution into Innovate Securities</h3>
-                                            <p>Under Amar's guidance and his team's support, the firm evolved into a research-driven, client-focused financial services company. Serving a broad base of individuals, corporates, dealers, and sub-brokers.</p>
+                                            <h3>Ahmedabad Office Inauguration</h3>
+                                            <p>Inaugurated Ahmedabad Office (current headquarters), establishing our central hub for operations.</p>
                                         </div>
                                     </div>
 
                                     <div className="TimelineItem">
-                                        <div className="TimelineYear">Today</div>
+                                        <div className="TimelineYear">1995</div>
                                         <div className="TimelineContent">
-                                            <h3>Continuing Excellence</h3>
-                                            <p>Over 3 decades of industry experience. Known for reliable, insightful, and ethical financial solutions. Continuing to grow as a trusted name in the financial sector.</p>
+                                            <h3>NSE Membership</h3>
+                                            <p>Acquired NSE Card (4th in Gujarat; one of the first members), expanding our reach to the National Stock Exchange.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="TimelineItem">
+                                        <div className="TimelineYear">2004</div>
+                                        <div className="TimelineContent">
+                                            <h3>Depository Participant</h3>
+                                            <p>Became a Depository Participant (DP) with CDSL (Central Depository Services Ltd.), enhancing our service offerings.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="TimelineItem">
+                                        <div className="TimelineYear">2010</div>
+                                        <div className="TimelineContent">
+                                            <h3>BSE Card Acquisition</h3>
+                                            <p>Acquired BSE Card, strengthening our position in the Bombay Stock Exchange.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="TimelineItem">
+                                        <div className="TimelineYear">2018</div>
+                                        <div className="TimelineContent">
+                                            <h3>Mutual Fund Distribution</h3>
+                                            <p>Launched Mutual Fund Distribution department with Amit Shah, diversifying our financial services portfolio.</p>
                                         </div>
                                     </div>
                                 </div>

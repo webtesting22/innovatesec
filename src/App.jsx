@@ -11,6 +11,7 @@ import NewsLetters from './Components/NewsLetter/NewsLetters'
 import Footer from './Components/Footer/Footer'
 import Services from './Components/Services/Services'
 import SingleService from './Components/Services/SingleService'
+import Modal from './Components/Modal/Modal'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -23,6 +24,7 @@ function App() {
   return (
     <>
       {contextHolder}
+      <Modal />
       <BrowserRouter>
         <Navbar />
         <Routes>

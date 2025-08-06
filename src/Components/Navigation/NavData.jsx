@@ -19,7 +19,13 @@ const NavData = [
         name: "Services",
         path: "/services",  
     },
+    {
+        id: 5,
+        name: "Directors",
+        path: "/directors",
+    },
     // {
+
     //     id: 5,
     //     name: "Contact",
     //     path: "/contact",

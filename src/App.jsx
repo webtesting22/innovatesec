@@ -12,7 +12,8 @@ import Footer from './Components/Footer/Footer'
 import Services from './Components/Services/Services'
 import SingleService from './Components/Services/SingleService'
 import Modal from './Components/Modal/Modal'
-function App() {
+import Directors from './Components/Directors/Directors'
+  function App() {
   const [count, setCount] = useState(0)
 
   // Initialize global animations
@@ -33,6 +34,7 @@ function App() {
           <Route path='/about-us' element={<About />} />
           <Route path='/services' element={<Services />} />
           <Route path='/services/:serviceName' element={<SingleService />} />
+          <Route path='/directors' element={<Directors />} />
         </Routes>
         <NewsLetters />
         <Footer />

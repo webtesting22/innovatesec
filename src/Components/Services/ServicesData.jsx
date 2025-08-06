@@ -245,7 +245,7 @@ const ServicesData = [
     {
         id: 5,
         title: "Corporate Fixed Deposit Services",
-        iconImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/FIXED DEPOSIT SERVICES.jpg",
+        iconImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/icons8-money-60.png",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/FIXED DEPOSIT SERVICES.jpg",
         servicesCardText: "Earn higher returns through fixed deposits offered by top-rated corporations with flexible tenure options.",
         description: <>

@@ -3,42 +3,25 @@ import "./Services.css";
 import { Row, Col } from "antd";
 import ServicesData from "./ServicesData";
 import { useNavigate } from "react-router-dom";
-// import { HiOutlineArrowUpRight } from "react-icons/hi";
 
 const Services = () => {
-    const [selectedService, setSelectedService] = useState(0);
-    const [isAnimating, setIsAnimating] = useState(false);
     const navigate = useNavigate();
-
-    const currentService = ServicesData[selectedService];
-
-
-    const handleServiceClick = (index) => {
-        if (index !== selectedService && !isAnimating) {
-            setIsAnimating(true);
-            setTimeout(() => {
-                setSelectedService(index);
-                setIsAnimating(false);
-            }, 300);
-        }
-    };
-
     const sectionRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
+    const [hoveredCard, setHoveredCard] = useState(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    // Add 1 second delay before starting the animation
                     setTimeout(() => {
                         setIsVisible(true);
                     }, 500);
                 }
             },
             {
-                threshold: 0.1, // Small threshold to detect early
-                rootMargin: '-30px 0px 0px 0px' // Trigger when user enters section by 30px
+                threshold: 0.1,
+                rootMargin: '-30px 0px 0px 0px'
             }
         );
 
@@ -52,9 +35,15 @@ const Services = () => {
             }
         };
     }, []);
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const handleServiceClick = (service) => {
+        const serviceSlug = service.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        navigate(`/services/${serviceSlug}`);
+    };
 
     return (
         <div className="MainContainer marginTop" ref={sectionRef}>
@@ -63,7 +52,7 @@ const Services = () => {
                     <div className="CommonHeader">
                         <div className="SectionTagLabelContainer" style={{ margin: "auto" }}>
                             <div>
-                                <div className="flexVertically" >
+                                <div className="flexVertically">
                                     <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutHome.png" alt="Financial Services Icon - Investment Solutions" />
                                 </div>
                                 <div>
@@ -73,83 +62,88 @@ const Services = () => {
                         </div>
                         <h2 className="text-center">Get The Professional Financial Services You Need To Grow And Succeed</h2>
                     </div>
+
                     <div className="marginTop ServicesBannerImage">
-                        <div className={` LayerImage ${isVisible ? 'reveal-image' : ''}`}>
+                        <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
                             <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/service.jpg" alt="" className="w-100" />
                         </div>
                     </div>
-                    <Row gutter={[40, 40]} className="ServicesRow">
-                        <Col lg={12} xs={24} >
-                            <div className="ServiceCardContainer" >
-                                <div className={`ServiceCard ${isAnimating ? 'animating' : ''}`}>
-                                    <div className={` ServiceCardImage LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                        <img
-                                            src={currentService.image}
-                                            alt={`${currentService.title} - Innovate Securities Financial Services`}
-                                        />
-                                    </div>
-                                    <div className="ServiceCardContent">
-                                        <h2>{currentService.title}</h2>
-                                        <br />
-                                        <p className="white">
-                                            {currentService.servicesCardText}
-                                        </p>
-                                        <br />
-                                        {/* <p className="white">
-                                            {currentService.description}
-                                        </p> */}
-                                        <br />
-                                        <div className="BtnContainerWhite">
-                                            <button onClick={() => {
-                                                const serviceSlug = currentService.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-                                                navigate(`/services/${serviceSlug}`);
-                                            }}>
-                                                View Detailed
-                                            </button>
+
+                    <div className="services-cards-container">
+                        <Row  gutter={[24, 24]} className="services-cards-row">
+                            {ServicesData.map((service, index) => (
+                                <Col lg={8} md={12} xs={24} key={service.id}>
+                                    <div 
+                                        className={`service-card ${isVisible ? 'card-visible' : ''}`}
+                                        style={{ animationDelay: `${index * 0.1}s` }}
+                                        onMouseEnter={() => setHoveredCard(index)}
+                                        onMouseLeave={() => setHoveredCard(null)}
+                                        onClick={() => handleServiceClick(service)}
+                                    >
+                                        {/* <div className="card-image-container">
+                                            <img 
+                                                src={service.image} 
+                                                alt={service.title}
+                                                className="card-image"
+                                            />
+                                            <div className="card-overlay">
+                                                <div className="overlay-content">
+                                                    <span className="view-more-text">View More</span>
+                                                    <span className="arrow-icon">→</span>
+                                                </div>
+                                            </div>
+                                        </div> */}
+                                        
+                                        <div className="card-content">
+                                            <div className="service-icon">
+                                                <img 
+                                                    src={service.iconImage} 
+                                                    alt={`${service.title} icon`}
+                                                    className="icon-image"
+                                                />
+                                            </div>
+                                            
+                                            <h3 className="service-title">{service.title}</h3>
+                                            
+                                            <p className="service-description">
+                                                {service.servicesCardText}
+                                            </p>
+                                            
+                                            <div className="card-footer">
+                                                <button 
+                                                    className="view-details-btn"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        handleServiceClick(service);
+                                                    }}
+                                                >
+                                                    View Details
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </Col>
+                            ))}
+                        </Row>
+                    </div>
+
+                    <div className="services-additional-section">
+                        <div className="additional-content">
+                            <div className="additional-image">
+                                <img
+                                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SquareSmall.jpg"
+                                    alt="Professional Financial Advisory Team - Innovate Securities"
+                                />
                             </div>
-                        </Col>
-
-                        <Col lg={12} xs={24}>
-                            <div className="ServicesContentContainer">
-                                <h2 className="marginBottom">
-                                    Professional Financial Services For Growth Success
-                                </h2>
-
-                                <div className="ServicesTagsContainer">
-                                    {ServicesData.map((service, index) => (
-                                        <button
-                                            key={service.id}
-                                            className={`ServiceTag ${selectedService === index ? 'active' : ''}`}
-                                            onClick={() => handleServiceClick(index)}
-                                        >
-                                            {service.title.toUpperCase()}
-                                        </button>
-                                    ))}
-                                </div>
-
-                                <div className="ServicesAdditionalContent">
-                                    <div className={`AdditionalImage LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                        <img
-                                            src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SquareSmall.jpg"
-                                            alt="Professional Financial Advisory Team - Innovate Securities"
-                                        />
-                                    </div>
-                                    <div className="AdditionalContent">
-                                        <div className="DecorativeIcon">
-                                            {/* <HiOutlineArrowUpRight /> */}
-                                        </div>
-                                        <p className="AdditionalText">
-                                            Our expert team provides personalized financial guidance tailored to your investment goals.
-                                            With over 30 years of market experience, we help you make informed decisions for sustainable wealth creation.
-                                        </p>
-                                    </div>
-                                </div>
+                            <div className="additional-text">
+                                <h3>Expert Financial Guidance</h3>
+                                <p>
+                                    Our expert team provides personalized financial guidance tailored to your investment goals.
+                                    With over 30 years of market experience, we help you make informed decisions for sustainable wealth creation.
+                                </p>
                             </div>
-                        </Col>
-                    </Row>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

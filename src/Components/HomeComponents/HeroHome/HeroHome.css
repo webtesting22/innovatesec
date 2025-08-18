@@ -1,12 +1,18 @@
 .FlexContainer {
-    height: 1400px;
+    /* height: 1400px; */
     /* background-color: red; */
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.LeftSideContentContainer {
+/* .LeftSideContentContainer {
     position: absolute;
-    width: 50%;
+    width: 100%;
+} */
+.LeftSideContentContainer {
+    max-width: 800px;
 }
 
 .LeftSideContentContainer>div:nth-child(2) {
@@ -89,10 +95,12 @@
     width: 24px;
     height: 24px;
 }
-.AnimatedBannerImageContainer{
+
+.AnimatedBannerImageContainer {
     display: flex;
     justify-content: center;
 }
+
 .AnimatedBannerImageContainer img {
     position: absolute;
     top: 450px;
@@ -117,19 +125,50 @@
 }
 
 
-@media (max-width:900px){
+@media (min-width:1100px) and (max-width:1500px) {
+    .BackgroundImage img {
+        width: 500px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: -1;
+        opacity: 0.2;
+    }
+
+}
+
+
+@media (min-width:1450px) and (max-width:2000px) {
+    .BackgroundImage img {
+        width: 900px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: -1;
+        opacity: 0.2;
+    }
+
+}
+
+@media (max-width:900px) {
+    .BackgroundImage{
+        display: none;
+    }
     .LeftSideContentContainer {
         position: static !important;
         width: 100%;
     }
-    .RightSideVideoContainer{
+
+    .RightSideVideoContainer {
         width: 100% !important;
         margin-top: 20px;
     }
-    .AnimatedBannerImageContainer{
+
+    .AnimatedBannerImageContainer {
         display: none !important;
     }
-    .FlexContainer{
+
+    .FlexContainer {
         height: 100% !important;
     }
 }

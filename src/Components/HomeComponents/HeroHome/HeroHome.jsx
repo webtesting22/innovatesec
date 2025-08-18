@@ -102,28 +102,64 @@ const HeroHome = () => {
             <div className="MainContainer marginTop">
                 <div className="Container">
                     <div className="FlexContainer paddingSide" ref={containerRef}>
-                        <div className="LeftSideContentContainer">
-                            <div className="SectionTagLabelContainer">
-                                <div>
-                                    <div className="flexVertically">
-                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/RocketPng.png" alt="Financial Growth Rocket Icon - Empowering Investment Success" />
-                                    </div>
+                        <div className="MaxWidthContainer">
+                            <div className="LeftSideContentContainer">
+                                <div className="SectionTagLabelContainer">
                                     <div>
-                                        <p>Empowering Smarter Financial Futures</p>
+                                        <div className="flexVertically">
+                                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/RocketPng.png" alt="Financial Growth Rocket Icon - Empowering Investment Success" />
+                                        </div>
+                                        <div>
+                                            <p>Empowering Smarter Financial Futures</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div>
-                                <h1>Your Trusted Partner in Financial Growth</h1>
-                                <p>With over 30 years of experience in capital markets, Innovate Securities offers personalized investment solutions across shares, bonds, mutual funds, and more.</p>
-                                <p>We serve individuals, corporates, and institutions with expertise, integrity, and long-term vision.</p>
-                                <div className="BtnContainer">
-                                    <Link to="/about-us"> <button>About Innovate</button></Link>
+                                <div>
+                                    <h1>Your Trusted Partner in Financial Growth</h1>
+                                    <p>With over 30 years of experience in capital markets, Innovate Securities offers personalized investment solutions across shares, bonds, mutual funds, and more.</p>
+                                    <p>We serve individuals, corporates, and institutions with expertise, integrity, and long-term vision.</p>
+                                    <div className="BtnContainer">
+                                        <Link to="/about-us"> <button>About Innovate</button></Link>
+                                    </div>
+                                    <div className="BackgroundImage">
+                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/S407.jpg" alt="" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div>
+                            <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
+                                <div className="VideoWrapper">
+                                    <video
+                                        ref={videoRef}
+                                        src="https://cdn.prod.website-files.com/67df2c20360768e358fdd20a%2F682b74c0505f21d18c54d43f_4426377-uhd_3840_2160_25fps-transcode.mp4"
+                                        autoPlay
+                                        muted
+                                        loop
+                                        className="w-100"
 
-                        <div
+                                    ></video>
+                                    <div
+                                        className={`PlayPauseButton ${showButton ? 'visible' : ''} ${isPlaying ? 'playing' : 'paused'}`}
+                                        onClick={togglePlayPause}
+                                    >
+                                        <div className="ButtonIcon">
+                                            {isPlaying ? (
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                    <rect x="6" y="4" width="4" height="16"></rect>
+                                                    <rect x="14" y="4" width="4" height="16"></rect>
+                                                </svg>
+                                            ) : (
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                    <polygon points="5,3 19,12 5,21"></polygon>
+                                                </svg>
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div
                             className="RightSideVideoContainer"
                             style={{ width: `${videoWidth}%` }}
                             onMouseEnter={handleMouseEnter}
@@ -159,7 +195,7 @@ const HeroHome = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* <div className="AnimatedBannerImageContainer">
                             <img src={AnimatedBannerImage} alt="Innovate Securities Financial Services Banner - Investment Solutions" />

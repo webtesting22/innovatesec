@@ -48,7 +48,7 @@
   position: relative;
 }
 
-.BoxDesigns::after {
+/* .BoxDesigns::after {
   content: "";
   position: absolute;
   left: 0px;
@@ -58,7 +58,7 @@
   width: 50px;
   z-index: 1;
   border-radius: 0px 10px 0px 10px;
-}
+} */
 
 .BoxDesigns .LogoIcon {
   height: 44px;
@@ -83,10 +83,10 @@
 
 @media (max-width:900px) {
 
-  .BoxDesigns::after,
+  /* .BoxDesigns::after,
   .BoxDesigns .LogoIcon {
     display: none !important;
-  }
+  } */
 
   .paddingRight {
     padding-right: 0px;

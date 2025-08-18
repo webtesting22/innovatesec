@@ -71,7 +71,7 @@
 
 .ServiceDescription {
     background: #f8f9fa;
-    padding: 40px;
+    padding: 20px;
     border-radius: 20px;
     border-left: 5px solid var(--brand-color);
 }
@@ -417,7 +417,7 @@
     }
 
     .OtherServices {
-        padding: 25px;
+        padding: 10px;
     }
 
     .OtherServiceItem {
@@ -454,7 +454,8 @@
     }
 
     .ServiceDescription {
-        padding: 20px;
+        padding: 0px;
+        border: none !important;
     }
 
     .FeatureCard {

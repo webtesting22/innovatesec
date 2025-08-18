@@ -57,7 +57,7 @@ const OurStory = () => {
 
                         </div>
 
-                        <div className="marginTop">
+                        <div className="marginTop centerContainer">
                             <Row gutter={[16, 16]}>
                                 <Col lg={24} md={24} xs={24}>
                                     <div className={`StoryImageContainer LayerImage ${isVisible ? 'reveal-image' : ''}`}>

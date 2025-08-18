@@ -441,6 +441,7 @@
   
   .modal-footer {
     padding: 12px 20px 20px 20px;
+    width: 50%;
   }
   
   .modal-button {
@@ -472,7 +473,7 @@
   }
   
   .scroll-arrow {
-    bottom: 15px;
+    /* bottom: 15px; */
     right: 15px;
     padding: 10px 16px;
     font-size: 14px;

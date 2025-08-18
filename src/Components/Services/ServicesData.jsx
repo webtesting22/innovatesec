@@ -14,30 +14,32 @@ const ServicesData = [
             <p>In addition to equities, we offer broking services for derivatives, including options and futures. This allows you to manage risk and take advantage of market opportunities with ease.</p>
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Why Choose Innovate Securities?</h3>
-                <Row gutter={[20, 20]}>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📊</div>
-                            <h3>Seamless Trading</h3>
-                            <p>We provide fast and secure trade execution, ensuring your trades are completed quickly and without hassle. Our advanced trading platforms guarantee a smooth and efficient experience.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🛡️</div>
-                            <h3>Technology-Driven Insights
-                            </h3>
-                            <p>Gain access to real-time market data and powerful analytics that help you make informed trading decisions. Our technology-driven approach keeps you ahead of market trends.</p>
-                        </div>
-                    </Col>
-                    <Col lg={24} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📈</div>
-                            <h3>Dedicated Support</h3>
-                            <p>Our experienced support team is always ready to assist you with any trading-related queries. We ensure that you receive expert guidance whenever needed, ensuring a smooth trading journey.</p>
-                        </div>
-                    </Col>
-                </Row>
+                <div className='centerContainer'>
+                    <Row gutter={[20, 20]}>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📊</div>
+                                <h3>Seamless Trading</h3>
+                                <p>We provide fast and secure trade execution, ensuring your trades are completed quickly and without hassle. Our advanced trading platforms guarantee a smooth and efficient experience.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">🛡️</div>
+                                <h3>Technology-Driven Insights
+                                </h3>
+                                <p>Gain access to real-time market data and powerful analytics that help you make informed trading decisions. Our technology-driven approach keeps you ahead of market trends.</p>
+                            </div>
+                        </Col>
+                        <Col lg={24} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📈</div>
+                                <h3>Dedicated Support</h3>
+                                <p>Our experienced support team is always ready to assist you with any trading-related queries. We ensure that you receive expert guidance whenever needed, ensuring a smooth trading journey.</p>
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
             </div>
             <br /><br />
             <p>Partner with Innovate Securities for all your equity and derivatives trading needs and take the next step in your investment journey with us!</p>
@@ -54,50 +56,52 @@ const ServicesData = [
             <p>We offer secure and efficient depository services as an authorized participant with Central Depository Services Limited (CDSL). Our comprehensive depository solutions ensure your securities are safely managed with complete transparency and seamless processing.</p>
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Our Depository Services</h3>
-                <Row gutter={[20, 20]}>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📋</div>
-                            <h3>Demat Account Opening</h3>
-                            <p>Simplified online process for quick account setup with minimal documentation requirements. Get your demat account activated within 24 hours with our streamlined onboarding process.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🔒</div>
-                            <h3>Asset Safekeeping</h3>
-                            <p>Secure electronic storage of your securities, minimizing physical risks and ensuring complete protection of your investments. Your assets are protected with bank-grade security protocols.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">⚡</div>
-                            <h3>Transaction Support</h3>
-                            <p>Fast processing of buy and sell transactions for accurate record-keeping. Real-time settlement and instant updates ensure you always have the latest information about your holdings.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📊</div>
-                            <h3>Portfolio Access</h3>
-                            <p>Regular e-statements and an intuitive online platform for easy investment tracking. Monitor your portfolio performance with detailed analytics and comprehensive reporting tools.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📢</div>
-                            <h3>Corporate Actions</h3>
-                            <p>Timely notifications and processing for dividends, bonuses, and rights offerings. Stay informed about all corporate actions affecting your investments with automated alerts.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">👥</div>
-                            <h3>Dedicated Support</h3>
-                            <p>A professional team ready to assist you with personalized guidance. Our experienced support staff is available to help you with any depository-related queries and concerns.</p>
-                        </div>
-                    </Col>
-                </Row>
+                <div className='centerContainer'>
+                    <Row gutter={[20, 20]}>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📋</div>
+                                <h3>Demat Account Opening</h3>
+                                <p>Simplified online process for quick account setup with minimal documentation requirements. Get your demat account activated within 24 hours with our streamlined onboarding process.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">🔒</div>
+                                <h3>Asset Safekeeping</h3>
+                                <p>Secure electronic storage of your securities, minimizing physical risks and ensuring complete protection of your investments. Your assets are protected with bank-grade security protocols.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">⚡</div>
+                                <h3>Transaction Support</h3>
+                                <p>Fast processing of buy and sell transactions for accurate record-keeping. Real-time settlement and instant updates ensure you always have the latest information about your holdings.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📊</div>
+                                <h3>Portfolio Access</h3>
+                                <p>Regular e-statements and an intuitive online platform for easy investment tracking. Monitor your portfolio performance with detailed analytics and comprehensive reporting tools.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📢</div>
+                                <h3>Corporate Actions</h3>
+                                <p>Timely notifications and processing for dividends, bonuses, and rights offerings. Stay informed about all corporate actions affecting your investments with automated alerts.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">👥</div>
+                                <h3>Dedicated Support</h3>
+                                <p>A professional team ready to assist you with personalized guidance. Our experienced support staff is available to help you with any depository-related queries and concerns.</p>
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
             </div>
             <br /><br />
             <p>Experience the future of depository services with Innovate Securities, where technology and customer focus empower your financial journey. Partner with us for secure, efficient, and transparent depository solutions.</p>
@@ -114,6 +118,7 @@ const ServicesData = [
             <p>Innovate Securities offers tailored mutual fund distribution services, helping clients build personalized portfolios aligned with their financial goals and risk profiles. We provide access to a broad range of top-rated funds from leading mutual fund houses across India. Our expert team works closely with clients to design portfolios suited for capital growth, wealth preservation, or income generation. Through our advanced digital platform, we ensure seamless transactions, real-time fund data, and transparent reporting.</p>
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Types of Mutual Funds</h3>
+                <div className='centerContainer'>
                 <Row gutter={[20, 20]}>
                     <Col lg={12} xs={24}>
                         <div className="FeatureCard">
@@ -151,6 +156,7 @@ const ServicesData = [
                         </div>
                     </Col>
                 </Row>
+                </div>
             </div>
             <br /><br />
             <p>Partner with Innovate Securities for expert mutual fund guidance and build a diversified portfolio that aligns with your financial objectives. Our experienced advisors help you navigate the complex world of mutual funds to achieve your investment goals.</p>
@@ -167,6 +173,7 @@ const ServicesData = [
             <p>Innovate Securities offers a comprehensive range of Government Bonds, Corporate Bonds, and Non-Convertible Debentures (NCDs), providing tailored solutions to meet diverse financial goals. Our bond investment services offer stability, predictable returns, and portfolio diversification through carefully curated fixed-income instruments.</p>
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Our Bond Investment Solutions</h3>
+                <div className='centerContainer'>
                 <Row gutter={[20, 20]}>
                     <Col lg={12} xs={24}>
                         <div className="FeatureCard">
@@ -197,9 +204,11 @@ const ServicesData = [
                         </div>
                     </Col>
                 </Row>
+                </div>
             </div>
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Why Choose Innovate Securities?</h3>
+                <div className='centerContainer'>
                 <Row gutter={[20, 20]}>
                     <Col lg={12} xs={24}>
                         <div className="FeatureCard">
@@ -237,6 +246,7 @@ const ServicesData = [
                         </div>
                     </Col>
                 </Row>
+                </div>
             </div>
             <br /><br />
             <p>Partner with Innovate Securities for secure, reliable bond investments backed by expert support. Our comprehensive bond investment services help you build a stable, income-generating portfolio that aligns with your financial goals.</p>
@@ -254,7 +264,8 @@ const ServicesData = [
             <p>Our intuitive platform simplifies the investment process, ensuring easy management of deposits, timely notifications of interest payments, and detailed reports for transparency and convenience.</p>
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Features of Corporate Fixed Deposits</h3>
-                <Row gutter={[20, 20]}>
+                <div className='centerContainer'>
+                    <Row gutter={[20, 20]}>
                     <Col lg={12} xs={24}>
                         <div className="FeatureCard">
                             <div className="FeatureIcon">💰</div>
@@ -291,9 +302,11 @@ const ServicesData = [
                         </div>
                     </Col>
                 </Row>
-            </div>
+                </div>
+                    </div>
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Why Choose Our Corporate FD Services?</h3>
+                <div className='centerContainer'>
                 <Row gutter={[20, 20]}>
                     <Col lg={12} xs={24}>
                         <div className="FeatureCard">
@@ -324,6 +337,7 @@ const ServicesData = [
                         </div>
                     </Col>
                 </Row>
+                </div>
             </div>
             <br /><br />
             <p>Partner with Innovate Securities for secure, high-yield corporate fixed deposit investments. Our comprehensive FD services help you build a stable, income-generating portfolio with the flexibility and security you need for your financial success.</p>
@@ -341,6 +355,7 @@ const ServicesData = [
             <p>Our expert team assists clients in selecting the right NCDs based on their financial goals, risk tolerance, and investment horizon. Through our seamless platform, clients enjoy real-time access to market data, transparent reporting, and easy management of their NCD investments.</p>
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Understanding NCD Investments</h3>
+                <div className='centerContainer'>
                 <Row gutter={[20, 20]}>
                     <Col lg={12} xs={24}>
                         <div className="FeatureCard">
@@ -378,10 +393,12 @@ const ServicesData = [
                         </div>
                     </Col>
                 </Row>
+                </div>
             </div>
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Why Choose Innovate Securities for NCD Investments?</h3>
-                <Row gutter={[20, 20]}>
+                <div className='centerContainer'>
+                    <Row gutter={[20, 20]}>
                     <Col lg={12} xs={24}>
                         <div className="FeatureCard">
                             <div className="FeatureIcon">📈</div>
@@ -418,6 +435,7 @@ const ServicesData = [
                         </div>
                     </Col>
                 </Row>
+                </div>
             </div>
             <br /><br />
             <p>Choose Innovate Securities for secure, high-return NCD investments with expert support and seamless service. Our comprehensive NCD investment services help you build a stable, income-generating portfolio that aligns with your financial goals and risk tolerance.</p>
@@ -435,54 +453,57 @@ const ServicesData = [
             <p>With our focus on accuracy, efficiency, and personalized support, Innovate Securities ensures a smooth and reliable IPO submission experience for all investors, helping you capitalize on exciting investment opportunities in the primary market.</p>
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Our IPO Submission Services</h3>
-                <Row gutter={[20, 20]}>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📋</div>
-                            <h3>Form Assistance</h3>
-                            <p>We handle the printing of physical IPO forms and provide expert assistance in ensuring accurate form completion. Our experienced team guides you through every step of the application process, minimizing errors and maximizing your chances of successful allotment.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">💳</div>
-                            <h3>Mandate Support</h3>
-                            <p>Our advanced software solution facilitates smooth UPI transactions, ensuring seamless mandate approvals and a streamlined process for investors. Experience hassle-free payment processing with our cutting-edge technology platform.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🏦</div>
-                            <h3>Banking Assistance</h3>
-                            <p>We also offer guidance on the banking process, helping clients manage payments and ensuring all financial obligations are met efficiently. Our banking experts ensure your transactions are processed smoothly without any complications.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📊</div>
-                            <h3>Market Research</h3>
-                            <p>Access comprehensive IPO research and analysis to make informed investment decisions. Our expert team provides detailed insights into company fundamentals, valuation metrics, and market positioning for each IPO opportunity.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📱</div>
-                            <h3>Digital Platform</h3>
-                            <p>Our user-friendly digital platform provides real-time IPO tracking, application status updates, and seamless document management. Stay informed about your IPO applications with instant notifications and transparent reporting.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">👨‍💼</div>
-                            <h3>Expert Guidance</h3>
-                            <p>Our experienced IPO specialists provide personalized advice on IPO selection, application strategies, and investment timing. Benefit from our deep market knowledge and proven track record in IPO investments.</p>
-                        </div>
-                    </Col>
-                </Row>
+                <div className='centerContainer'>
+                    <Row gutter={[20, 20]}>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📋</div>
+                                <h3>Form Assistance</h3>
+                                <p>We handle the printing of physical IPO forms and provide expert assistance in ensuring accurate form completion. Our experienced team guides you through every step of the application process, minimizing errors and maximizing your chances of successful allotment.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">💳</div>
+                                <h3>Mandate Support</h3>
+                                <p>Our advanced software solution facilitates smooth UPI transactions, ensuring seamless mandate approvals and a streamlined process for investors. Experience hassle-free payment processing with our cutting-edge technology platform.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">🏦</div>
+                                <h3>Banking Assistance</h3>
+                                <p>We also offer guidance on the banking process, helping clients manage payments and ensuring all financial obligations are met efficiently. Our banking experts ensure your transactions are processed smoothly without any complications.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📊</div>
+                                <h3>Market Research</h3>
+                                <p>Access comprehensive IPO research and analysis to make informed investment decisions. Our expert team provides detailed insights into company fundamentals, valuation metrics, and market positioning for each IPO opportunity.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📱</div>
+                                <h3>Digital Platform</h3>
+                                <p>Our user-friendly digital platform provides real-time IPO tracking, application status updates, and seamless document management. Stay informed about your IPO applications with instant notifications and transparent reporting.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">👨‍💼</div>
+                                <h3>Expert Guidance</h3>
+                                <p>Our experienced IPO specialists provide personalized advice on IPO selection, application strategies, and investment timing. Benefit from our deep market knowledge and proven track record in IPO investments.</p>
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
             </div>
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Why Choose Innovate Securities for IPO Submissions?</h3>
-                <Row gutter={[20, 20]}>
+                <div className='centerContainer'>
+                    <Row gutter={[20, 20]}>
                     <Col lg={12} xs={24}>
                         <div className="FeatureCard">
                             <div className="FeatureIcon">🎯</div>
@@ -519,6 +540,7 @@ const ServicesData = [
                         </div>
                     </Col>
                 </Row>
+                </div>
             </div>
             <br /><br />
             <p>Partner with Innovate Securities for expert IPO submission services and capitalize on exciting investment opportunities in the primary market. Our comprehensive IPO services ensure you can participate in Initial Public Offerings with confidence and ease.</p>

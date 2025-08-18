@@ -69,7 +69,7 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <div className="services-cards-container">
+                    <div className="services-cards-container centerContainer">
                         <Row  gutter={[24, 24]} className="services-cards-row">
                             {ServicesData.map((service, index) => (
                                 <Col lg={8} md={12} xs={24} key={service.id}>

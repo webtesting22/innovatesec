@@ -35,7 +35,7 @@ const ProgressReach = () => {
         <div className="MainContainer" ref={sectionRef}>
             <div className="Container ">
                 <div className="paddingSide">
-                    <div className="ReachQuateContainer">
+                    <div className="ReachQuateContainer centerContainer">
                         <Row gutter={[16, 16]}>
                             <Col lg={12} md={12} xs={24}>
                                 <div className="ReachQuateContainerLeft">
@@ -55,7 +55,7 @@ const ProgressReach = () => {
                                 </div>
                             </Col>
                             <Col lg={12} md={12} xs={24}>
-                                <div className="ReachQuateContainerRight">
+                                <div className="ReachQuateContainerRight centerContainer">
                                     <Row gutter={[10, 10]}>
                                         <Col lg={12} md={12} xs={24}>
                                             <div>

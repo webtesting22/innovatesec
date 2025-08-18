@@ -24,7 +24,12 @@
     gap: 10px;
     font-size: 20px;
 }
-
+ .SocialMediaContainer ul li a{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: black;
+ }
 .SocialLinkstAndAdress>div ul {
     display: flex;
     flex-direction: column;

@@ -88,6 +88,7 @@ const SingleService = () => {
                     </div>
 
                     {/* Service Content */}
+                    <div className="centerContainer">
                     <Row gutter={[40, 40]} className="ServiceContentRow">
                         <Col lg={16} xs={24}>
                             <div className="ServiceMainContent">
@@ -168,6 +169,7 @@ const SingleService = () => {
                             </div>
                         </Col>
                     </Row>
+                    </div>
                 </div>
             </div>
         </div>

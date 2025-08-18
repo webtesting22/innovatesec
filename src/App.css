@@ -91,6 +91,16 @@
   .paddingRight {
     padding-right: 0px;
   }
+  .centerContainer{
+    display: flex;
+    justify-content: center;
+  }
+  .ant-col {
+  padding: 0px !important;
+}
+.marginAuto{
+  margin: auto;
+}
 }
 
 /* .ant-col {

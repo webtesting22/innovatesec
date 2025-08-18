@@ -12,25 +12,24 @@ const Footer = () => {
     const SocialMediaData = [
         {
             name: "Facebook",
-            icon: <FaFacebook />
+            icon: <FaFacebook />,
+            link: "https://www.facebook.com/profile.php?id=61577903109138"
         },
         {
             name: "Instagram",
-            icon: <AiFillInstagram />
+            icon: <AiFillInstagram />,
+            link: "https://www.instagram.com/innovatesecurities/"
         },
         {
             name: "LinkedIn",
-            icon: <FaLinkedin />
-        },
-        {
-            name: "Twitter",
-            icon: <FaTwitter />
+            icon: <FaLinkedin />,
+            link: "https://www.linkedin.com/company/innovate-securities"
         },
     ]
     return (
         <div className="MainContainer FooterMainContainer">
             <div className="Container ">
-                <div className="paddingSide marginTop marginBottom">
+                <div className="paddingSide marginTop marginBottom marginAuto">
                     <Row gutter={[16, 16]} className="w-100">
                         <Col lg={12} md={12} sm={24} xs={24}>
                             <div className="CompanyBrandingContainer paddingRight">
@@ -44,7 +43,9 @@ const Footer = () => {
                                     <ul>
                                         {SocialMediaData.map((item, index) => (
                                             <li key={index}>
-                                                {item.icon} {item.name}
+                                                <Link to={item.link} target="_blank" rel="noopener noreferrer">
+                                                    {item.icon} {item.name}
+                                                </Link>
                                             </li>
                                         ))}
                                     </ul>

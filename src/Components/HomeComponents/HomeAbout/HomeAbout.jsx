@@ -51,7 +51,7 @@ const HomeAbout = () => {
                             </div>
                             <h2 className="text-center">Welcome to Innovate Securities Pvt. Ltd. (ISPL)</h2>
                         </div>
-                        <div className="marginTop">
+                        <div className="marginTop centerContainer">
                             <Row gutter={[16, 16]}>
                                 <Col lg={12} md={12} xs={24}>
                                     <div className="AboutCardContainer BoxDesigns">

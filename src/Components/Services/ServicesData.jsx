@@ -45,8 +45,64 @@ const ServicesData = [
             <p>Partner with Innovate Securities for all your equity and derivatives trading needs and take the next step in your investment journey with us!</p>
         </>,
     },
+
     {
         id: 2,
+        title: "⁠⁠Mutual Funds and Bonds",
+        iconImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Mutual Funds.png",
+        image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MutualFunds-min.jpg",
+        servicesCardText: "Access diversified investment portfolios managed by experienced fund managers across equity, debt, hybrid, and sectoral funds.",
+        description: <>
+            <p><b>Mutual Fund Distribution Services – Innovate Securities</b></p>
+            <p>Innovate Securities offers tailored mutual fund distribution services, helping clients build personalized portfolios aligned with their financial goals and risk profiles. We provide access to a broad range of top-rated funds from leading mutual fund houses across India. Our expert team works closely with clients to design portfolios suited for capital growth, wealth preservation, or income generation. Through our advanced digital platform, we ensure seamless transactions, real-time fund data, and transparent reporting.</p>
+            <div className='marginTop'>
+                <h3 className='text-center marginBottom' style={{ color: "black" }}>Types of Mutual Funds</h3>
+                <div className='centerContainer'>
+                <Row gutter={[20, 20]}>
+                    <Col lg={12} xs={24}>
+                        <div className="FeatureCard">
+                            <div className="FeatureIcon">📈</div>
+                            <h3>Equity Funds</h3>
+                            <p>Focused on long-term capital growth through investment in stocks. These funds are ideal for investors seeking higher returns over extended periods and are willing to accept market volatility for potential growth opportunities.</p>
+                        </div>
+                    </Col>
+                    <Col lg={12} xs={24}>
+                        <div className="FeatureCard">
+                            <div className="FeatureIcon">🛡️</div>
+                            <h3>Debt Funds</h3>
+                            <p>Offer stable returns with lower risk by investing in bonds and fixed-income securities. Perfect for conservative investors looking for regular income with capital preservation and lower volatility compared to equity markets.</p>
+                        </div>
+                    </Col>
+                    <Col lg={12} xs={24}>
+                        <div className="FeatureCard">
+                            <div className="FeatureIcon">⚖️</div>
+                            <h3>Hybrid Funds</h3>
+                            <p>A mix of equity and debt, balancing risk and return for diversified growth. These funds provide the best of both worlds - growth potential from equities and stability from debt instruments, making them suitable for moderate risk-takers.</p>
+                        </div>
+                    </Col>
+                    <Col lg={12} xs={24}>
+                        <div className="FeatureCard">
+                            <div className="FeatureIcon">🎯</div>
+                            <h3>Sectoral/Thematic Funds</h3>
+                            <p>Target specific industries or sectors for specialized investment strategies. These funds allow investors to capitalize on growth opportunities in particular sectors like technology, healthcare, or infrastructure, offering focused exposure to emerging trends.</p>
+                        </div>
+                    </Col>
+                    <Col lg={24} xs={24}>
+                        <div className="FeatureCard">
+                            <div className="FeatureIcon">💰</div>
+                            <h3>Tax-Saving Funds (ELSS)</h3>
+                            <p>Equity funds offering tax benefits under Section 80C of the Income Tax Act. These funds not only help you save taxes but also provide the potential for wealth creation through equity investments, with a lock-in period of 3 years for tax benefits.</p>
+                        </div>
+                    </Col>
+                </Row>
+                </div>
+            </div>
+            <br /><br />
+            <p>Partner with Innovate Securities for expert mutual fund guidance and build a diversified portfolio that aligns with your financial objectives. Our experienced advisors help you navigate the complex world of mutual funds to achieve your investment goals.</p>
+        </>,
+    },
+    {
+        id: 3,
         title: "Depository Services",
         iconImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Depository Services.png",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DEPOSITORY SERVICES-min.jpg",
@@ -107,245 +163,10 @@ const ServicesData = [
             <p>Experience the future of depository services with Innovate Securities, where technology and customer focus empower your financial journey. Partner with us for secure, efficient, and transparent depository solutions.</p>
         </>,
     },
-    {
-        id: 3,
-        title: "Mutual Funds",
-        iconImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Mutual Funds.png",
-        image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MutualFunds-min.jpg",
-        servicesCardText: "Access diversified investment portfolios managed by experienced fund managers across equity, debt, hybrid, and sectoral funds.",
-        description: <>
-            <p><b>Mutual Fund Distribution Services – Innovate Securities</b></p>
-            <p>Innovate Securities offers tailored mutual fund distribution services, helping clients build personalized portfolios aligned with their financial goals and risk profiles. We provide access to a broad range of top-rated funds from leading mutual fund houses across India. Our expert team works closely with clients to design portfolios suited for capital growth, wealth preservation, or income generation. Through our advanced digital platform, we ensure seamless transactions, real-time fund data, and transparent reporting.</p>
-            <div className='marginTop'>
-                <h3 className='text-center marginBottom' style={{ color: "black" }}>Types of Mutual Funds</h3>
-                <div className='centerContainer'>
-                <Row gutter={[20, 20]}>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📈</div>
-                            <h3>Equity Funds</h3>
-                            <p>Focused on long-term capital growth through investment in stocks. These funds are ideal for investors seeking higher returns over extended periods and are willing to accept market volatility for potential growth opportunities.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🛡️</div>
-                            <h3>Debt Funds</h3>
-                            <p>Offer stable returns with lower risk by investing in bonds and fixed-income securities. Perfect for conservative investors looking for regular income with capital preservation and lower volatility compared to equity markets.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">⚖️</div>
-                            <h3>Hybrid Funds</h3>
-                            <p>A mix of equity and debt, balancing risk and return for diversified growth. These funds provide the best of both worlds - growth potential from equities and stability from debt instruments, making them suitable for moderate risk-takers.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🎯</div>
-                            <h3>Sectoral/Thematic Funds</h3>
-                            <p>Target specific industries or sectors for specialized investment strategies. These funds allow investors to capitalize on growth opportunities in particular sectors like technology, healthcare, or infrastructure, offering focused exposure to emerging trends.</p>
-                        </div>
-                    </Col>
-                    <Col lg={24} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">💰</div>
-                            <h3>Tax-Saving Funds (ELSS)</h3>
-                            <p>Equity funds offering tax benefits under Section 80C of the Income Tax Act. These funds not only help you save taxes but also provide the potential for wealth creation through equity investments, with a lock-in period of 3 years for tax benefits.</p>
-                        </div>
-                    </Col>
-                </Row>
-                </div>
-            </div>
-            <br /><br />
-            <p>Partner with Innovate Securities for expert mutual fund guidance and build a diversified portfolio that aligns with your financial objectives. Our experienced advisors help you navigate the complex world of mutual funds to achieve your investment goals.</p>
-        </>,
-    },
+    
     {
         id: 4,
-        title: "Bonds Investment Services",
-        iconImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Bonds Investment.png",
-        image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/BondInvestementService-min.jpg",
-        servicesCardText: "Invest in government securities, corporate bonds, and fixed income instruments for steady income with capital preservation.",
-        description: <>
-            <p><b>Bonds Investment Services – Innovate Securities Pvt. Ltd. (ISPL)</b></p>
-            <p>Innovate Securities offers a comprehensive range of Government Bonds, Corporate Bonds, and Non-Convertible Debentures (NCDs), providing tailored solutions to meet diverse financial goals. Our bond investment services offer stability, predictable returns, and portfolio diversification through carefully curated fixed-income instruments.</p>
-            <div className='marginTop'>
-                <h3 className='text-center marginBottom' style={{ color: "black" }}>Our Bond Investment Solutions</h3>
-                <div className='centerContainer'>
-                <Row gutter={[20, 20]}>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🏛️</div>
-                            <h3>Government Bonds</h3>
-                            <p>Invest in sovereign securities backed by the Government of India, offering the highest level of safety and guaranteed returns. These bonds provide stable income with minimal credit risk, making them ideal for conservative investors.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🏢</div>
-                            <h3>Corporate Bonds</h3>
-                            <p>Access high-quality corporate debt instruments from leading companies across various sectors. These bonds offer higher yields than government securities while maintaining strong credit ratings and regular interest payments.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📜</div>
-                            <h3>Non-Convertible Debentures (NCDs)</h3>
-                            <p>Invest in listed and unlisted NCDs from top-rated corporations with various maturity periods and attractive interest rates. These instruments provide fixed returns with different risk profiles to suit your investment strategy.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📊</div>
-                            <h3>Portfolio Diversification</h3>
-                            <p>Build a well-balanced investment portfolio by combining different types of bonds. Our expert advisors help you create a diversified bond portfolio that matches your risk tolerance and income requirements.</p>
-                        </div>
-                    </Col>
-                </Row>
-                </div>
-            </div>
-            <div className='marginTop'>
-                <h3 className='text-center marginBottom' style={{ color: "black" }}>Why Choose Innovate Securities?</h3>
-                <div className='centerContainer'>
-                <Row gutter={[20, 20]}>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🎯</div>
-                            <h3>Tailored Solutions</h3>
-                            <p>Customized bond options to match your financial objectives. Our team analyzes your goals, risk appetite, and income requirements to recommend the most suitable bond investments for your portfolio.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">👨‍💼</div>
-                            <h3>Expert Guidance</h3>
-                            <p>Over 30 years of experience and deep market insights. Our seasoned professionals provide expert advice on bond selection, timing, and portfolio management to maximize your returns.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🌐</div>
-                            <h3>Diverse Offerings</h3>
-                            <p>Wide access to government and corporate bonds for balanced risk and returns. We provide access to a comprehensive range of fixed-income instruments across different sectors and maturities.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📱</div>
-                            <h3>Seamless Management</h3>
-                            <p>Real-time data and transparent reporting for easy investment tracking. Our digital platform provides instant access to your bond portfolio, performance metrics, and transaction history.</p>
-                        </div>
-                    </Col>
-                    <Col lg={24} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🤝</div>
-                            <h3>Trusted Reputation</h3>
-                            <p>A legacy of trust, integrity, and client-focused service. With decades of experience in the financial markets, Innovate Securities has built a reputation for reliable, transparent, and professional bond investment services.</p>
-                        </div>
-                    </Col>
-                </Row>
-                </div>
-            </div>
-            <br /><br />
-            <p>Partner with Innovate Securities for secure, reliable bond investments backed by expert support. Our comprehensive bond investment services help you build a stable, income-generating portfolio that aligns with your financial goals.</p>
-        </>,
-    },
-    {
-        id: 5,
-        title: "Corporate Fixed Deposit Services",
-        iconImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/icons8-money-60.png",
-        image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/FIXED DEPOSIT SERVICES.jpg",
-        servicesCardText: "Earn higher returns through fixed deposits offered by top-rated corporations with flexible tenure options.",
-        description: <>
-            <p><b>Corporate Fixed Deposit Services – Innovate Securities</b></p>
-            <p>Innovate Securities offers reliable Corporate Fixed Deposit (FD) services, providing clients with secure and high-yield investment options through leading corporates. Our services help clients diversify their portfolio by investing in corporate FDs that offer attractive interest rates with flexible tenures. Whether the goal is steady income or capital preservation, we assist in selecting FDs that align with individual financial needs and risk tolerance.</p>
-            <p>Our intuitive platform simplifies the investment process, ensuring easy management of deposits, timely notifications of interest payments, and detailed reports for transparency and convenience.</p>
-            <div className='marginTop'>
-                <h3 className='text-center marginBottom' style={{ color: "black" }}>Features of Corporate Fixed Deposits</h3>
-                <div className='centerContainer'>
-                    <Row gutter={[20, 20]}>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">💰</div>
-                            <h3>Higher Interest Rates</h3>
-                            <p>Corporate FDs often provide better returns than traditional bank deposits. Our curated selection of top-rated corporate FDs offers competitive interest rates that help maximize your investment returns while maintaining security.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📅</div>
-                            <h3>Flexible Tenure</h3>
-                            <p>Choose from a wide range of maturity periods, typically from 1 to 5 years. Our flexible tenure options allow you to align your investment with your specific financial goals and cash flow requirements.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">⭐</div>
-                            <h3>Credit Rating</h3>
-                            <p>FDs from well-rated companies provide a balance of security and yield. We carefully select corporate FDs from companies with strong credit ratings, ensuring your investments are backed by financially sound institutions.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📊</div>
-                            <h3>Periodic Interest Payouts</h3>
-                            <p>Options for monthly, quarterly, or annual interest payments to suit cash flow needs. Choose the payout frequency that best matches your income requirements and financial planning objectives.</p>
-                        </div>
-                    </Col>
-                    <Col lg={24} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🔄</div>
-                            <h3>Premature Withdrawal</h3>
-                            <p>Allows early withdrawal with applicable penalties, offering liquidity in times of need. While we encourage holding deposits until maturity for optimal returns, our corporate FDs provide the flexibility to withdraw funds when necessary, subject to terms and conditions.</p>
-                        </div>
-                    </Col>
-                </Row>
-                </div>
-                    </div>
-            <div className='marginTop'>
-                <h3 className='text-center marginBottom' style={{ color: "black" }}>Why Choose Our Corporate FD Services?</h3>
-                <div className='centerContainer'>
-                <Row gutter={[20, 20]}>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🎯</div>
-                            <h3>Curated Selection</h3>
-                            <p>We carefully select corporate FDs from top-rated companies across various sectors, ensuring you have access to the best investment opportunities with optimal risk-reward profiles.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📱</div>
-                            <h3>Digital Platform</h3>
-                            <p>Our intuitive online platform provides real-time access to your FD portfolio, automated interest tracking, and seamless transaction management for a hassle-free investment experience.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">👨‍💼</div>
-                            <h3>Expert Guidance</h3>
-                            <p>Our experienced advisors help you select the most suitable corporate FDs based on your financial goals, risk tolerance, and investment horizon, ensuring optimal portfolio performance.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📈</div>
-                            <h3>Portfolio Diversification</h3>
-                            <p>Build a diversified investment portfolio by combining corporate FDs with other investment instruments, creating a balanced approach to wealth creation and income generation.</p>
-                        </div>
-                    </Col>
-                </Row>
-                </div>
-            </div>
-            <br /><br />
-            <p>Partner with Innovate Securities for secure, high-yield corporate fixed deposit investments. Our comprehensive FD services help you build a stable, income-generating portfolio with the flexibility and security you need for your financial success.</p>
-        </>,
-    },
-    {
-        id: 6,
-        title: "NCD Investment Services",
+        title: "NCD",
         iconImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/NCD Investment.png",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/NCD Investment Services.jpg",
         servicesCardText: "Invest in Non-Convertible Debentures from leading companies for fixed returns with various maturity periods.",
@@ -442,7 +263,98 @@ const ServicesData = [
         </>,
     },
     {
-        id: 7,
+        id: 5,
+        title: "FD",
+        iconImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/icons8-money-60.png",
+        image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/FIXED DEPOSIT SERVICES.jpg",
+        servicesCardText: "Earn higher returns through fixed deposits offered by top-rated corporations with flexible tenure options.",
+        description: <>
+            <p><b>Corporate Fixed Deposit Services – Innovate Securities</b></p>
+            <p>Innovate Securities offers reliable Corporate Fixed Deposit (FD) services, providing clients with secure and high-yield investment options through leading corporates. Our services help clients diversify their portfolio by investing in corporate FDs that offer attractive interest rates with flexible tenures. Whether the goal is steady income or capital preservation, we assist in selecting FDs that align with individual financial needs and risk tolerance.</p>
+            <p>Our intuitive platform simplifies the investment process, ensuring easy management of deposits, timely notifications of interest payments, and detailed reports for transparency and convenience.</p>
+            <div className='marginTop'>
+                <h3 className='text-center marginBottom' style={{ color: "black" }}>Features of Corporate Fixed Deposits</h3>
+                <div className='centerContainer'>
+                    <Row gutter={[20, 20]}>
+                    <Col lg={12} xs={24}>
+                        <div className="FeatureCard">
+                            <div className="FeatureIcon">💰</div>
+                            <h3>Higher Interest Rates</h3>
+                            <p>Corporate FDs often provide better returns than traditional bank deposits. Our curated selection of top-rated corporate FDs offers competitive interest rates that help maximize your investment returns while maintaining security.</p>
+                        </div>
+                    </Col>
+                    <Col lg={12} xs={24}>
+                        <div className="FeatureCard">
+                            <div className="FeatureIcon">📅</div>
+                            <h3>Flexible Tenure</h3>
+                            <p>Choose from a wide range of maturity periods, typically from 1 to 5 years. Our flexible tenure options allow you to align your investment with your specific financial goals and cash flow requirements.</p>
+                        </div>
+                    </Col>
+                    <Col lg={12} xs={24}>
+                        <div className="FeatureCard">
+                            <div className="FeatureIcon">⭐</div>
+                            <h3>Credit Rating</h3>
+                            <p>FDs from well-rated companies provide a balance of security and yield. We carefully select corporate FDs from companies with strong credit ratings, ensuring your investments are backed by financially sound institutions.</p>
+                        </div>
+                    </Col>
+                    <Col lg={12} xs={24}>
+                        <div className="FeatureCard">
+                            <div className="FeatureIcon">📊</div>
+                            <h3>Periodic Interest Payouts</h3>
+                            <p>Options for monthly, quarterly, or annual interest payments to suit cash flow needs. Choose the payout frequency that best matches your income requirements and financial planning objectives.</p>
+                        </div>
+                    </Col>
+                    <Col lg={24} xs={24}>
+                        <div className="FeatureCard">
+                            <div className="FeatureIcon">🔄</div>
+                            <h3>Premature Withdrawal</h3>
+                            <p>Allows early withdrawal with applicable penalties, offering liquidity in times of need. While we encourage holding deposits until maturity for optimal returns, our corporate FDs provide the flexibility to withdraw funds when necessary, subject to terms and conditions.</p>
+                        </div>
+                    </Col>
+                </Row>
+                </div>
+            </div>
+            <div className='marginTop'>
+                <h3 className='text-center marginBottom' style={{ color: "black" }}>Why Choose Our Corporate FD Services?</h3>
+                <div className='centerContainer'>
+                    <Row gutter={[20, 20]}>
+                    <Col lg={12} xs={24}>
+                        <div className="FeatureCard">
+                            <div className="FeatureIcon">🎯</div>
+                            <h3>Curated Selection</h3>
+                            <p>We carefully select corporate FDs from top-rated companies across various sectors, ensuring you have access to the best investment opportunities with optimal risk-reward profiles.</p>
+                        </div>
+                    </Col>
+                    <Col lg={12} xs={24}>
+                        <div className="FeatureCard">
+                            <div className="FeatureIcon">📱</div>
+                            <h3>Digital Platform</h3>
+                            <p>Our intuitive online platform provides real-time access to your FD portfolio, automated interest tracking, and seamless transaction management for a hassle-free investment experience.</p>
+                        </div>
+                    </Col>
+                    <Col lg={12} xs={24}>
+                        <div className="FeatureCard">
+                            <div className="FeatureIcon">👨‍💼</div>
+                            <h3>Expert Guidance</h3>
+                            <p>Our experienced advisors help you select the most suitable corporate FDs based on your financial goals, risk tolerance, and investment horizon, ensuring optimal portfolio performance.</p>
+                        </div>
+                    </Col>
+                    <Col lg={12} xs={24}>
+                        <div className="FeatureCard">
+                            <div className="FeatureIcon">📈</div>
+                            <h3>Portfolio Diversification</h3>
+                            <p>Build a diversified investment portfolio by combining corporate FDs with other investment instruments, creating a balanced approach to wealth creation and income generation.</p>
+                        </div>
+                    </Col>
+                </Row>
+                </div>
+            </div>
+            <br /><br />
+            <p>Partner with Innovate Securities for secure, high-yield corporate fixed deposit investments. Our comprehensive FD services help you build a stable, income-generating portfolio with the flexibility and security you need for your financial success.</p>
+        </>,
+    },
+    {
+        id: 6,
         title: "IPO Submission Services",
         iconImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/IPO Submission.png",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/IPO SUBMISSION SERVICES.jpg",

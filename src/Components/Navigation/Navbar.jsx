@@ -120,7 +120,7 @@ const Navbar = () => {
             }}>
                 <div className="NavigationLogoContainer">
                     <img
-                        src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/InnovateLogo1993.png"
+                        src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/InnovateLogoAddSince.png"
                         alt="Innovate Securities Logo - Trusted Financial Services"
                         style={{ width: '160px' }}
                     />
@@ -205,7 +205,7 @@ const Navbar = () => {
                                     behavior: 'smooth'
                                 });
                             }}>
-                                <Link to="/"> <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/InnovateLogo1993.png" alt="Innovate Securities Logo - Trusted Financial Services" /></Link>
+                                <Link to="/"> <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/InnovateLogoAddSince.png" alt="Innovate Securities Logo - Trusted Financial Services" /></Link>
                             </div>
 
                             {/* Desktop Navigation */}

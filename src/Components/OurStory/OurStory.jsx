@@ -152,14 +152,14 @@ const OurStory = () => {
                                         <div className="TimelineYear">2018</div>
                                         <div className="TimelineContent">
                                             <h3>Mutual Fund Distribution</h3>
-                                            <p>Launched Mutual Fund Distribution department with Amit Shah, diversifying our financial services portfolio.</p>
+                                            <p>Launched Mutual Fund Distribution with Amit Shah, diversifying our financial services portfolio.</p>
                                         </div>
                                     </div>
                                     <div className="TimelineItem">
                                         <div className="TimelineYear">2025</div>
                                         <div className="TimelineContent">
                                             <h3>Innovate Upgrade 2.0</h3>
-                                            <p>Launched our comprehensive digital transformation initiative, introducing advanced technology platforms, enhanced digital services, and innovative financial solutions to better serve our clients in the modern digital era.</p>
+                                            <p>Launched our revolutionary mobile app and digital platform, introducing cutting-edge features designed for the new generation of investors. Our app brings seamless trading, real-time portfolio tracking, and AI-powered investment insights to your fingertips, revolutionizing how you manage your financial future.</p>
                                         </div>
                                     </div>
                                     <div className="TimelineItem">

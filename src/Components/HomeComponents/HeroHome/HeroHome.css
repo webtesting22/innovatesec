@@ -37,6 +37,7 @@
     min-height: 300px;
     overflow: hidden;
     max-height: 450px;
+    /* border-radius: 12px; */
 }
 
 .VideoWrapper video {

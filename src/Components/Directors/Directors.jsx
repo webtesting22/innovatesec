@@ -95,7 +95,7 @@ const Directors = () => {
                                         style={{ animationDelay: `${index * 0.2}s` }}
                                     >
                                         <div className="card-header">
-                                            <div className="director-image">
+                                            {/* <div className="director-image">
                                                 <img
                                                     src={director.image}
                                                     alt={director.name}
@@ -103,7 +103,7 @@ const Directors = () => {
                                                         e.target.src = "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/default-director.jpg";
                                                     }}
                                                 />
-                                            </div>
+                                            </div> */}
                                             <div className="director-info">
                                                 <h3 className="director-name">{director.name}</h3>
                                                 <span className="director-position">{director.position}</span>

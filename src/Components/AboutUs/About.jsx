@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import "./About.css";
 import { BiSolidQuoteLeft } from "react-icons/bi";
 import { Row, Col } from "antd";
+import Directors from "../Directors/Directors";
 const About = () => {
     const sectionRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
@@ -36,6 +37,7 @@ const About = () => {
         window.scrollTo(0, 0);
     }, []);
     return (
+        <>
         <div className="MainContainer marginTop" ref={sectionRef}>
             <div className="Container">
                 <div className="paddingSide">
@@ -114,6 +116,9 @@ const About = () => {
                 </div>
             </div>
         </div>
+        <Directors />
+        
+        </>
     );
 };
 

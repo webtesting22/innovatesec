@@ -8,7 +8,7 @@
 
 /* Newsletter Subtitle */
 .NewsletterSubtitle {
-    color: #666;
+    /* color: #666; */
     font-size: 16px;
     margin: 0;
     line-height: 1.5;
@@ -114,7 +114,7 @@
 }
 
 .ExpertText {
-    color: #666;
+    /* color: #666; */
     font-size: 14px;
     margin: 0;
     white-space: nowrap;
@@ -154,6 +154,28 @@
 
 .NewsLetterMainContainer .Container {
     min-height: 100% !important;
+    background-image: url("https://plus.unsplash.com/premium_photo-1679923813998-6603ee2466c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    padding: 80px 0px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.NewsLetterMainContainer .Container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.605);
+}
+
+.NewsLetterMainContainer .paddingSide {
+    position: sticky;
+    z-index: 10;
 }
 
 /* Error Message */
@@ -170,6 +192,7 @@
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);

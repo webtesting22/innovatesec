@@ -61,6 +61,10 @@ const Services = () => {
             swiperRef.current.swiper.autoplay.resume();
         }
     };
+    const handleServiceClick = (service) => {
+        const serviceSlug = service.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        navigate(`/services/${serviceSlug}`);
+    };
 
     return (
         <div className="MainContainer ServicesHomeContainer" >
@@ -154,10 +158,7 @@ const Services = () => {
 
                                                     </div>
                                                     <div className="BtnContainer">
-                                                        <button onClick={() => {
-                                                            const serviceSlug = item.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-                                                            navigate(`/services/${serviceSlug}`, { state: { service: item } });
-                                                        }}>
+                                                        <button onClick={() => handleServiceClick(item)}>
                                                             Read More
                                                         </button>
                                                     </div>

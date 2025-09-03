@@ -34,10 +34,20 @@
     position: relative;
     width: 100%;
     /* height: 100%; */
-    min-height: 300px;
+    min-height: 400px;
     overflow: hidden;
-    max-height: 450px;
+    max-height: 800px;
     /* border-radius: 12px; */
+}
+
+.VideoWrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .VideoWrapper video {
@@ -46,6 +56,10 @@
     object-fit: cover;
     min-height: 400px;
 }
+
+/* .VideoWrapper:hover .PlayPauseButton {
+    opacity: 1;
+} */
 
 .PlayPauseButton {
     position: absolute;
@@ -66,6 +80,7 @@
     border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     transition: .5s;
+    opacity: 0;
 }
 
 .PlayPauseButton.visible {
@@ -109,6 +124,67 @@
     max-width: 100%;
     /* left: 0px; */
     z-index: -1;
+}
+
+/* Taglines Overlay Styles */
+.TaglinesOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.TaglineText {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    max-width: 80%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.6s ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+}
+
+.TaglineText.hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(20px);
+}
+
+.TaglineText.visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+/* Responsive styles for taglines */
+@media (max-width: 768px) {
+    .TaglineText {
+        font-size: 1.8rem;
+        max-width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .TaglineText {
+        font-size: 1.4rem;
+        max-width: 95%;
+        padding: 12px;
+    }
 }
 
 @keyframes pulse {

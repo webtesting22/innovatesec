@@ -2,14 +2,42 @@ import React, { useState, useEffect, useRef } from "react";
 import "./HeroHome.css"
 import AnimatedBannerImage from "/Image/Financial Growth.jpg"
 import { Link } from "react-router-dom";
+
 const HeroHome = () => {
     const [videoWidth, setVideoWidth] = useState(40);
     const [isPlaying, setIsPlaying] = useState(true);
     const [showButton, setShowButton] = useState(false);
+    const [currentTaglineIndex, setCurrentTaglineIndex] = useState(0);
+    const [isTaglineVisible, setIsTaglineVisible] = useState(true);
     const containerRef = useRef(null);
     const videoRef = useRef(null);
     const sectionRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
+
+    // Taglines array
+    const taglines = [
+        "Empowering Smarter Financial Futures",
+        "Your Trusted Partner in Investment Success",
+        "Building Wealth Through Strategic Planning",
+        "Innovation Meets Financial Excellence",
+        "Securing Tomorrow's Prosperity Today"
+    ];
+
+    // Tagline rotation effect
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIsTaglineVisible(false);
+
+            setTimeout(() => {
+                setCurrentTaglineIndex((prevIndex) =>
+                    (prevIndex + 1) % taglines.length
+                );
+                setIsTaglineVisible(true);
+            }, 300); // Half of the transition time for smooth fade
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, [taglines.length]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -99,10 +127,10 @@ const HeroHome = () => {
 
     return (
         <div ref={sectionRef}>
-            <div className="MainContainer marginTop">
+            <div className="MainContainer">
                 <div className="Container">
-                    <div className="FlexContainer paddingSide" ref={containerRef}>
-                        <div className="MaxWidthContainer">
+                    <div className="FlexContainer " ref={containerRef}>
+                        {/* <div className="MaxWidthContainer">
                             <div className="LeftSideContentContainer">
                                 <div className="SectionTagLabelContainer">
                                     <div>
@@ -126,7 +154,7 @@ const HeroHome = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div>
                             <div className={`LayerImage ${isVisible ? 'reveal-image' : ''}`}>
                                 <div className="VideoWrapper">
@@ -137,8 +165,15 @@ const HeroHome = () => {
                                         muted
                                         loop
                                         className="w-100"
-
                                     ></video>
+
+                                    {/* Taglines Overlay */}
+                                    <div className="TaglinesOverlay">
+                                        <div className={`TaglineText ${isTaglineVisible ? 'visible' : 'hidden'}`}>
+                                            {taglines[currentTaglineIndex]}
+                                        </div>
+                                    </div>
+
                                     <div
                                         className={`PlayPauseButton ${showButton ? 'visible' : ''} ${isPlaying ? 'playing' : 'paused'}`}
                                         onClick={togglePlayPause}

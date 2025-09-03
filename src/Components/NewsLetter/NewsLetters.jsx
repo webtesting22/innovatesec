@@ -89,13 +89,13 @@ const NewsLetters = () => {
                     <div className="paddingSide">
                         <div className="NewsletterContainer">
                             <div className="NewsletterContent">
-                                <h2 className="text-center">Let's Connect</h2>
-                                <p className="text-center NewsletterSubtitle">
+                                <h2 className="text-center white">Let's Connect</h2>
+                                <p className="text-center NewsletterSubtitle white">
                                     We're here to help you with your financial needs.
                                 </p>
                                 {/* <br /> */}
                                 <div className="ExpertSection">
-                                    <p className="ExpertText">Our experts are ready to help!</p>
+                                    <p className="ExpertText white">Our experts are ready to help!</p>
                                     <div className="ExpertProfiles">
                                         <div className="ExpertProfile">
                                             <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/UserIcon.png" alt="Innovate Securities Financial Expert - Investment Advisory Specialist" />

@@ -2,7 +2,9 @@
     min-height: 100% !important;
     background-color: #0021470a;
 }
-
+.FooterMainContainer{
+    padding-top: 0px !important;
+}
 .SocialMediaContainer ul {
     list-style: none;
     padding: 0px;

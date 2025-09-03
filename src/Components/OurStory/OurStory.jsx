@@ -97,7 +97,7 @@ const OurStory = () => {
                                         <div className="TimelineYear">1986</div>
                                         <div className="TimelineContent">
                                             <h3>The Foundation</h3>
-                                            <p>Bhushan Shah, along with Piyush Parikh & Amar Parikh started out as AMPI Investments as a proprietor firm. Started broking business with BSE (these are those times when not many people used to work with BSE). Worked as a Sub Broker.</p>
+                                            <p>Bhushan Shah, along with Piyush Parikh & Amar Parikh started out as AMPI Investments as a proprietor firm. Started broking business with BSE. Worked as a Sub Broker.</p>
                                         </div>
                                     </div>
 
@@ -118,7 +118,7 @@ const OurStory = () => {
                                     </div>
 
                                     <div className="TimelineItem">
-                                        <div className="TimelineYear">15th August 1994</div>
+                                        <div className="TimelineYear">15th Aug 1994</div>
                                         <div className="TimelineContent">
                                             <h3>Ahmedabad Office Inauguration</h3>
                                             <p>Inaugurated Ahmedabad Office (current headquarters), establishing our central hub for operations.</p>

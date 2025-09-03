@@ -7,9 +7,10 @@ const HomeComponents = () => {
     return (
         <>
             <HeroHome />
-            <HomeAbout />
             <ServicesHome />
-            <ProgressReach />
+            <HomeAbout />
+    
+            {/* <ProgressReach /> */}
         </>
     )
 }

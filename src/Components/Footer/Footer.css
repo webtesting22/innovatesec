@@ -2,15 +2,18 @@
     min-height: 100% !important;
     background-color: #0021470a;
 }
-.FooterMainContainer{
+
+.FooterMainContainer {
     padding-top: 0px !important;
 }
+
 .SocialMediaContainer ul {
     list-style: none;
     padding: 0px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .SocialMediaContainer ul li {

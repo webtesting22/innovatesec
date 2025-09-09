@@ -31,7 +31,7 @@ const Footer = () => {
             <div className="Container ">
                 <div className="paddingSide marginTop marginBottom marginAuto">
                     <Row gutter={[16, 16]} className="w-100">
-                        <Col lg={12} md={12} sm={24} xs={24}>
+                        <Col lg={8} md={8} sm={24} xs={24}>
                             <div className="CompanyBrandingContainer paddingRight">
                                 <div>
                                     <h3>Innovate Securities Pvt. Ltd.</h3>
@@ -39,20 +39,10 @@ const Footer = () => {
                                         We are a team of experienced professionals who are dedicated to providing the best possible service to our clients.
                                     </p>
                                 </div>
-                                <div className="SocialMediaContainer marginTop">
-                                    <ul>
-                                        {SocialMediaData.map((item, index) => (
-                                            <li key={index}>
-                                                <Link to={item.link} target="_blank" rel="noopener noreferrer">
-                                                    {item.icon} {item.name}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
+
                             </div>
                         </Col>
-                        <Col lg={12} md={12} sm={24} xs={24}>
+                        <Col lg={8} md={8} sm={24} xs={24}>
                             <div className="SocialLinkstAndAdress">
                                 <div>
                                     <h3>Quick Links</h3>
@@ -65,6 +55,19 @@ const Footer = () => {
                                 <div>
 
                                 </div>
+                            </div>
+                        </Col>
+                        <Col lg={8} md={8} sm={24} xs={24}>
+                            <div className="SocialMediaContainer">
+                                <ul>
+                                    {SocialMediaData.map((item, index) => (
+                                        <li key={index}>
+                                            <Link to={item.link} target="_blank" rel="noopener noreferrer">
+                                                {item.icon} {item.name}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </Col>
                     </Row>

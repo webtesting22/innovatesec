@@ -1,5 +1,5 @@
 import { Row, Col } from 'antd';
-
+import { Link } from 'react-router-dom';
 const ServicesData = [
     {
         id: 1,
@@ -43,6 +43,13 @@ const ServicesData = [
             </div>
             <br /><br />
             <p>Partner with Innovate Securities for all your equity and derivatives trading needs and take the next step in your investment journey with us!</p>
+            <br />
+            <div className='BtnContainer'>
+                <Link to="https://bo.innovatesec.com/Account/Login" target='_blank'>
+                    <button>Equity and Derivatives</button>
+                </Link>
+            </div>
+
         </>,
     },
 
@@ -58,47 +65,52 @@ const ServicesData = [
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Types of Mutual Funds</h3>
                 <div className='centerContainer'>
-                <Row gutter={[20, 20]}>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📈</div>
-                            <h3>Equity Funds</h3>
-                            <p>Focused on long-term capital growth through investment in stocks. These funds are ideal for investors seeking higher returns over extended periods and are willing to accept market volatility for potential growth opportunities.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🛡️</div>
-                            <h3>Debt Funds</h3>
-                            <p>Offer stable returns with lower risk by investing in bonds and fixed-income securities. Perfect for conservative investors looking for regular income with capital preservation and lower volatility compared to equity markets.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">⚖️</div>
-                            <h3>Hybrid Funds</h3>
-                            <p>A mix of equity and debt, balancing risk and return for diversified growth. These funds provide the best of both worlds - growth potential from equities and stability from debt instruments, making them suitable for moderate risk-takers.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🎯</div>
-                            <h3>Sectoral/Thematic Funds</h3>
-                            <p>Target specific industries or sectors for specialized investment strategies. These funds allow investors to capitalize on growth opportunities in particular sectors like technology, healthcare, or infrastructure, offering focused exposure to emerging trends.</p>
-                        </div>
-                    </Col>
-                    <Col lg={24} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">💰</div>
-                            <h3>Tax-Saving Funds (ELSS)</h3>
-                            <p>Equity funds offering tax benefits under Section 80C of the Income Tax Act. These funds not only help you save taxes but also provide the potential for wealth creation through equity investments, with a lock-in period of 3 years for tax benefits.</p>
-                        </div>
-                    </Col>
-                </Row>
+                    <Row gutter={[20, 20]}>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📈</div>
+                                <h3>Equity Funds</h3>
+                                <p>Focused on long-term capital growth through investment in stocks. These funds are ideal for investors seeking higher returns over extended periods and are willing to accept market volatility for potential growth opportunities.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">🛡️</div>
+                                <h3>Debt Funds</h3>
+                                <p>Offer stable returns with lower risk by investing in bonds and fixed-income securities. Perfect for conservative investors looking for regular income with capital preservation and lower volatility compared to equity markets.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">⚖️</div>
+                                <h3>Hybrid Funds</h3>
+                                <p>A mix of equity and debt, balancing risk and return for diversified growth. These funds provide the best of both worlds - growth potential from equities and stability from debt instruments, making them suitable for moderate risk-takers.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">🎯</div>
+                                <h3>Sectoral/Thematic Funds</h3>
+                                <p>Target specific industries or sectors for specialized investment strategies. These funds allow investors to capitalize on growth opportunities in particular sectors like technology, healthcare, or infrastructure, offering focused exposure to emerging trends.</p>
+                            </div>
+                        </Col>
+                        <Col lg={24} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">💰</div>
+                                <h3>Tax-Saving Funds (ELSS)</h3>
+                                <p>Equity funds offering tax benefits under Section 80C of the Income Tax Act. These funds not only help you save taxes but also provide the potential for wealth creation through equity investments, with a lock-in period of 3 years for tax benefits.</p>
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
             </div>
             <br /><br />
             <p>Partner with Innovate Securities for expert mutual fund guidance and build a diversified portfolio that aligns with your financial objectives. Our experienced advisors help you navigate the complex world of mutual funds to achieve your investment goals.</p>
+            <div className='BtnContainer'>
+                <Link to="https://wealthelite.in/client-login" target='_blank'>
+                    <button>Mutual Funds and Bonds</button>
+                </Link>
+            </div>
         </>,
     },
     {
@@ -161,9 +173,14 @@ const ServicesData = [
             </div>
             <br /><br />
             <p>Experience the future of depository services with Innovate Securities, where technology and customer focus empower your financial journey. Partner with us for secure, efficient, and transparent depository solutions.</p>
+            <div className='BtnContainer'>
+                <Link to="https://evoting.cdslindia.com/Evoting/EvotingLogin" target='_blank'>
+                    <button>Depository Services</button>
+                </Link>
+            </div>
         </>,
     },
-    
+
     {
         id: 4,
         title: "NCD",
@@ -177,85 +194,85 @@ const ServicesData = [
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Understanding NCD Investments</h3>
                 <div className='centerContainer'>
-                <Row gutter={[20, 20]}>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📜</div>
-                            <h3>What are NCDs?</h3>
-                            <p>Non-Convertible Debentures are fixed-income instruments issued by companies to raise capital. Unlike convertible debentures, NCDs cannot be converted into equity shares, providing predictable returns with fixed interest payments and maturity dates.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">💰</div>
-                            <h3>High-Yield Returns</h3>
-                            <p>NCDs typically offer higher interest rates compared to traditional fixed deposits and government securities. Our curated selection of NCDs from top-rated companies provides attractive returns while maintaining strong credit quality.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🛡️</div>
-                            <h3>Lower Risk Profile</h3>
-                            <p>NCDs from well-rated companies provide a balance of security and yield. We carefully select NCDs from companies with strong credit ratings, ensuring your investments are backed by financially sound institutions.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📊</div>
-                            <h3>Regular Income</h3>
-                            <p>NCDs provide regular interest payments at predetermined intervals, making them ideal for investors seeking steady income. Choose from various payout frequencies to match your cash flow requirements.</p>
-                        </div>
-                    </Col>
-                    <Col lg={24} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🎯</div>
-                            <h3>Portfolio Diversification</h3>
-                            <p>NCDs help diversify your investment portfolio by adding fixed-income instruments with different risk profiles and maturity periods. Our expert advisors help you build a balanced portfolio that aligns with your financial objectives.</p>
-                        </div>
-                    </Col>
-                </Row>
+                    <Row gutter={[20, 20]}>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📜</div>
+                                <h3>What are NCDs?</h3>
+                                <p>Non-Convertible Debentures are fixed-income instruments issued by companies to raise capital. Unlike convertible debentures, NCDs cannot be converted into equity shares, providing predictable returns with fixed interest payments and maturity dates.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">💰</div>
+                                <h3>High-Yield Returns</h3>
+                                <p>NCDs typically offer higher interest rates compared to traditional fixed deposits and government securities. Our curated selection of NCDs from top-rated companies provides attractive returns while maintaining strong credit quality.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">🛡️</div>
+                                <h3>Lower Risk Profile</h3>
+                                <p>NCDs from well-rated companies provide a balance of security and yield. We carefully select NCDs from companies with strong credit ratings, ensuring your investments are backed by financially sound institutions.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📊</div>
+                                <h3>Regular Income</h3>
+                                <p>NCDs provide regular interest payments at predetermined intervals, making them ideal for investors seeking steady income. Choose from various payout frequencies to match your cash flow requirements.</p>
+                            </div>
+                        </Col>
+                        <Col lg={24} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">🎯</div>
+                                <h3>Portfolio Diversification</h3>
+                                <p>NCDs help diversify your investment portfolio by adding fixed-income instruments with different risk profiles and maturity periods. Our expert advisors help you build a balanced portfolio that aligns with your financial objectives.</p>
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
             </div>
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Why Choose Innovate Securities for NCD Investments?</h3>
                 <div className='centerContainer'>
                     <Row gutter={[20, 20]}>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📈</div>
-                            <h3>Attractive Returns</h3>
-                            <p>Access to high-yield NCDs from trusted companies. Our carefully curated selection of NCDs offers competitive interest rates that help maximize your investment returns while maintaining strong credit quality.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">👨‍💼</div>
-                            <h3>Expert Guidance</h3>
-                            <p>Personalized NCD recommendations to align with your financial strategy. Our experienced advisors analyze your goals, risk tolerance, and investment horizon to recommend the most suitable NCD investments.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🌐</div>
-                            <h3>Diversified Portfolio</h3>
-                            <p>Enhance your portfolio with reliable, fixed-income investments. NCDs help create a well-balanced investment portfolio by combining different types of fixed-income instruments with varying risk profiles.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📱</div>
-                            <h3>Effortless Management</h3>
-                            <p>Real-time data and transparency for easy tracking and decision-making. Our digital platform provides instant access to your NCD portfolio, performance metrics, and transaction history for seamless management.</p>
-                        </div>
-                    </Col>
-                    <Col lg={24} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🤝</div>
-                            <h3>Trusted Service</h3>
-                            <p>Over three decades of experience in delivering client-centric financial solutions. With our proven track record and commitment to excellence, Innovate Securities has built a reputation for reliable, transparent, and professional NCD investment services.</p>
-                        </div>
-                    </Col>
-                </Row>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📈</div>
+                                <h3>Attractive Returns</h3>
+                                <p>Access to high-yield NCDs from trusted companies. Our carefully curated selection of NCDs offers competitive interest rates that help maximize your investment returns while maintaining strong credit quality.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">👨‍💼</div>
+                                <h3>Expert Guidance</h3>
+                                <p>Personalized NCD recommendations to align with your financial strategy. Our experienced advisors analyze your goals, risk tolerance, and investment horizon to recommend the most suitable NCD investments.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">🌐</div>
+                                <h3>Diversified Portfolio</h3>
+                                <p>Enhance your portfolio with reliable, fixed-income investments. NCDs help create a well-balanced investment portfolio by combining different types of fixed-income instruments with varying risk profiles.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📱</div>
+                                <h3>Effortless Management</h3>
+                                <p>Real-time data and transparency for easy tracking and decision-making. Our digital platform provides instant access to your NCD portfolio, performance metrics, and transaction history for seamless management.</p>
+                            </div>
+                        </Col>
+                        <Col lg={24} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">🤝</div>
+                                <h3>Trusted Service</h3>
+                                <p>Over three decades of experience in delivering client-centric financial solutions. With our proven track record and commitment to excellence, Innovate Securities has built a reputation for reliable, transparent, and professional NCD investment services.</p>
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
             </div>
             <br /><br />
@@ -276,77 +293,77 @@ const ServicesData = [
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Features of Corporate Fixed Deposits</h3>
                 <div className='centerContainer'>
                     <Row gutter={[20, 20]}>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">💰</div>
-                            <h3>Higher Interest Rates</h3>
-                            <p>Corporate FDs often provide better returns than traditional bank deposits. Our curated selection of top-rated corporate FDs offers competitive interest rates that help maximize your investment returns while maintaining security.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📅</div>
-                            <h3>Flexible Tenure</h3>
-                            <p>Choose from a wide range of maturity periods, typically from 1 to 5 years. Our flexible tenure options allow you to align your investment with your specific financial goals and cash flow requirements.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">⭐</div>
-                            <h3>Credit Rating</h3>
-                            <p>FDs from well-rated companies provide a balance of security and yield. We carefully select corporate FDs from companies with strong credit ratings, ensuring your investments are backed by financially sound institutions.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📊</div>
-                            <h3>Periodic Interest Payouts</h3>
-                            <p>Options for monthly, quarterly, or annual interest payments to suit cash flow needs. Choose the payout frequency that best matches your income requirements and financial planning objectives.</p>
-                        </div>
-                    </Col>
-                    <Col lg={24} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🔄</div>
-                            <h3>Premature Withdrawal</h3>
-                            <p>Allows early withdrawal with applicable penalties, offering liquidity in times of need. While we encourage holding deposits until maturity for optimal returns, our corporate FDs provide the flexibility to withdraw funds when necessary, subject to terms and conditions.</p>
-                        </div>
-                    </Col>
-                </Row>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">💰</div>
+                                <h3>Higher Interest Rates</h3>
+                                <p>Corporate FDs often provide better returns than traditional bank deposits. Our curated selection of top-rated corporate FDs offers competitive interest rates that help maximize your investment returns while maintaining security.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📅</div>
+                                <h3>Flexible Tenure</h3>
+                                <p>Choose from a wide range of maturity periods, typically from 1 to 5 years. Our flexible tenure options allow you to align your investment with your specific financial goals and cash flow requirements.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">⭐</div>
+                                <h3>Credit Rating</h3>
+                                <p>FDs from well-rated companies provide a balance of security and yield. We carefully select corporate FDs from companies with strong credit ratings, ensuring your investments are backed by financially sound institutions.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📊</div>
+                                <h3>Periodic Interest Payouts</h3>
+                                <p>Options for monthly, quarterly, or annual interest payments to suit cash flow needs. Choose the payout frequency that best matches your income requirements and financial planning objectives.</p>
+                            </div>
+                        </Col>
+                        <Col lg={24} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">🔄</div>
+                                <h3>Premature Withdrawal</h3>
+                                <p>Allows early withdrawal with applicable penalties, offering liquidity in times of need. While we encourage holding deposits until maturity for optimal returns, our corporate FDs provide the flexibility to withdraw funds when necessary, subject to terms and conditions.</p>
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
             </div>
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Why Choose Our Corporate FD Services?</h3>
                 <div className='centerContainer'>
                     <Row gutter={[20, 20]}>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🎯</div>
-                            <h3>Curated Selection</h3>
-                            <p>We carefully select corporate FDs from top-rated companies across various sectors, ensuring you have access to the best investment opportunities with optimal risk-reward profiles.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📱</div>
-                            <h3>Digital Platform</h3>
-                            <p>Our intuitive online platform provides real-time access to your FD portfolio, automated interest tracking, and seamless transaction management for a hassle-free investment experience.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">👨‍💼</div>
-                            <h3>Expert Guidance</h3>
-                            <p>Our experienced advisors help you select the most suitable corporate FDs based on your financial goals, risk tolerance, and investment horizon, ensuring optimal portfolio performance.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📈</div>
-                            <h3>Portfolio Diversification</h3>
-                            <p>Build a diversified investment portfolio by combining corporate FDs with other investment instruments, creating a balanced approach to wealth creation and income generation.</p>
-                        </div>
-                    </Col>
-                </Row>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">🎯</div>
+                                <h3>Curated Selection</h3>
+                                <p>We carefully select corporate FDs from top-rated companies across various sectors, ensuring you have access to the best investment opportunities with optimal risk-reward profiles.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📱</div>
+                                <h3>Digital Platform</h3>
+                                <p>Our intuitive online platform provides real-time access to your FD portfolio, automated interest tracking, and seamless transaction management for a hassle-free investment experience.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">👨‍💼</div>
+                                <h3>Expert Guidance</h3>
+                                <p>Our experienced advisors help you select the most suitable corporate FDs based on your financial goals, risk tolerance, and investment horizon, ensuring optimal portfolio performance.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📈</div>
+                                <h3>Portfolio Diversification</h3>
+                                <p>Build a diversified investment portfolio by combining corporate FDs with other investment instruments, creating a balanced approach to wealth creation and income generation.</p>
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
             </div>
             <br /><br />
@@ -416,46 +433,51 @@ const ServicesData = [
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Why Choose Innovate Securities for IPO Submissions?</h3>
                 <div className='centerContainer'>
                     <Row gutter={[20, 20]}>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🎯</div>
-                            <h3>Accuracy & Efficiency</h3>
-                            <p>Our streamlined processes ensure accurate form completion and efficient submission, minimizing the risk of application rejections and maximizing your chances of successful IPO participation.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">⚡</div>
-                            <h3>Quick Processing</h3>
-                            <p>Experience fast and reliable IPO application processing with our advanced technology solutions. Our systems ensure timely submissions and real-time status updates throughout the process.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🛡️</div>
-                            <h3>Secure Transactions</h3>
-                            <p>Your IPO applications and financial transactions are protected with bank-grade security protocols. We ensure complete data protection and secure payment processing for all your IPO investments.</p>
-                        </div>
-                    </Col>
-                    <Col lg={12} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">📈</div>
-                            <h3>Success Track Record</h3>
-                            <p>Benefit from our proven track record in IPO submissions and successful allotments. Our expertise helps you navigate the complex IPO landscape and make informed investment decisions.</p>
-                        </div>
-                    </Col>
-                    <Col lg={24} xs={24}>
-                        <div className="FeatureCard">
-                            <div className="FeatureIcon">🤝</div>
-                            <h3>Personalized Support</h3>
-                            <p>Receive dedicated support throughout your IPO journey, from initial research to successful allotment. Our team is committed to providing personalized assistance and ensuring a smooth IPO experience for every investor.</p>
-                        </div>
-                    </Col>
-                </Row>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">🎯</div>
+                                <h3>Accuracy & Efficiency</h3>
+                                <p>Our streamlined processes ensure accurate form completion and efficient submission, minimizing the risk of application rejections and maximizing your chances of successful IPO participation.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">⚡</div>
+                                <h3>Quick Processing</h3>
+                                <p>Experience fast and reliable IPO application processing with our advanced technology solutions. Our systems ensure timely submissions and real-time status updates throughout the process.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">🛡️</div>
+                                <h3>Secure Transactions</h3>
+                                <p>Your IPO applications and financial transactions are protected with bank-grade security protocols. We ensure complete data protection and secure payment processing for all your IPO investments.</p>
+                            </div>
+                        </Col>
+                        <Col lg={12} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">📈</div>
+                                <h3>Success Track Record</h3>
+                                <p>Benefit from our proven track record in IPO submissions and successful allotments. Our expertise helps you navigate the complex IPO landscape and make informed investment decisions.</p>
+                            </div>
+                        </Col>
+                        <Col lg={24} xs={24}>
+                            <div className="FeatureCard">
+                                <div className="FeatureIcon">🤝</div>
+                                <h3>Personalized Support</h3>
+                                <p>Receive dedicated support throughout your IPO journey, from initial research to successful allotment. Our team is committed to providing personalized assistance and ensuring a smooth IPO experience for every investor.</p>
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
             </div>
             <br /><br />
             <p>Partner with Innovate Securities for expert IPO submission services and capitalize on exciting investment opportunities in the primary market. Our comprehensive IPO services ensure you can participate in Initial Public Offerings with confidence and ease.</p>
+            <div className='BtnContainer'>
+                <Link to="https://ipo.innovatesec.com/" target='_blank'>
+                    <button>IPO Submission Services</button>
+                </Link>
+            </div>
         </>,
     },
 

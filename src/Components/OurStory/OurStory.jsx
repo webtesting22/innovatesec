@@ -69,7 +69,7 @@ const OurStory = () => {
                                         <div className="StorySection">
                                             <div className="StoryParagraph">
                                                 <p>
-                                                    The journey of <strong>Innovate Securities Pvt. Ltd.</strong> began in 1986, when <strong>Bhushan Shah</strong>, along with <strong>Piyush Parikh</strong> and <strong>Amar Parikh</strong>, started out as <strong>AMPI Investments</strong> as a proprietor firm. They began their broking business with the <strong>Bombay Stock Exchange</strong> at a time when not many people worked with BSE, operating as a Sub Broker. This marked the foundation of what would become a trusted name in the financial sector.
+                                                    The journey of <strong>Innovate Securities Pvt. Ltd.</strong> began in 1986, when <strong>Bhushan Shah</strong>, along with <strong>Piyush Parikh</strong> and <strong>Amar Parikh</strong>, started out as <strong>AMPI Investments</strong> as a proprietor firm. They began their broking business operating as a Sub Broker. This marked the foundation of what would become a trusted name in the financial sector.
                                                 </p>
                                             </div>
 
@@ -97,7 +97,7 @@ const OurStory = () => {
                                         <div className="TimelineYear">1986</div>
                                         <div className="TimelineContent">
                                             <h3>The Foundation</h3>
-                                            <p>Bhushan Shah, along with Piyush Parikh & Amar Parikh started out as AMPI Investments as a proprietor firm. Started broking business with BSE. Worked as a Sub Broker.</p>
+                                            <p>Bhushan Shah, along with Piyush Parikh & Amar Parikh started out as AMPI Investments as a proprietor firm. Started broking business. Worked as a Sub Broker.</p>
                                         </div>
                                     </div>
 
@@ -158,8 +158,8 @@ const OurStory = () => {
                                     <div className="TimelineItem">
                                         <div className="TimelineYear">2025</div>
                                         <div className="TimelineContent">
-                                            <h3>Innovate Upgrade 2.0</h3>
-                                            <p>Launched our revolutionary mobile app and digital platform, introducing cutting-edge features designed for the new generation of investors. Our app brings seamless trading, real-time portfolio tracking, and AI-powered investment insights to your fingertips, revolutionizing how you manage your financial future.</p>
+                                            <h3>Innovate is Innovating</h3>
+                                            <p>Continuing our legacy of innovation, we're constantly evolving to meet the changing needs of modern investors. Through cutting-edge technology, personalized service, and forward-thinking strategies, we're not just keeping pace with the industry—we're setting new standards and redefining what it means to be a trusted financial partner in the digital age.</p>
                                         </div>
                                     </div>
                                     <div className="TimelineItem">

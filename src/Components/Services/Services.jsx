@@ -60,7 +60,7 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <h2 className="text-center">Get The Professional Financial Services You Need To Grow And Succeed</h2>
+                        <h2 className="text-center">Professional Financial Services for Your Success</h2>
                     </div>
 
                     <div className="marginTop ServicesBannerImage">
@@ -70,10 +70,10 @@ const Services = () => {
                     </div>
 
                     <div className="services-cards-container centerContainer">
-                        <Row  gutter={[24, 24]} className="services-cards-row">
+                        <Row gutter={[24, 24]} className="services-cards-row">
                             {ServicesData.map((service, index) => (
                                 <Col lg={8} md={12} xs={24} key={service.id}>
-                                    <div 
+                                    <div
                                         className={`service-card ${isVisible ? 'card-visible' : ''}`}
                                         style={{ animationDelay: `${index * 0.1}s` }}
                                         onMouseEnter={() => setHoveredCard(index)}
@@ -93,24 +93,24 @@ const Services = () => {
                                                 </div>
                                             </div>
                                         </div> */}
-                                        
+
                                         <div className="card-content">
                                             <div className="service-icon">
-                                                <img 
-                                                    src={service.iconImage} 
+                                                <img
+                                                    src={service.iconImage}
                                                     alt={`${service.title} icon`}
                                                     className="icon-image"
                                                 />
                                             </div>
-                                            
+
                                             <h3 className="service-title">{service.title}</h3>
-                                            
+
                                             <p className="service-description">
                                                 {service.servicesCardText}
                                             </p>
-                                            
+
                                             <div className="card-footer">
-                                                <button 
+                                                <button
                                                     className="view-details-btn"
                                                     onClick={(e) => {
                                                         e.stopPropagation();

@@ -215,9 +215,9 @@
 
 
 .ServicesBannerImage>div {
-    min-height: 500px;
+    min-height: 400px;
     overflow: hidden;
-    max-height: 600px;
+    max-height: 400px;
     display: flex;
     align-items: end;
 }

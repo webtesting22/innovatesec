@@ -374,6 +374,12 @@
     transform: translateY(-2px);
 }
 
+.FlexContaienerservices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .ServiceTitle {
@@ -386,6 +392,15 @@
 }
 
 @media (max-width: 768px) {
+    .FlexContaienerservices {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
     .ServiceTitle {
         font-size: 32px;
     }

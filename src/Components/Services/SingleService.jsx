@@ -3,7 +3,7 @@ import { useParams, useLocation, useNavigate } from "react-router-dom";
 import { Row, Col } from "antd";
 import ServicesData from "./ServicesData";
 import "./SingleService.css";
-
+import { Link } from "react-router-dom";
 const SingleService = () => {
     const { serviceName } = useParams();
     const location = useLocation();
@@ -89,30 +89,38 @@ const SingleService = () => {
 
                     {/* Service Content */}
                     <div className="centerContainer">
-                    <Row gutter={[40, 40]} className="ServiceContentRow">
-                        <Col lg={16} xs={24}>
-                            <div className="ServiceMainContent">
-                                <div className={`ServiceHeroImage LayerImage ${isVisible ? 'reveal-image' : ''}`}>
-                                    <img
-                                        src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CommonService.jpg"
-                                        alt={`${service.title} - Innovate Securities`}
-                                    />
-                                </div>
-
-                                <div className="ServiceDescription">
-                                    <h2>Service Overview</h2>
-                                    <div className="service-description-content marginTop" >
-                                        {service.description}
+                        <Row gutter={[40, 40]} className="ServiceContentRow">
+                            <Col lg={16} xs={24}>
+                                <div className="ServiceMainContent">
+                                    <div className={`ServiceHeroImage LayerImage ${isVisible ? 'reveal-image' : ''}`}>
+                                        <img
+                                            src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CommonService.jpg"
+                                            alt={`${service.title} - Innovate Securities`}
+                                        />
                                     </div>
+
+                                    <div className="ServiceDescription">
+                                        <div className="FlexContaienerservices">
+                                            <h2>Service Overview</h2>
+                                            <div className='BtnContainer'>
+                                                <Link to={service.buttonLink} target='_blank'>
+                                                    <button>{service.buttonText}</button>
+                                                </Link>
+                                            </div>
+                                        </div>
+
+                                        <div className="service-description-content marginTop" >
+                                            {service.description}
+                                        </div>
+                                    </div>
+
+
                                 </div>
+                            </Col>
 
-
-                            </div>
-                        </Col>
-
-                        <Col lg={8} xs={24}>
-                            <div className="ServiceSidebar">
-                                {/* <div className="ServiceCard">
+                            <Col lg={8} xs={24}>
+                                <div className="ServiceSidebar">
+                                    {/* <div className="ServiceCard">
                                     <h3>Get Started Today</h3>
                                     <p>Ready to begin your investment journey? Our experts are here to help you make informed decisions.</p>
                                     <button className="ContactButton">Contact Our Experts</button>
@@ -134,41 +142,41 @@ const SingleService = () => {
                                     </div>
                                 </div> */}
 
-                                <div className="OtherServices">
-                                    <h3>Explore Other Services</h3>
-                                    <div className="OtherServicesList">
-                                        {ServicesData.filter(s => s.id !== service.id).map((otherService) => {
-                                            const serviceSlug = otherService.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-                                            return (
-                                                <div key={otherService.id} className="OtherServiceItem">
-                                                    <div className="OtherServiceImage">
-                                                        <img
-                                                            src={otherService.iconImage}
-                                                            alt={`${otherService.title} - Innovate Securities`}
-                                                        />
-                                                    </div>
-                                                    <div className="OtherServiceContent BtnContainer">
-                                                        <div>
-                                                            <h4>{otherService.title}</h4>
-                                                            <p>{otherService.servicesCardText}</p>
-                                                            <button
-                                                                onClick={() => {
-                                                                    navigate(`/services/${serviceSlug}`);
-                                                                    window.scrollTo(0, 0);
-                                                                }}
-                                                            >
-                                                                View Details
-                                                            </button>
+                                    <div className="OtherServices">
+                                        <h3>Explore Other Services</h3>
+                                        <div className="OtherServicesList">
+                                            {ServicesData.filter(s => s.id !== service.id).map((otherService) => {
+                                                const serviceSlug = otherService.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                                                return (
+                                                    <div key={otherService.id} className="OtherServiceItem">
+                                                        <div className="OtherServiceImage">
+                                                            <img
+                                                                src={otherService.iconImage}
+                                                                alt={`${otherService.title} - Innovate Securities`}
+                                                            />
+                                                        </div>
+                                                        <div className="OtherServiceContent BtnContainer">
+                                                            <div>
+                                                                <h4>{otherService.title}</h4>
+                                                                <p>{otherService.servicesCardText}</p>
+                                                                <button
+                                                                    onClick={() => {
+                                                                        navigate(`/services/${serviceSlug}`);
+                                                                        window.scrollTo(0, 0);
+                                                                    }}
+                                                                >
+                                                                    View Details
+                                                                </button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            );
-                                        })}
+                                                );
+                                            })}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </Col>
-                    </Row>
+                            </Col>
+                        </Row>
                     </div>
                 </div>
             </div>

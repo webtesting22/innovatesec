@@ -7,6 +7,8 @@ const ServicesData = [
         iconImage: "/Image/ServicesIcons/equity-market.png",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/EQUITY MARKET AND DERIVATIVES-min.jpg",
         servicesCardText: "At Innovate Securities, we offer efficient and reliable broking services for the Equity Market, enabling seamless buying and selling of shares across NSE and BSE",
+        buttonLink: "https://bo.innovatesec.com/Account/Login",
+        buttonText: "Equity and Derivatives",
         description: <>
             <p><b>Equity Market Overview</b></p>
             <p>At Innovate Securities, we specialize in providing efficient broking services in the equity market, facilitating the buying and selling of shares on the NSE and BSE. Our streamlined processes ensure that your trades are executed swiftly and reliably.</p>
@@ -44,11 +46,7 @@ const ServicesData = [
             <br /><br />
             <p>Partner with Innovate Securities for all your equity and derivatives trading needs and take the next step in your investment journey with us!</p>
             <br />
-            <div className='BtnContainer'>
-                <Link to="https://bo.innovatesec.com/Account/Login" target='_blank'>
-                    <button>Equity and Derivatives</button>
-                </Link>
-            </div>
+            
 
         </>,
     },
@@ -58,6 +56,8 @@ const ServicesData = [
         title: "⁠⁠Mutual Funds and Bonds",
         iconImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Mutual Funds.png",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MutualFunds-min.jpg",
+        buttonLink: "https://wealthelite.in/client-login",
+        buttonText: "Mutual Funds and Bonds",
         servicesCardText: "Access diversified investment portfolios managed by experienced fund managers across equity, debt, hybrid, and sectoral funds.",
         description: <>
             <p><b>Mutual Fund Distribution Services – Innovate Securities</b></p>
@@ -106,11 +106,7 @@ const ServicesData = [
             </div>
             <br /><br />
             <p>Partner with Innovate Securities for expert mutual fund guidance and build a diversified portfolio that aligns with your financial objectives. Our experienced advisors help you navigate the complex world of mutual funds to achieve your investment goals.</p>
-            <div className='BtnContainer'>
-                <Link to="https://wealthelite.in/client-login" target='_blank'>
-                    <button>Mutual Funds and Bonds</button>
-                </Link>
-            </div>
+
         </>,
     },
     {
@@ -119,6 +115,8 @@ const ServicesData = [
         iconImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Depository Services.png",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DEPOSITORY SERVICES-min.jpg",
         servicesCardText: "We offer secure and efficient depository services as an authorized participant with Central Depository Services Limited (CDSL). Our services include:",
+        buttonLink: "https://evoting.cdslindia.com/Evoting/EvotingLogin",
+        buttonText: "Depository Services",
         description: <>
             <p><b>Innovate Securities: Your Trusted CDSL Depository Participant</b></p>
             <p>We offer secure and efficient depository services as an authorized participant with Central Depository Services Limited (CDSL). Our comprehensive depository solutions ensure your securities are safely managed with complete transparency and seamless processing.</p>
@@ -173,11 +171,6 @@ const ServicesData = [
             </div>
             <br /><br />
             <p>Experience the future of depository services with Innovate Securities, where technology and customer focus empower your financial journey. Partner with us for secure, efficient, and transparent depository solutions.</p>
-            <div className='BtnContainer'>
-                <Link to="https://evoting.cdslindia.com/Evoting/EvotingLogin" target='_blank'>
-                    <button>Depository Services</button>
-                </Link>
-            </div>
         </>,
     },
 
@@ -376,6 +369,8 @@ const ServicesData = [
         iconImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/IPO Submission.png",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/IPO SUBMISSION SERVICES.jpg",
         servicesCardText: "Apply for Initial Public Offerings with expert guidance and market insights for informed investment decisions.",
+        buttonLink: "https://ipo.innovatesec.com/",
+        buttonText: "IPO Submission Services",
         description: <>
             <p><b>IPO Submission Services – Innovate Securities Pvt. Ltd. (ISPL)</b></p>
             <p>At Innovate Securities, we provide tailored IPO Submission Services designed to simplify the process for investors. Our comprehensive IPO services ensure that you can participate in Initial Public Offerings with confidence, backed by our expertise and advanced technology solutions.</p>
@@ -473,11 +468,6 @@ const ServicesData = [
             </div>
             <br /><br />
             <p>Partner with Innovate Securities for expert IPO submission services and capitalize on exciting investment opportunities in the primary market. Our comprehensive IPO services ensure you can participate in Initial Public Offerings with confidence and ease.</p>
-            <div className='BtnContainer'>
-                <Link to="https://ipo.innovatesec.com/" target='_blank'>
-                    <button>IPO Submission Services</button>
-                </Link>
-            </div>
         </>,
     },
 

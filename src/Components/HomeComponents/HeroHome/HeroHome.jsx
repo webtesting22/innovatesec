@@ -2,6 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 import "./HeroHome.css"
 import AnimatedBannerImage from "/Image/Financial Growth.jpg"
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+// import required modules
+import { Pagination, Autoplay } from 'swiper/modules';
 
 const HeroHome = () => {
     const [videoWidth, setVideoWidth] = useState(40);
@@ -125,6 +132,30 @@ const HeroHome = () => {
         setShowButton(false);
     };
 
+    const SwiperData = [
+        {
+            title: "ISPL is do PRO Trading"
+        },
+        {
+            title: "Pay 20% upfront margin of the transaction value to trade in cash market segment"
+        },
+        {
+            title: "No need to issue cheques by investors while subscribing to IPO. Just write the bank account number and sign in the application form to authorize your bank to make payment in case of allotment. No worries for refund as the money remains in investor's accou"
+        },
+        {
+            title: "Prevent Unauthorised transactions in your account. Update your mobile numbers/email IDs with your stock brokers/Dp Participant. Receive information of your transactions directly from Exchange/DP on your mobile/email at the end of the day."
+        },
+        {
+            title: "Stock Brokers can accept securities as margin from clients only by way of pledge in the depository system w.e.f. September 1, 2020"
+        },
+        {
+            title: "Client Bank Account Details"
+        },
+        {
+            title: "The new client login is available at https://bo.innovatesec.com. Username is your Trading Code and Password is your PAN Number."
+        },
+    ]
+
     return (
         <div ref={sectionRef}>
             <div className="MainContainer">
@@ -193,7 +224,45 @@ const HeroHome = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className="VerticalSwiperContainer paddingSide PcContainerOnly">
+                                <Swiper
+                                    direction={'vertical'}
+                                    spaceBetween={0}
+                                    slidesPerView={1}
+                                    loop={true}
+                                    speed={800}
+                                    // autoplay={{
+                                    //     delay: 3000,
+                                    //     disableOnInteraction: false,
+                                    // }}
+                                    modules={[Pagination, Autoplay]}
+                                    className="mySwiper"
+                                >
+                                    {
+                                        SwiperData.map((item, index) => {
+                                            return <SwiperSlide key={index}><div className="ContentContainerInThisSWiper">
+                                                <h3> {item.title}</h3></div></SwiperSlide>
+                                        })
+                                    }
+                                </Swiper>
+                            </div>
+                            <div className="MobileContainerOnly">
+                                <marquee behavior="scroll" direction="up" scrollamount="5" height="180" loop="-1">
+                                    {SwiperData.map((item, index) => {
+                                        return <div key={index} className="MarqueeItem">
+                                            <p>{item.title}</p>
+                                        </div>
+                                    })}
+                                    {/* Duplicate content for seamless loop */}
+                                    {SwiperData.map((item, index) => {
+                                        return <div key={`duplicate-${index}`} className="MarqueeItem">
+                                            <p>{item.title}</p>
+                                        </div>
+                                    })}
+                                </marquee>
+                            </div>
                         </div>
+
                         {/* <div
                             className="RightSideVideoContainer"
                             style={{ width: `${videoWidth}%` }}

@@ -27,6 +27,13 @@
     z-index: 1;
 }
 
+.InvestorChartersCardLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
 .TitleContainer {
     position: absolute;
     bottom: 20px;

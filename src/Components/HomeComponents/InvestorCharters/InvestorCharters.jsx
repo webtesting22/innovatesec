@@ -7,13 +7,13 @@ const InvestorCharters = () => {
         {
             id: 1,
             title: "Investor Charter for Stock Brokers",
-            pdfLink: "Investor Charters",
+            pdfLink: "/Image/InvestorCharter/investor_charter_for_stock_brokers.pdf",
             image: "https://images.unsplash.com/photo-1723158597314-4760daf1aaae?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
             id: 2,
             title: "Investor Charter for Depositories and Depository Participants - August 2025",
-            pdfLink: "Investor Charters",
+            pdfLink: "/Image/InvestorCharter/investor_charter_august_2025.pdf",
             image: "https://images.unsplash.com/photo-1723158597314-4760daf1aaae?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
     ]
@@ -39,12 +39,19 @@ const InvestorCharters = () => {
                         <Row gutter={[16, 16]} className="w-100">
                             {investorChartersData.map((item) => (
                                 <Col key={item.id} lg={12} md={12} xs={24}>
-                                    <div className="InvestorChartersCard">
-                                        <img src={item.image} alt={item.title} />
-                                        <div className="TitleContainer">
-                                            <h3 className="white">{item.title}</h3>
+                                    <a 
+                                        href={item.pdfLink} 
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                        className="InvestorChartersCardLink"
+                                    >
+                                        <div className="InvestorChartersCard">
+                                            <img src={item.image} alt={item.title} />
+                                            <div className="TitleContainer">
+                                                <h3 className="white">{item.title}</h3>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </Col>
                             ))}
                         </Row>

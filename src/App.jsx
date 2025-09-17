@@ -14,7 +14,8 @@ import SingleService from './Components/Services/SingleService'
 import Modal from './Components/Modal/Modal'
 import Directors from './Components/Directors/Directors'
 import OnlineDesk from './Components/OnlineDesk/OnlineDesk'
-  function App() {
+import CompliancesAndForms from './Components/HomeComponents/CompliancesAndForms/CompliancesAndForms'
+function App() {
   const [count, setCount] = useState(0)
 
   // Initialize global animations
@@ -37,6 +38,7 @@ import OnlineDesk from './Components/OnlineDesk/OnlineDesk'
           <Route path='/services/:serviceName' element={<SingleService />} />
           <Route path='/directors' element={<Directors />} />
           <Route path='/online-desk' element={<OnlineDesk />} />
+          <Route path='/compliances-and-forms' element={<CompliancesAndForms />} />
         </Routes>
         <NewsLetters />
         <Footer />

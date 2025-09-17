@@ -179,13 +179,12 @@ const Navbar = () => {
                     ))}
                     <div className="BtnContainer">
                         <Link to="tel:9825032653">
-                        <button
-                            type="primary"
-                            style={{ width: "100%", textAlign: "center", margin: "auto", justifyContent: "center" }}
-
-                        >
-                            Contact Us
-                        </button>
+                            <button
+                                type="primary"
+                                style={{ width: "100%", textAlign: "center", margin: "auto", justifyContent: "center" }}
+                            >
+                                Contact Us
+                            </button>
                         </Link>
                     </div>
                 </div>
@@ -197,7 +196,7 @@ const Navbar = () => {
         <div className={`NavigationbarContainer ${isVisible ? 'nav-visible' : 'nav-hidden'} ${hasScrolled ? 'nav-scrolled' : ''}`}>
             <div className="MainContainer">
                 <div className="Container">
-                    <div className="paddingSide">
+                    <div>
                         <div className="NavigationContainer">
                             <div className="NavigationLogoContainer" onClick={() => {
                                 window.scrollTo({

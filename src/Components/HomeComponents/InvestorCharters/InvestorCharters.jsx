@@ -39,9 +39,9 @@ const InvestorCharters = () => {
                         <Row gutter={[16, 16]} className="w-100">
                             {investorChartersData.map((item) => (
                                 <Col key={item.id} lg={12} md={12} xs={24}>
-                                    <a 
-                                        href={item.pdfLink} 
-                                        target="_blank" 
+                                    <a
+                                        href={item.pdfLink}
+                                        target="_blank"
                                         rel="noreferrer"
                                         className="InvestorChartersCardLink"
                                     >

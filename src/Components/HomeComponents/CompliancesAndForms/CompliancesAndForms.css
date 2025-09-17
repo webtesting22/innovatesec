@@ -119,7 +119,7 @@
     margin: 0;
 }
 
-.DownloadButton {
+.ViewButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,18 +134,18 @@
     flex-shrink: 0;
 }
 
-.DownloadButton:hover {
+.ViewButton:hover {
     background: var(--brand-color);
     color: #fff;
     border-color: var(--brand-color);
     transform: scale(1.05);
 }
 
-.DownloadButton svg {
+.ViewButton svg {
     transition: transform 0.3s ease;
 }
 
-.DownloadButton:hover svg {
+.ViewButton:hover svg {
     transform: translateY(-1px);
 }
 

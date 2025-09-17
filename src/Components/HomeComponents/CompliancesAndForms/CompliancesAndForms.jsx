@@ -1,102 +1,13 @@
 import React, { useState } from "react";
 import { Tabs } from "antd";
 import "./CompliancesAndForms.css";
+import { compliancesAndFormsData } from "./CompliancesAndFormsData";
 
 const CompliancesAndForms = () => {
     const [activeTab, setActiveTab] = useState("forms");
 
-    const formsData = [
-        {
-            id: 1,
-            title: "Combined Account Opening Forms",
-            size: "3.199 MB",
-            downloadUrl: "#"
-        },
-        {
-            id: 2,
-            title: "New Account Opening Process",
-            size: "2.89 MB",
-            downloadUrl: "#"
-        },
-        {
-            id: 3,
-            title: "Account Modification Form",
-            size: "60.048 KB",
-            downloadUrl: "#"
-        },
-        {
-            id: 4,
-            title: "Account Closure Form",
-            size: "204.65 KB",
-            downloadUrl: "#"
-        },
-        {
-            id: 5,
-            title: "Nomination Form",
-            size: "378.125 KB",
-            downloadUrl: "#"
-        },
-        {
-            id: 6,
-            title: "CKYC Form",
-            size: "3.696 MB",
-            downloadUrl: "#"
-        }
-    ];
-
-    const policiesData = [
-        {
-            id: 1,
-            title: "Privacy Policy",
-            size: "245 KB",
-            downloadUrl: "#"
-        },
-        {
-            id: 2,
-            title: "Terms of Service",
-            size: "189 KB",
-            downloadUrl: "#"
-        }
-    ];
-
-    const disclosuresData = [
-        {
-            id: 1,
-            title: "Risk Disclosure Document",
-            size: "1.2 MB",
-            downloadUrl: "#"
-        },
-        {
-            id: 2,
-            title: "Annual Disclosure",
-            size: "856 KB",
-            downloadUrl: "#"
-        }
-    ];
-
-    const complianceData = [
-        {
-            id: 1,
-            title: "Compliance Report 2024",
-            size: "2.1 MB",
-            downloadUrl: "#"
-        },
-        {
-            id: 2,
-            title: "Audit Report",
-            size: "1.8 MB",
-            downloadUrl: "#"
-        }
-    ];
-
     const getTabData = (tabKey) => {
-        switch (tabKey) {
-            case "forms": return formsData;
-            case "policies": return policiesData;
-            case "disclosures": return disclosuresData;
-            case "compliance": return complianceData;
-            default: return formsData;
-        }
+        return compliancesAndFormsData[tabKey] || [];
     };
 
     const DocumentCard = ({ document }) => (
@@ -115,11 +26,10 @@ const CompliancesAndForms = () => {
                 <h3 className="DocumentTitle">{document.title}</h3>
                 <p className="DocumentSize">{document.size}</p>
             </div>
-            <a href={document.downloadUrl} className="DownloadButton" download>
+            <a href={document.viewUrl} className="ViewButton" target="_blank" rel="noreferrer">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <polyline points="7,10 12,15 17,10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M1 12S5 4 12 4s11 8 11 8-4 8-11 8-11-8-11-8Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
             </a>
         </div>
@@ -149,11 +59,11 @@ const CompliancesAndForms = () => {
             )
         },
         {
-            key: "disclosures",
-            label: "Disclosures",
+            key: "investorCharters",
+            label: "Investor Charters",
             children: (
                 <div className="DocumentsGrid">
-                    {getTabData("disclosures").map((document) => (
+                    {getTabData("investorCharters").map((document) => (
                         <DocumentCard key={document.id} document={document} />
                     ))}
                 </div>

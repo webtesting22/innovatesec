@@ -17,7 +17,7 @@ const ListOfUpstream = () => {
                                 </div>
                             </div>
                         </div>
-                        <h1 className="text-center animate-blur-3d animate-in">List of Upstream Bank Accounts</h1>
+                        <h2 className="text-center animate-blur-3d animate-in">List of Upstream Bank Accounts</h2>
                     </div>
                     <div className="marginTop">
                         <div className="TableContainer">

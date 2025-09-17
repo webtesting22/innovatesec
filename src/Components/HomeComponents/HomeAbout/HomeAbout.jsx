@@ -57,7 +57,7 @@ const HomeAbout = () => {
                                     <div className="AboutCardContainer BoxDesigns">
                                         {/* <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Innovative Logo.png" alt="Innovate Securities Company Logo - 30+ Years of Financial Excellence" className="LogoIcon" /> */}
                                         <div>
-                                            <h2>Empowering Financial Growth with 30+ Years of Trusted Expertise</h2>
+                                            <h3>Empowering Financial Growth with 30+ Years of Trusted Expertise</h3>
                                             <br />
                                             <p>Founded in 1993, Innovate Securities Pvt. Ltd. (ISPL) has over three decades of experience in the Indian capital markets. We offer a wide spectrum of investment services including Shares & Securities, Mutual Funds, Government & Corporate Bonds, Fixed Deposits (FDs), and Non-Convertible Debentures (NCDs). As corporate members of NSE and BSE, and a depository participant with CDSL, we provide our clients with seamless and secure access to financial markets.</p>
                                             <br />

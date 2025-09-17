@@ -13,6 +13,7 @@ import Services from './Components/Services/Services'
 import SingleService from './Components/Services/SingleService'
 import Modal from './Components/Modal/Modal'
 import Directors from './Components/Directors/Directors'
+import OnlineDesk from './Components/OnlineDesk/OnlineDesk'
   function App() {
   const [count, setCount] = useState(0)
 
@@ -35,6 +36,7 @@ import Directors from './Components/Directors/Directors'
           <Route path='/services' element={<Services />} />
           <Route path='/services/:serviceName' element={<SingleService />} />
           <Route path='/directors' element={<Directors />} />
+          <Route path='/online-desk' element={<OnlineDesk />} />
         </Routes>
         <NewsLetters />
         <Footer />

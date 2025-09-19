@@ -119,12 +119,12 @@ export const onlineDeskItems = [
         href: "https://www.mcxindia.com/",
         logo: "/Image/OnlineDeskImages/Multi Commodity Exchange of India.png"
     },
-    {
-        title: "old website",
-        cta: "Go to the website",
-        href: "https://www.innovatesec.com/",
-        logo: "/Image/OnlineDeskImages/InnovateLogo.gif"
-    },
+    // {
+    //     title: "old website",
+    //     cta: "Go to the website",
+    //     href: "https://www.innovatesec.com/",
+    //     logo: "/Image/OnlineDeskImages/InnovateLogo.gif"
+    // },
     {
         title: "e-Voting to Shareholders",
         cta: "Go to the website",

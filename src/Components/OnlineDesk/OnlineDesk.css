@@ -1,3 +1,40 @@
+/* Animation Classes */
+.CommonHeader.animate-blur-3d {
+    opacity: 0;
+    transform: perspective(1000px) rotateX(15deg) translateZ(-50px);
+    filter: blur(8px);
+    transition: all 0.8s ease-out;
+}
+
+.CommonHeader.animate-blur-3d.animate-in {
+    opacity: 1;
+    transform: perspective(1000px) rotateX(0deg) translateZ(0);
+    filter: blur(0px);
+}
+
+.OnlineDeskGrid.animate-3d-zoom {
+    opacity: 0;
+    transform: perspective(1000px) scale(0.8) translateZ(-100px);
+    filter: blur(10px);
+    transition: all 0.8s ease-out;
+}
+
+.OnlineDeskGrid.animate-3d-zoom.animate-in {
+    opacity: 1;
+    transform: perspective(1000px) scale(1) translateZ(0);
+    filter: blur(0px);
+}
+
+/* Desk cards will have subtle hover animations instead of initial animations */
+.DeskCard {
+    transition: all 0.3s ease;
+}
+
+.DeskCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
 .OnlineDeskGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

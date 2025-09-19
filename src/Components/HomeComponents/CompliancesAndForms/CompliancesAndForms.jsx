@@ -1,20 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Tabs } from "antd";
 import "./CompliancesAndForms.css";
 import { compliancesAndFormsData } from "./CompliancesAndFormsData";
+import { AnimationObserver, AnimationConfigs } from "../../../utils/animationObserver";
 
 const CompliancesAndForms = () => {
     const [activeTab, setActiveTab] = useState("forms");
+    
+    // Refs for animation
+    const headerRef = useRef(null);
+    const tabsRef = useRef(null);
 
     const getTabData = (tabKey) => {
         return compliancesAndFormsData[tabKey] || [];
     };
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
-    const DocumentCard = ({ document }) => (
-        <div className="DocumentCard">
+    // Animation setup
+    useEffect(() => {
+        const observer = new AnimationObserver({
+            threshold: 0.1,
+            rootMargin: '-20px 0px 0px 0px',
+            animationDelay: 200
+        });
+
+        // Animate header section
+        if (headerRef.current) {
+            observer.observe(headerRef.current, AnimationConfigs.BLUR_3D);
+        }
+
+        // Animate tabs container
+        if (tabsRef.current) {
+            observer.observe(tabsRef.current, AnimationConfigs.SLIDE_3D);
+        }
+
+        return () => {
+            observer.destroy();
+        };
+    }, []); // Only run once on mount
+
+    const DocumentCard = ({ document, index }) => (
+        <div className="DocumentCard" style={{ animationDelay: `${index * 0.1}s` }}>
             <div className="DocumentIcon">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="DocumentIconSvg">
                     <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="var(--brand-color)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -44,8 +73,8 @@ const CompliancesAndForms = () => {
             label: "Forms",
             children: (
                 <div className="DocumentsGrid">
-                    {getTabData("forms").map((document) => (
-                        <DocumentCard key={document.id} document={document} />
+                    {getTabData("forms").map((document, index) => (
+                        <DocumentCard key={document.id} document={document} index={index} />
                     ))}
                 </div>
             )
@@ -55,8 +84,8 @@ const CompliancesAndForms = () => {
             label: "Policies",
             children: (
                 <div className="DocumentsGrid">
-                    {getTabData("policies").map((document) => (
-                        <DocumentCard key={document.id} document={document} />
+                    {getTabData("policies").map((document, index) => (
+                        <DocumentCard key={document.id} document={document} index={index} />
                     ))}
                 </div>
             )
@@ -66,8 +95,8 @@ const CompliancesAndForms = () => {
             label: "Investor Charters",
             children: (
                 <div className="DocumentsGrid">
-                    {getTabData("investorCharters").map((document) => (
-                        <DocumentCard key={document.id} document={document} />
+                    {getTabData("investorCharters").map((document, index) => (
+                        <DocumentCard key={document.id} document={document} index={index} />
                     ))}
                 </div>
             )
@@ -77,8 +106,8 @@ const CompliancesAndForms = () => {
             label: "Compliance Data",
             children: (
                 <div className="DocumentsGrid">
-                    {getTabData("compliance").map((document) => (
-                        <DocumentCard key={document.id} document={document} />
+                    {getTabData("compliance").map((document, index) => (
+                        <DocumentCard key={document.id} document={document} index={index} />
                     ))}
                 </div>
             )
@@ -89,7 +118,7 @@ const CompliancesAndForms = () => {
         <div className="MainContainer marginTop">
             <div className="Container">
                 <div className="paddingSide">
-                    <div className="CommonHeader">
+                    <div className="CommonHeader" ref={headerRef}>
                         <div className="SectionTagLabelContainer">
                             <div style={{ margin: "auto" }}>
                                 <div className="flexVertically">
@@ -100,10 +129,10 @@ const CompliancesAndForms = () => {
                                 </div>
                             </div>
                         </div>
-                        <h1 className="text-center animate-blur-3d animate-in">Documents & Forms</h1>
+                        <h1 className="text-center">Documents & Forms</h1>
                     </div>
 
-                    <div className="TabsContainer">
+                    <div className="TabsContainer" ref={tabsRef}>
                         <Tabs
                             defaultActiveKey="forms"
                             items={tabItems}

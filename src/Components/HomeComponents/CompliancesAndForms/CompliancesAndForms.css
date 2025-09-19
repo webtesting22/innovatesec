@@ -1,3 +1,40 @@
+/* Animation Classes */
+.CommonHeader.animate-blur-3d {
+    opacity: 0;
+    transform: perspective(1000px) rotateX(15deg) translateZ(-50px);
+    filter: blur(8px);
+    transition: all 0.8s ease-out;
+}
+
+.CommonHeader.animate-blur-3d.animate-in {
+    opacity: 1;
+    transform: perspective(1000px) rotateX(0deg) translateZ(0);
+    filter: blur(0px);
+}
+
+.TabsContainer.animate-3d-slide {
+    opacity: 0;
+    transform: perspective(1000px) rotateY(-20deg) translateX(-100px) translateZ(-50px);
+    filter: blur(5px);
+    transition: all 0.8s ease-out;
+}
+
+.TabsContainer.animate-3d-slide.animate-in {
+    opacity: 1;
+    transform: perspective(1000px) rotateY(0deg) translateX(0) translateZ(0);
+    filter: blur(0px);
+}
+
+/* Document cards will have subtle hover animations instead of initial animations */
+.DocumentCard {
+    transition: all 0.3s ease;
+}
+
+.DocumentCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
 .TabsContainer {
     margin-top: 40px;
 }

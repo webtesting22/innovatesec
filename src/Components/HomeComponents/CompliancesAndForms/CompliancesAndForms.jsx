@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Tabs } from "antd";
 import "./CompliancesAndForms.css";
 import { compliancesAndFormsData } from "./CompliancesAndFormsData";
@@ -9,6 +9,9 @@ const CompliancesAndForms = () => {
     const getTabData = (tabKey) => {
         return compliancesAndFormsData[tabKey] || [];
     };
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const DocumentCard = ({ document }) => (
         <div className="DocumentCard">

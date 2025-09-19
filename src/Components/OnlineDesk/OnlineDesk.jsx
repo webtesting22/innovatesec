@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./OnlineDesk.css";
 import { onlineDeskItems } from "./OnlineDeskData";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 
 const OnlineDesk = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="MainContainer marginTop">
             <div className="Container">

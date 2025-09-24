@@ -134,27 +134,28 @@ const HeroHome = () => {
 
     const SwiperData = [
         {
-            title: "ISPL is do PRO Trading"
+          title: "ISPL engages in proprietary (PRO) trading."
         },
         {
-            title: "Pay 20% upfront margin of the transaction value to trade in cash market segment"
+          title: "Pay an upfront margin of 20% of the transaction value to trade in the cash market segment."
         },
         {
-            title: "No need to issue cheques by investors while subscribing to IPO. Just write the bank account number and sign in the application form to authorize your bank to make payment in case of allotment. No worries for refund as the money remains in investor's account."
+          title: "IPO applications: no cheques required. Provide your bank account number and sign (ASBA) to authorize your bank to block funds; the money stays in your account until allotment."
         },
         {
-            title: "Prevent Unauthorised transactions in your account. Update your mobile numbers/email IDs with your stock brokers/Dp Participant. Receive information of your transactions directly from Exchange/DP on your mobile/email at the end of the day."
+          title: "Prevent unauthorized transactions: update your mobile number and email ID with your stockbroker/Depository Participant (DP). Receive transaction alerts directly from the Exchange/DP via SMS/email at day-end."
         },
         {
-            title: "Stock Brokers can accept securities as margin from clients only by way of pledge in the depository system w.e.f. September 1, 2020"
+          title: "Effective 1 September 2020, stockbrokers may accept securities as margin from clients only through a pledge in the depository system."
         },
         {
-            title: "Client Bank Account Details"
+          title: "Client Bank Account Details"
         },
         {
-            title: "The new client login is available at https://bo.innovatesec.com. Username is your Trading Code and Password is your PAN Number."
+          title: "New client login: https://bo.innovatesec.com. Username: your Trading Code; Password: your PAN."
         },
-    ]
+      ];
+      
 
     return (
         <div ref={sectionRef}>

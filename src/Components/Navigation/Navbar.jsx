@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import NavData from "./NavData";
 import { Link } from "react-router-dom";
-import { Drawer, Button } from "antd";
+import { Drawer, Button, Modal } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 
 const Navbar = () => {
@@ -11,6 +11,10 @@ const Navbar = () => {
     const [hasScrolled, setHasScrolled] = useState(false);
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+    const [isContactOpen, setIsContactOpen] = useState(false);
+
+    const openContactModal = () => setIsContactOpen(true);
+    const closeContactModal = () => setIsContactOpen(false);
 
     useEffect(() => {
         const checkMobile = () => {
@@ -178,14 +182,13 @@ const Navbar = () => {
                         </div>
                     ))}
                     <div className="BtnContainer">
-                        <Link to="tel:9825032653">
-                            <button
-                                type="primary"
-                                style={{ width: "100%", textAlign: "center", margin: "auto", justifyContent: "center" }}
-                            >
-                                Contact Us
-                            </button>
-                        </Link>
+                        <button
+                            type="primary"
+                            onClick={openContactModal}
+                            style={{ width: "100%", textAlign: "center", margin: "auto", justifyContent: "center" }}
+                        >
+                            Contact Us
+                        </button>
                     </div>
                 </div>
             </div>
@@ -219,7 +222,7 @@ const Navbar = () => {
                                     </div>
                                     <div>
                                         <div className="BtnContainer">
-                                            <Link to="tel:9825032653"><button>Contact Us</button></Link>
+                                            <button onClick={openContactModal}>Contact Us</button>
                                         </div>
                                     </div>
                                 </>
@@ -249,6 +252,32 @@ const Navbar = () => {
 
             {/* Mobile Drawer */}
             {renderMobileDrawer()}
+
+            {/* Contact Modal */}
+            <Modal
+                open={isContactOpen}
+                onCancel={closeContactModal}
+                footer={null}
+                centered
+                destroyOnClose
+            >
+                <div style={{ display: 'grid', gap: 12 }}>
+                    <h3 style={{ margin: 0 }}>Get in touch</h3>
+                    <p style={{ margin: 0, color: '#666' }}>Choose how you'd like to contact us:</p>
+                    <div style={{ display: 'grid', gap: 10, marginTop: 8 }}>
+                        <a href="tel:07926474500" style={{ textDecoration: 'none' }}>
+                            <button className="NewsletterButton" style={{ width: '100%' }} onClick={closeContactModal}>
+                                Call Now
+                            </button>
+                        </a>
+                        <a href="mailto:innovate95@rediffmail.com" style={{ textDecoration: 'none' }}>
+                            <button className="NewsletterButton secondary" style={{ width: '100%' }} onClick={closeContactModal}>
+                                Email Us
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </Modal>
         </div>
     )
 }

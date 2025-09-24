@@ -2,13 +2,35 @@ import React, { useState } from "react";
 import "./NewsLetters.css";
 import { HiOutlineMail } from "react-icons/hi";
 import { HiOutlineCheckCircle } from "react-icons/hi";
-import { notification } from "antd";
+import { notification, Modal } from "antd";
 import { Link } from "react-router-dom";
 const NewsLetters = () => {
     const [email, setEmail] = useState("");
     const [isValid, setIsValid] = useState(true);
     const [isLoading, setIsLoading] = useState(false);
     const [api, contextHolder] = notification.useNotification();
+    const [isContactOpen, setIsContactOpen] = useState(false);
+
+    const openContactModal = () => setIsContactOpen(true);
+    const closeContactModal = () => setIsContactOpen(false);
+
+    const handleEmailClick = () => {
+        const email = 'innovate95@rediffmail.com';
+        const subject = 'Contact from Website';
+        const body = 'Hello,\n\nI would like to get in touch with Innovate Securities.\n\n';
+        
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        
+        // Use window.open for better compatibility
+        const emailWindow = window.open(mailtoLink, '_self');
+        
+        // If window.open fails, try direct navigation
+        if (!emailWindow) {
+            window.location.href = mailtoLink;
+        }
+        
+        closeContactModal();
+    };
 
     // Email validation function
     const validateEmail = (email) => {
@@ -124,15 +146,13 @@ const NewsLetters = () => {
                                             onKeyPress={handleKeyPress}
                                         />
                                     </div> */}
-                                    <Link to="tel:9825032653">
                                     <button
                                         className={`NewsletterButton ${isLoading ? 'loading' : ''}`}
-                                        // onClick={handleSubmit}
+                                        onClick={openContactModal}
                                         disabled={isLoading}
                                     >
-                                        {isLoading ? "Calling..." : "Call Now"}
+                                        {isLoading ? "Please wait..." : "Contact Us"}
                                     </button>
-                                    </Link>
                                 </div>
 
                                 {!isValid && email && (
@@ -141,12 +161,42 @@ const NewsLetters = () => {
                                     </div>
                                 )}
 
-                                
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <Modal
+                open={isContactOpen}
+                onCancel={closeContactModal}
+                footer={null}
+                centered
+                destroyOnClose
+            >
+                <div style={{ display: 'grid', gap: 12 }}>
+                    <h3 style={{ margin: 0 }}>Get in touch</h3>
+                    <p style={{ margin: 0, color: '#666' }}>Choose how you'd like to contact us:</p>
+                    <div style={{ display: 'grid', gap: 10, marginTop: 8 }}>
+                        <a href="tel:07926474500" style={{ textDecoration: 'none' }}>
+                            <button className="NewsletterButton" style={{ width: '100%' }} onClick={closeContactModal}>
+                                Call Now
+                            </button>
+                        </a>
+                        <a 
+                            href="mailto:innovate95@rediffmail.com?subject=Contact from Website&body=Hello,%0A%0AI would like to get in touch with Innovate Securities.%0A%0A" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: 'none', width: '100%' }}
+                            onClick={closeContactModal}
+                        >
+                            <button className="NewsletterButton secondary" style={{ width: '100%' }}>
+                                Email Us
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </Modal>
         </>
     );
 };

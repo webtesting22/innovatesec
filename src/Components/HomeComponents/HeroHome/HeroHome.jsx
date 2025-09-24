@@ -140,7 +140,7 @@ const HeroHome = () => {
             title: "Pay 20% upfront margin of the transaction value to trade in cash market segment"
         },
         {
-            title: "No need to issue cheques by investors while subscribing to IPO. Just write the bank account number and sign in the application form to authorize your bank to make payment in case of allotment. No worries for refund as the money remains in investor's accou"
+            title: "No need to issue cheques by investors while subscribing to IPO. Just write the bank account number and sign in the application form to authorize your bank to make payment in case of allotment. No worries for refund as the money remains in investor's account."
         },
         {
             title: "Prevent Unauthorised transactions in your account. Update your mobile numbers/email IDs with your stock brokers/Dp Participant. Receive information of your transactions directly from Exchange/DP on your mobile/email at the end of the day."

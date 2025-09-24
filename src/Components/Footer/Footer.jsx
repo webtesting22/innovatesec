@@ -76,7 +76,7 @@ const Footer = () => {
                                 </div>
                                 <div>
                                     <div className="SocialMediaContainer">
-                                    <h3>Social Links</h3>
+                                        <h3>Social Links</h3>
                                         <ul>
                                             {SocialMediaData.map((item, index) => (
                                                 <li key={index}>
@@ -96,6 +96,12 @@ const Footer = () => {
                         </Col> */}
                         <Col lg={6} md={8} sm={24} xs={24}>
                             <div className="MapContainer">
+                                <p>1st Floor, DEVASHISH
+                                    39, Sardar Patel Nagar
+                                    Opp. ABC-III, Nr. Hotel Regency
+                                    Navrangpura
+                                    Ahmedabad - 380006</p>
+                                    <br />
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.739721205993!2d72.55726109999999!3d23.033326999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8579d81d10e9%3A0xa79909e608211356!2sINNOVATE%20SECURITIES%20P%20LTD!5e0!3m2!1sen!2sin!4v1757922030852!5m2!1sen!2sin"
                                     width="100%"

@@ -12,6 +12,8 @@ const Navbar = () => {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
     const [isContactOpen, setIsContactOpen] = useState(false);
+    const [activeDropdown, setActiveDropdown] = useState(null);
+    const [mobileAccordionOpen, setMobileAccordionOpen] = useState(null);
 
     const openContactModal = () => setIsContactOpen(true);
     const closeContactModal = () => setIsContactOpen(false);
@@ -63,6 +65,10 @@ const Navbar = () => {
                 behavior: 'smooth'
             });
         }
+    };
+
+    const handleMobileAccordionToggle = (itemId) => {
+        setMobileAccordionOpen(mobileAccordionOpen === itemId ? null : itemId);
     };
 
     const renderMobileDrawer = () => (
@@ -161,24 +167,79 @@ const Navbar = () => {
                 <div className="NavLinksContainerMobile">
                     {NavData.map((item) => (
                         <div key={item.id}>
-                            <Link
-                                to={item.path}
-                                onClick={() => handleMobileNavClick(item.path)}
-                                style={{
-                                    display: 'block',
-                                    padding: '12px 0',
-                                    fontSize: '16px',
-                                    fontWeight: '500',
-                                    color: '#333',
-                                    textDecoration: 'none',
-                                    borderBottom: '1px solid #f0f0f0',
-                                    transition: 'color 0.3s ease'
-                                }}
-                                onMouseEnter={(e) => e.target.style.color = '#060568'}
-                                onMouseLeave={(e) => e.target.style.color = '#333'}
-                            >
-                                {item.name}
-                            </Link>
+                            {item.hasDropdown ? (
+                                <div>
+                                    <div
+                                        onClick={() => handleMobileAccordionToggle(item.id)}
+                                        style={{
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'space-between',
+                                            padding: '12px 0',
+                                            fontSize: '16px',
+                                            fontWeight: '500',
+                                            color: '#333',
+                                            cursor: 'pointer',
+                                            borderBottom: '1px solid #f0f0f0',
+                                            transition: 'color 0.3s ease'
+                                        }}
+                                        onMouseEnter={(e) => e.target.style.color = '#060568'}
+                                        onMouseLeave={(e) => e.target.style.color = '#333'}
+                                    >
+                                        <span>{item.name}</span>
+                                        {/* <span style={{
+                                            transform: mobileAccordionOpen === item.id ? 'rotate(180deg)' : 'rotate(0deg)',
+                                            transition: 'transform 0.3s ease',
+                                            fontSize: '14px'
+                                        }}>
+                                            ▼
+                                        </span> */}
+                                    </div>
+                                    {mobileAccordionOpen === item.id && (
+                                        <div style={{ paddingLeft: '20px', borderBottom: '1px solid #f0f0f0' }}>
+                                            {item.sublinks.map((sublink) => (
+                                                <Link
+                                                    key={sublink.id}
+                                                    to={sublink.path}
+                                                    onClick={() => handleMobileNavClick(sublink.path)}
+                                                    style={{
+                                                        display: 'block',
+                                                        padding: '10px 0',
+                                                        fontSize: '14px',
+                                                        fontWeight: '400',
+                                                        color: '#666',
+                                                        textDecoration: 'none',
+                                                        transition: 'color 0.3s ease'
+                                                    }}
+                                                    onMouseEnter={(e) => e.target.style.color = '#060568'}
+                                                    onMouseLeave={(e) => e.target.style.color = '#666'}
+                                                >
+                                                    {sublink.name}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+                            ) : (
+                                <Link
+                                    to={item.path}
+                                    onClick={() => handleMobileNavClick(item.path)}
+                                    style={{
+                                        display: 'block',
+                                        padding: '12px 0',
+                                        fontSize: '16px',
+                                        fontWeight: '500',
+                                        color: '#333',
+                                        textDecoration: 'none',
+                                        borderBottom: '1px solid #f0f0f0',
+                                        transition: 'color 0.3s ease'
+                                    }}
+                                    onMouseEnter={(e) => e.target.style.color = '#060568'}
+                                    onMouseLeave={(e) => e.target.style.color = '#333'}
+                                >
+                                    {item.name}
+                                </Link>
+                            )}
                         </div>
                     ))}
                     <div className="BtnContainer">
@@ -215,8 +276,34 @@ const Navbar = () => {
                                 <>
                                     <div className="NavLinksContainer">
                                         {NavData.map((item) => (
-                                            <div key={item.id}>
-                                                <Link to={item.path}>{item.name}</Link>
+                                            <div key={item.id} className="nav-item">
+                                                {item.hasDropdown ? (
+                                                    <div
+                                                        className="dropdown-container"
+                                                        onMouseEnter={() => setActiveDropdown(item.id)}
+                                                        onMouseLeave={() => setActiveDropdown(null)}
+                                                    >
+                                                        <Link to={item.path} className="dropdown-trigger">
+                                                            {item.name}
+                                                            {/* <span className="dropdown-arrow">▼</span> */}
+                                                        </Link>
+                                                        {activeDropdown === item.id && (
+                                                            <div className="dropdown-menu">
+                                                                {item.sublinks.map((sublink) => (
+                                                                    <Link
+                                                                        key={sublink.id}
+                                                                        to={sublink.path}
+                                                                        className="dropdown-item"
+                                                                    >
+                                                                        {sublink.name}
+                                                                    </Link>
+                                                                ))}
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                ) : (
+                                                    <Link to={item.path}>{item.name}</Link>
+                                                )}
                                             </div>
                                         ))}
                                     </div>

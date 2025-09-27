@@ -13,7 +13,7 @@ const ServicesData = [
             <p><b>Equity Market Overview</b></p>
             <p>At Innovate Securities, we specialize in providing efficient broking services in the equity market, facilitating the buying and selling of shares on the NSE and BSE. Our streamlined processes ensure that your trades are executed swiftly and reliably.</p>
             <p><b>Understanding Derivatives</b></p>
-            <p>In addition to equities, we offer broking services for derivatives, including options and futures. This allows you to manage risk and take advantage of market opportunities with ease.</p>
+            <p>In addition to equities, we offer broking services for deri vatives, including options and futures. This allows you to manage risk and take advantage of market opportunities with ease.</p>
             <div className='marginTop'>
                 <h3 className='text-center marginBottom' style={{ color: "black" }}>Why Choose Innovate Securities?</h3>
                 <div className='centerContainer'>
@@ -46,7 +46,7 @@ const ServicesData = [
             <br /><br />
             <p>Partner with Innovate Securities for all your equity and derivatives trading needs and take the next step in your investment journey with us!</p>
             <br />
-            
+
 
         </>,
     },

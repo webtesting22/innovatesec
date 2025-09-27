@@ -134,28 +134,28 @@ const HeroHome = () => {
 
     const SwiperData = [
         {
-          title: "ISPL engages in proprietary (PRO) trading."
+            title: "ISPL engages in proprietary (PRO) trading."
         },
         {
-          title: "Pay an upfront margin of 20% of the transaction value to trade in the cash market segment."
+            title: "Pay an upfront margin of 20% of the transaction value to trade in the cash market segment."
         },
         {
-          title: "IPO applications: no cheques required. Provide your bank account number and sign (ASBA) to authorize your bank to block funds; the money stays in your account until allotment."
+            title: "IPO applications: no cheques required. Provide your bank account number and sign (ASBA) to authorize your bank to block funds; the money stays in your account until allotment."
         },
         {
-          title: "Prevent unauthorized transactions: update your mobile number and email ID with your stockbroker/Depository Participant (DP). Receive transaction alerts directly from the Exchange/DP via SMS/email at day-end."
+            title: "Prevent unauthorized transactions: update your mobile number and email ID with your stockbroker/Depository Participant (DP). Receive transaction alerts directly from the Exchange/DP via SMS/email at day-end."
         },
         {
-          title: "Effective 1 September 2020, stockbrokers may accept securities as margin from clients only through a pledge in the depository system."
+            title: "Effective 1 September 2020, stockbrokers may accept securities as margin from clients only through a pledge in the depository system."
         },
         {
-          title: "Client Bank Account Details"
+            title: "Client Bank Account Details"
         },
         {
-          title: "New client login: https://bo.innovatesec.com. Username: your Trading Code; Password: your PAN."
+            title: "New client login: https://bo.innovatesec.com. Username: your Trading Code; Password: your PAN."
         },
-      ];
-      
+    ];
+
 
     return (
         <div ref={sectionRef}>
